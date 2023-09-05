@@ -1,5 +1,5 @@
 // Conveyers
-import TriptiS from "../../assets/Images/Team/Teacher/TriptiS.JPG"
+import TriptiS from "../../assets/Images/Team/Teacher/TriptiS.jpg"
 import MonikaS from "../../assets/Images/Team/Teacher/monika-sharma.jpg"
 import TanyaS from "../../assets/Images/Team/Teacher/Tanya_Sharma.jpeg"
 export const ConveyersList=[
@@ -38,7 +38,7 @@ export const ConveyersList=[
 ]
 // Heads
 import VijaiS from "../../assets/Images/Team/Teacher/CSE.jpeg"
-import IT from "../../assets/Images/Team/Teacher/IT.JPG"
+import IT from "../../assets/Images/Team/Teacher/IT.jpg"
 export const HeadsDList=[
     {
         id:"1",
