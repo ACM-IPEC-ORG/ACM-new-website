@@ -484,7 +484,7 @@ export const session_2020_21=[
 // posters
 import FANG from "../../assets/Images/Poster/fang.jpg"
 import FSWD from "../../assets/Images/Poster/fswd.jpg"
-import DreamIT from "../../assets/Images/Poster/dreamit.jpg"
+import DreamIT from "../../assets/Images/Poster/dreamiIT.jpg"
 import Quizzard from "../../assets/Images/Poster/quizzard.jpeg"
 import Internship from "../../assets/Images/Poster/1.jpg"
 import POPQ from "../../assets/Images/Poster/2.jpg"
