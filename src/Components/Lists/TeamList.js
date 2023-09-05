@@ -439,7 +439,7 @@ import GayatriS from "../../assets/Images/2023/gayatri.jpeg"
 import JunaidS from "../../assets/Images/2023/junaid.jpg"
 import VanshG from "../../assets/Images/2023/vansh.jpeg"
 import AnkurKK from "../../assets/Images/2023/ankur.jpg"
-import PoornaA from "../../assets/Images/2023/PoornaAsthana.jpeg"
+import PoornaA from "../../assets/Images/2023/poornaAsthana.jpeg"
 import Kanupriya from "../../assets/Images/2023/kanupriya.jpeg"
 export const Team2023List=[
     {
@@ -556,7 +556,7 @@ export const Team2023List=[
 ]
 // TEAM 2022
 import DevanshM from "../../assets/Images/2022/Devansh.jpeg"
-import AjayP from "../../assets/Images/2022/Aditi.jpeg"
+import AjayP from "../../assets/Images/2022/Ajay.jpeg"
 import AnubhavC from "../../assets/Images/2022/Anubhav.jpeg"
 import AditiY from "../../assets/Images/2022/Aditi.jpeg"
 import AbhishekS from "../../assets/Images/2022/Abhishek.jpg"
@@ -568,7 +568,7 @@ import SwatiR from "../../assets/Images/2022/Swati.jpeg"
 export const Team2022List=[
     {
         id:"1",
-        img:AnjaliM,
+        img:DevanshM,
         name:"Devansh Mittal",
         title:"Chair Person",
         // facebook:"https://www.facebook.com/",
