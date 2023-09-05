@@ -1,0 +1,94 @@
+.SIG-hero{
+    background-image: url("../../../public/Images/club/SIGHERO.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+}
+.HERO-details{
+    height: 95vh;
+}
+.Hero-right{
+    width: 40vw;
+    margin-left: 20%;
+}
+.YT{
+    width: 40vw;
+    height: 50vh;
+    background-color: #b4b4b4;
+}
+.ImageSIG{
+    border: 0.3rem solid #0F87C9;
+    width: 25%;
+    z-index: 10;
+    margin-right: -8%;
+    margin-bottom: -2%;
+    margin-top: auto;
+}
+.ImageSIGR{
+    border: 0.3rem solid #0F87C9;
+    width: 25%;
+    z-index: 10;
+    margin-left: -8%;
+    margin-bottom: -2%;
+    margin-top: auto;
+}
+.Image-drop{
+    width: 65%;
+    height: 100%;
+    margin-left:-60% ;
+    margin-top: -3%;
+    z-index: -2;
+    background-color: #0F87C9;
+}
+.Image-dropL{
+    width: 65%;
+    height: 100%;
+    margin-right:-60% ;
+    margin-top: -3%;
+    z-index: -2;
+    background-color: #0F87C9;
+}
+.bg-syllabus{
+    background-color: #ffffff;
+    background-image: radial-gradient(#292929 1px, #ffffff 1px);
+    background-size: 25px 25px;
+}
+.BG-info{
+    background-color: #292929;
+}
+.Tech{
+    background-image: linear-gradient(to right , #292929 30%,#51CDC8);
+}
+.Web{
+    background-image: linear-gradient(to left , #292929 40%,#0F87C9);
+}
+.Graph{
+    background-image: linear-gradient(to right , #CC244A 10%,#6A2991);
+}
+.Foundation{
+    background-image: linear-gradient(to left , #515454 30%,#960C3E);
+}
+.Python{
+    background-image: linear-gradient(to left , #3770A0 40%,#FFCD3D);
+}
+@media(max-width:900px){
+    .ImageSIG{
+        width: 50%;
+       
+    }
+    .ImageSIGR{
+       
+        width: 50%;
+    }
+}
+@media(max-width:600px){
+    .ImageSIG{
+        width: 50%;
+        margin:0
+    }
+    .ImageSIGR{
+        margin:0;
+        width: 50%;
+    }
+}

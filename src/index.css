@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ *{
+    font-family: 'Raleway',sans-serif;
+ }
+.container{
+    align-items: center;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    user-select: none;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+}

@@ -1,0 +1,12 @@
+.Team-Hero{
+    background-image: linear-gradient(to bottom, white,#08C2BF);
+}
+.Team-Hero-2{
+    background-image: linear-gradient(to bottom, white,#0182AC);
+}
+.circle{
+    border: 0.3rem solid #08C2BF;
+}
+.square{
+    border: 0.3rem solid #08C2BF;
+}
