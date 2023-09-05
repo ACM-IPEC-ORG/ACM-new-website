@@ -172,119 +172,7 @@ export const FoundersList=[
     },
 ]
 
-export const CMList2023=[
-    {
-        id:"1",
-        img:"Images/prime/anjali-mathur.jpg",
-        name:"Anjali Mathur",
-        title:"Chair Person",
-        facebook:"https://www.facebook.com/profile.php?id=100010877117560",
-        instagram:"https://www.instagram.com/a._.mathur/",
-        // twitter:"",
-        linkedin:"https://www.linkedin.com/in/anjali-mathur-043aa2201/"
-    },
-    {
-        id:"2",
-        img:"Images/prime/Atif.jpg",
-        name:"Atif Moin",
-        title:"Vice Chair Person",
-        facebook:"https://www.facebook.com/jsone.atif",
-        instagram:"https://instagram.com/_.a_ti_f./",
-        // twitter:"",
-        linkedin:"https://www.linkedin.com/in/atif-moin-858167179"
-    },
-    {
-        id:"3",
-        img:"Images/prime/pk.jpeg",
-        name:"Priyansh Kulshrestha",
-        title:"WebMaster",
-        facebook:"https://www.facebook.com/profile.php?id=100022034401336",
-        instagram:"https://www.instagram.com/priyansh_kulshrestha/",
-        // twitter:"",
-        linkedin:"https://www.linkedin.com/in/priyansh-kulshrestha-45724919b/"
-    },
-    {
-        id:"4",
-        img:"Images/prime/vaibhav.jpg",
-        name:"Vaibhav Srivastava",
-        title:"General Secretary",
-        facebook:"https://www.facebook.com/vaibhavsrivastava.2019/",
-        instagram:"https://www.instagram.com/vaib_s_/",
-        // twitter:"",
-        linkedin:"https://www.linkedin.com/in/vaibhavsrivastavadev/"
-    },
-    {
-        id:"5",
-        img:"Images/prime/deepanshu.jpeg",
-        name:"Deepanshu Mishra",
-        title:"Membership Coordinator",
-        // facebook:"",
-        instagram:"https://www.instagram.com/_deepanshu_mishra/",
-        // twitter:"",
-        linkedin:"https://www.linkedin.com/in/deepanshu-mishra-34536112b/"
-    },
-    {
-        id:"6",
-        img:"Images/prime/gayatri.jpeg",
-        name:"Gayatri Sharma",
-        title:"Treasure",
-        // facebook:"",
-        instagram:"https://www.instagram.com/iamnikitaa_sharma/",
-        // twitter:"",
-        linkedin:"https://www.linkedin.com/in/gayatri-sharma-95b258211"
-    },
-    {
-        id:"7",
-        img:"Images/prime/junaid.jpg",
-        name:"Junaid Siddiqui",
-        title:"Technical Head",
-        facebook:"https://www.facebook.com/junaid.siddiqui.39904181",
-        instagram:"https://www.instagram.com/junaid.just_me/",
-        // twitter:"",
-        linkedin:"https://www.linkedin.com/in/max-einstein/"
-    },
-    {
-        id:"8",
-        img:"Images/prime/vansh.jpeg",
-        name:"Vansh Gupta",
-        title:"Technical Head",
-        facebook:"https://www.facebook.com/vanshguptaaman/",
-        instagram:"https://www.instagram.com/vansh.gupta.aman/",
-        // twitter:"",
-        linkedin:"https://www.linkedin.com/in/vanshguptaaman/"
-    },
-    {
-        id:"9",
-        img:"Images/prime/ankur.jpg",
-        name:"Ankur Kumar Kushwaha",
-        title:"Event Head",
-        facebook:"https://www.facebook.com/ankur.kumarkushwaha.9",
-        instagram:"https://www.instagram.com/ankurkush10/",
-        // twitter:"",
-        linkedin:"https://www.linkedin.com/in/ankur-kumar-kushwaha-7a059714a"
-    },
-    {
-        id:"10",
-        img:"Images/prime/poornaAsthana.jpeg",
-        name:"Poorna Asthana",
-        title:"Documentation Head",
-        // facebook:"",
-        instagram:"https://instagram.com/_miss_asthana?utm_medium=copy_link",
-        // twitter:"",
-        linkedin:"https://www.linkedin.com/in/poorna-asthana-863114202"
-    },
-    {
-        id:"11",
-        img:"Images/prime/kanupriya.jpeg",
-        name:"Kanpuriya",
-        title:"Joint Secretary",
-        // facebook:"",
-        instagram:"https://www.instagram.com/kanupriya__11/",
-        // twitter:"",
-        linkedin:"https://www.linkedin.com/in/kanupriya-prajapati-197842196"
-    },
-    
-]
+
 // Prime
 import VivekRS from "../../assets/Images/Team/Prime/vivek-raj-singh.jpg"
 import YatinS from "../../assets/Images/Team/Prime/yatin-singhal.jpg"
@@ -550,7 +438,7 @@ import DeepanshuM from "../../assets/Images/2023/deepanshu.jpeg"
 import GayatriS from "../../assets/Images/2023/gayatri.jpeg"
 import JunaidS from "../../assets/Images/2023/junaid.jpg"
 import VanshG from "../../assets/Images/2023/vansh.jpeg"
-import AnkurKK from "../../assets/Images/2023/Ankur.jpg"
+import AnkurKK from "../../assets/Images/2023/ankur.jpg"
 import PoornaA from "../../assets/Images/2023/PoornaAsthana.jpeg"
 import Kanupriya from "../../assets/Images/2023/kanupriya.jpeg"
 export const Team2023List=[
