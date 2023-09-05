@@ -9,11 +9,10 @@ import HEROleft from "../../assets/Images/club/events-left.svg"
 import HEROright from "../../assets/Images/club/events-right.svg"
 import "./Event.css"
 export default function Events(){
-    let flag=0;
-    if(flag=0){
-        window.scroll(0,0);
-        flag=1
-    }
+   window.scrollTo({
+    top:0,
+    behavior:"smooth"
+   })
     const [menuItem, setMenuItem]=useState(session_2022_23);
     const filter=(button)=>{
         let FilterData=allEvent.filter(item=>item.tags===button);
