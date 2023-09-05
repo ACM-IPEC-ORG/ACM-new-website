@@ -7,13 +7,7 @@ export default function SIGDetails(){
     const { Slugs } = useParams();
     const event = Syllable.find(i => i.slugs === Slugs);
     const{heading,tagline,intro,img,color,logo,YT,tasks,project,info}=event;
-    const Syllabus=tasks.map(Ele=>{
-        return(
-            <SyllCard
-            {...Ele}
-            />
-        )
-    })
+    
     return(
         <div>
             <div className="">

@@ -36,16 +36,16 @@ export const WebSyllabus=[
     },
 ]
 // SYLLABUS
-import Web from "../../assets/Images/sigs/SIG Web.png"
+import Web from "../../assets/Images/sigs/SIG_WEB.png"
 import TECH_H from "../../assets/Images/club/SIG Tech.png"
 import GRAPH_H from "../../assets/Images/club/SIG GRAPH.svg"
 import PYTHON_H from "../../assets/Images/club/SIG PYTHON.svg"
 import FOUND_H from "../../assets/Images/club/SIG FOUNDATION.svg"
 import WEB_H from "../../assets/Images/club/SIG WEB.svg"
-import Tech from "../../assets/Images/sigs/SIG Tech.png"
-import Graph from "../../assets/Images/sigs/SIG Graph.png"
-import Python from "../../assets/Images/sigs/SIG Python.png"
-import Foundation from "../../assets/Images/sigs/SIG Foundation.png"
+import Tech from "../../assets/Images/sigs/SIG_TECH.png"
+import Graph from "../../assets/Images/sigs/SIG_GRAPH.png"
+import Python from "../../assets/Images/sigs/SIG_PYTHON.png"
+import Foundation from "../../assets/Images/sigs/SIG_FOUNDATION.png"
 export const Syllable=[
     {
         "id":"1",

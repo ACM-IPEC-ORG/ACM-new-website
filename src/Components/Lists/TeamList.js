@@ -1,5 +1,5 @@
 // Conveyers
-import TriptiS from "../../assets/Images/Team/Teacher/T.JPG"
+import TriptiS from "../../assets/Images/Team/Teacher/T.jpg"
 import MonikaS from "../../assets/Images/Team/Teacher/monika-sharma.jpg"
 import TanyaS from "../../assets/Images/Team/Teacher/Tanya_Sharma.jpeg"
 export const ConveyersList=[
