@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import "./Sig.css"
 import { motion, useInView } from "framer-motion";
-import Web from "../../assets/Images/sigs/SIG Web.png"
-import Tech from "../../assets/Images/sigs/SIG Tech.png"
-import Graph from "../../assets/Images/sigs/SIG Graph.png"
-import Python from "../../assets/Images/sigs/SIG Python.png"
-import Foundation from "../../assets/Images/sigs/SIG Foundation.png"
+import Web from "../../assets/Images/sigs/SIG_WEB.png"
+import Tech from "../../assets/Images/sigs/SIG_TECH.png"
+import Graph from "../../assets/Images/sigs/SIG_GRAPH.png"
+import Python from "../../assets/Images/sigs/SIG_PYTHON.png"
+import Foundation from "../../assets/Images/sigs/SIG_FOUNDATION.png"
 import sig from "../../assets/Images/club/SIG.png"
 import SIGHero from "../../assets/Images/club/SIGHERO.svg"
 import { useRef } from "react";
