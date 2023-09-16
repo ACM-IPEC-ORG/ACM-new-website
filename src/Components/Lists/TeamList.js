@@ -199,7 +199,7 @@ export const PrimeCMList=[
     {
         id:"6",
         img:KavyaV,
-        name:"Kavya Varshabey",
+        name:"Kavya Varshaney",
         title:"Vice Chairperson",
         // facebook:"",
         instagram:"https://instagram.com/_kaashii__?igshid=ZDdkNTZiNTM=",
