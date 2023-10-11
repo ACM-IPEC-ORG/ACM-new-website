@@ -2,9 +2,10 @@ import { HeadD, CMCard } from "../../Components/Cards";
 import "./Team.css"
 import { motion } from "framer-motion";
 import { CMList, ConveyersList, HeadsDList, PrimeCMList } from "../../Components/Lists/TeamList";
-import TEAM from "../../assets/Images/club/TEAM.svg"
+import TEAM from "../../assets/Images/club/TEAM.webp"
 import { useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import ImgSource from "../../Components/ImgSource";
 export default function Teams() {
     window.scroll(0,0)
     const HEADsD = HeadsDList.map(ele => {
@@ -60,14 +61,14 @@ export default function Teams() {
                 <section ref={ref}> 
                
                 <motion.div className="Team-Hero py-10" style={{y}}>
-                    <div className="grid xl:px-52 lg:px-12 px-12 overflow-hidden xl:grid-flow-col lg:grid-cols-1 justify-center lg:gap-32 md:gap-24 py-12 " >
+                    <div className="grid lg:px-12 px-12 overflow-hidden xl:grid-cols-[20vw_50vw] lg:grid-cols-1 xl:place-items-center justify-center lg:gap-32 md:gap-24 py-12 " >
                         <div className="">
                         <h1 className="font-extrabold text-7xl w-12">WE WATCH, LEARN, GROW</h1>
                             <h2 className="text-xl w-64">Meet the Dedicated <b>TEAM</b> behind ACM IPEC</h2>
                         </div>
 
-                        <div style={block.side} className="hidden md:block xl:px-[25vw] md:px-[45vw] py-52 rounded-3xl"></div>
-                        
+                        {/* <img src={TEAM}  className="hidden md:block xl:px-[25vw] md:px-[45vw] py-52 rounded-3xl"></img> */}
+                        <ImgSource src={TEAM}/>
                     </div>
                 </motion.div>
                 

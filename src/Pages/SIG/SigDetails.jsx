@@ -1,6 +1,8 @@
 import { useParams } from "react-router-dom";
 import { SyllCard } from "../../Components/Cards"
 import { Syllable } from "../../Components/Lists/SigDetail";
+import { useState } from "react";
+import ImgSource from "../../Components/ImgSource";
 // SIG DETAILS
 export default function SIGDetails(){
     window.scroll(0,0)
@@ -20,7 +22,7 @@ export default function SIGDetails(){
                         <h3 className="text-lg text-justify py-12 px-12 md:px-48">{intro}</h3>
                     </div>
                     <div className="hidden xl:block">
-                        <img src={img} className="absolute right-0"/>
+                        <img loading="lazy" src={img} className="absolute right-0 w-1/2"/>
                     </div>
                 </div>
                 <div className="grid md:grid-flow-col md:gap-0 gap-6 place-items-center text-white py-12 px-10 lg:px-24 xl:px-48 bg-black">

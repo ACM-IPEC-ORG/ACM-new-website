@@ -7,7 +7,7 @@ export default function Gallery(){
     const [hidden,sethidden]=useState(false)
     const gallery=GalleryList.map((data)=>{
         return(
-            <div>
+            (data.have &&<div>
                 <h1 className="text-2xl font-bold pt-8 pb-4">{data.name}</h1>
                 <div className="grid place-items-center">
                     <div className="xl:w-1/2 lg:w-2/3 md:w-4/5 w-11/12 flex flex-wrap gap-8 justify-center" onClick={()=>setimg(data.allimg)}>
@@ -21,7 +21,7 @@ export default function Gallery(){
                     </div>
                 </div>
                 {hidden && <Slider hidden={hidden} img={img} sethidden={sethidden}/>}
-            </div>
+            </div>)
         )
     })
     return(

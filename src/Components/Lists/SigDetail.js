@@ -37,11 +37,11 @@ export const WebSyllabus=[
 ]
 // SYLLABUS
 import Web from "../../assets/Images/sigs/SIG_WEB.png"
-import TECH_H from "../../assets/Images/club/SIG Tech.png"
-import GRAPH_H from "../../assets/Images/club/SIG GRAPH.svg"
-import PYTHON_H from "../../assets/Images/club/SIG PYTHON.svg"
-import FOUND_H from "../../assets/Images/club/SIG FOUNDATION.svg"
-import WEB_H from "../../assets/Images/club/SIG WEB.svg"
+import TECH_H from "../../assets/Images/club/SIG Tech.webp"
+import GRAPH_H from "../../assets/Images/club/SIG GRAPH.webp"
+import PYTHON_H from "../../assets/Images/club/SIG PYTHON.webp"
+import FOUND_H from "../../assets/Images/club/SIG FOUNDATION.webp"
+import WEB_H from "../../assets/Images/club/SIG WEB.webp"
 import Tech from "../../assets/Images/sigs/SIG_TECH.png"
 import Graph from "../../assets/Images/sigs/SIG_GRAPH.png"
 import Python from "../../assets/Images/sigs/SIG_PYTHON.png"

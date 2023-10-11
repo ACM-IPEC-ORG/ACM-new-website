@@ -25,7 +25,7 @@ export default function Events(){
         <div className="overflow-hidden">
         
         {/* Hero Section */}
-        <motion.div className="absolute overflow-hidden bottom-24 xl:p-96 lg:p-56 bottom-0 aspect-square"
+        <motion.div className="absolute overflow-hidden bottom-24 p-52 xl:p-80 lg:p-56 bottom-0 aspect-square"
             initial={{left:"-100%" }}
             animate={{left:"10%",}}
             transition={{duration:"0.8",ease:"easeInOut"}}
@@ -36,7 +36,7 @@ export default function Events(){
                 backgroundSize: "contain",
             }}
         ></motion.div>
-        <motion.div className="absolute overflow-hidden xl:p-96 lg:p-56 top-0 right-0 aspect-square"
+        <motion.div className="absolute overflow-hidden p-52 xl:p-80 lg:p-56 top-0 right-0 aspect-square"
             initial={{right:"-100%"}}
             transition={{duration:"0.8",ease:"easeInOut"}}
             animate={{right:"10%"}}

@@ -2086,14 +2086,24 @@ export const featurelist=[
 ]
 // Upcoming
 import CodeSprint from "../../assets/Images/Poster/Code-sprint.jpeg"
-
+import AIPICATHON from "../../assets/Images/Poster/AIPICATHON.jpeg"
 export const UpcomingList=[
     {
         id:"1",
-        upcome:false,
-        name:"Bug-Smash",
-        img:BugSmash,
-        intro:"Get ready to put your debugging skills to the test in Bug Smash! This event offers a fantastic opportunity for participants to showcase their expertise in identifying and fixing code errors. You'll be provided with code snippets that contain hidden bugs, and your mission is to debug them within a time limit. Bug Smash is a thrilling competition that celebrates your problem-solving abilities and technical finesse. Join us for a code-busting extravaganza where you can earn glory by smashing those pesky bugs!",
+        upcome:true,
+        name:"AIPICATHON",
+        img:AIPICATHON,
+        intro:" IPEC ACM STUDENT CHAPTER is organizing AIPICATHON An event for 1st year and 3rd year students BBA, BCA,  Btech branches (CSE, CSE(DS), CSE(AIML), IT ).AIPICATHON: A Multi Elimination round  event  to merge innovation with imagination that portray in AI image",
+        points:[
+            "Generate AI images with the following rounds:",
+            "Round 1: Based on theme.",
+            "Round 2: Using Keyword.",
+            
+            "Participants will be judged based on different categories as follows",
+            "Element consistency in AI images.",
+            "Attractive theme portray.",
+            "Imagination with Artificial Intelligence."
+        ],
         rules:[
             "Eligibility: Bug Smash is open to all participants interested in showcasing their debugging skills.",
             "Bug Identification: Participants will be presented with code snippets that contain errors.",
@@ -2104,7 +2114,10 @@ export const UpcomingList=[
             "Scoring: Participants will earn points based on the number of bugs successfully fixed and the time taken.",
             "Recognition: The participants with the highest scores and the quickest bug smashers will be recognized and celebrated.",
             "Learning Opportunity: Bug Smash offers a unique chance to enhance debugging skills and learn from real-world code errors.",
-            
+            "Winners will be awarded with certificates",
+            "Date: 13 October 2023",
+            "Time: 3:00 PM Onwards",
+            "Venue: CS LAB 6"
         
         ],
         contact:"If you have any query then contact: ",
@@ -2112,7 +2125,7 @@ export const UpcomingList=[
             "Eti: +91 8218553892",
             "Tanish: +91 8382874059"
         ],
-        register:"link"
+        register:"https://tinyurl.com/AIpicathon-ACM"
     },
     
 ]

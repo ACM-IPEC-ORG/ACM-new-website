@@ -122,6 +122,7 @@ export const EveCard=function(props){
         <motion.div className=" grid md:flex gap-10" whileHover={{scale:1.05}} transition={{ease:"easeIn"}}>
             <div className="object-cover aspect-square p-32 md:w-52 md:h-52"
             style={{
+
               backgroundImage:`url(${props.img})`,
               backgroundSize:"cover",
               backgroundPosition:"center",
@@ -280,6 +281,7 @@ import F8 from "../assets/Images/Poster/quizophile.jfif"
 import { Link } from "react-router-dom";
 import classNames from "classnames";
 import { allEvent, featurelist } from "./Lists/EventList";
+import ImgSource from "./ImgSource";
 
 export const MarqueR=function(){
   
@@ -292,7 +294,7 @@ export const MarqueR=function(){
             {image.map(data=>{
               return(
               <ImageGroup >
-                <Link to={`/Events/${data.slugs}`}><img src={data.img} alt="" className="h-full aspect-auto"/></Link>
+                <Link to={`/Events/${data.slugs}`}><ImgSource src={data.img} className="h-full aspect-auto"/></Link>
               </ImageGroup>
               )
               
@@ -303,7 +305,7 @@ export const MarqueR=function(){
             {image.map(data=>{
               return(
               <ImageGroup >
-                <Link to={`/Events/${data.slugs}`}><img src={data.img} alt="" className="h-full aspect-auto"/></Link>
+                <Link to={`/Events/${data.slugs}`}><ImgSource src={data.img} className="h-full aspect-auto"/></Link>
 
               </ImageGroup>
               )

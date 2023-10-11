@@ -1,7 +1,7 @@
 import { useScroll, useTransform } from "framer-motion";
 import { CMCard, Founder, HeadD } from "../../Components/Cards";
 import { FoundersList, Team2022List, Team2023List } from "../../Components/Lists/TeamList";
-import FOUNDER from "../../assets/Images/club/foundersteam.jpeg"
+import FOUNDER from "../../assets/Images/club/foundersteam.webp"
 import { motion } from "framer-motion";
 import "../Teams/Team.css"
 import { useRef } from "react";

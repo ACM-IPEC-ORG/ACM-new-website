@@ -7,7 +7,7 @@ import Graph from "../../assets/Images/sigs/SIG_GRAPH.png"
 import Python from "../../assets/Images/sigs/SIG_PYTHON.png"
 import Foundation from "../../assets/Images/sigs/SIG_FOUNDATION.png"
 import sig from "../../assets/Images/club/SIG.png"
-import SIGHero from "../../assets/Images/club/SIGHERO.svg"
+import SIGHero from "../../assets/Images/club/SIGHERO.webp"
 import { useRef } from "react";
 import { useScroll, useTransform } from "framer-motion";
 import TypewriterComponent from "typewriter-effect";
@@ -28,22 +28,25 @@ export default function SIGs() {
                         backgroundImage: `url(${SIGHero})`,
                         backgroundRepeat: "no-repeat",
                         backgroundSize:"cover",
+                        width:"100%",
                         backgroundPosition: "center",
                     y                    }}
                 >
-                    <div className="w-full md:px-32 px-10 py-64 h-full">
-                        <div className="text-7xl font-bold text-secondary tracking-wide">
+                    <div className="w-full md:px-32 px-10 py-72 h-full">
+                    <h2 className="text-7xl font-bold text-secondary tracking-wide">SPECIAL INTEREST GROUPS</h2>
+
+                        <div className="text-2xl font-semibold">
                         <TypewriterComponent
                         onInit={(typewriter=>{
                             typewriter
-                            .typeString("SPECIAL INTEREST GROUPS.")
+                            .typeString("Exploring Special Interests in Computer Technology")
                             .pause()
                             .start()
                         })}
                         />
                         </div>
-                        <h2 className="text-2xl font-semibold">Exploring Special Interests in Computer Technology</h2>
-                        <p className="text-lg py-8">The SIG (Special Interest Group) page of ACM IPEC showcases the different groups within the organization that focus on specific areas of interest. These SIGs provide a platform for members to collaborate, learn, and network with like-minded individuals. From machine learning to web development, there is a SIG for everyone. Explore our SIG page to discover the SIG that aligns with your interests and start engaging with the community</p>
+                        {/* <h2 className="text-2xl font-semibold">Exploring Special Interests in Computer Technology</h2> */}
+                        <p className="text-lg py-2">The SIG (Special Interest Group) page of ACM IPEC showcases the different groups within the organization that focus on specific areas of interest. These SIGs provide a platform for members to collaborate, learn, and network with like-minded individuals. From machine learning to web development, there is a SIG for everyone. Explore our SIG page to discover the SIG that aligns with your interests and start engaging with the community</p>
                         
                     </div>
                     <motion.div
@@ -54,10 +57,9 @@ export default function SIGs() {
                     <img src={sig} className="hidden xl:block Hero-right"></img>
                     </motion.div>
                 </motion.div>
-                <div className=" grid grid-cols-1 gap-32 justify-center xl:ml-32 xl:px-96 md:px-12 px-6 py-12">
+                <div className="grid gap-32 place-items-center justify-center py-12">
                     {/* SIG Tech */}
-                    <div >
-                        <div className="md:flex grid gap-2 place-items-center">
+                        <div className="md:flex grid gap-2 place-items-center w-7/12">
                             <div className="ImageSIG">
                                 <img src={Tech}  />
                             </div>
@@ -69,11 +71,9 @@ export default function SIGs() {
                             </div>
                             {/* <div className="Image-drop Tech"></div> */}
                         </div>
-                    </div>
                     
                     {/* SIG Web*/}
-                    <div >
-                        <div className="md:flex grid gap-2 place-items-center">
+                        <div className="md:flex grid gap-2 place-items-center w-7/12">
                             {/* <div className="Image-dropL Web"></div>                        */}
                             <div className={`text-center xl:py-36 lg:py-24 md:px-32 px-6 Web text-white BG-info xl:w-4/6 lg:w-4/5 md:w-11/12 py-10`}>
                                 <h1 className="text-4xl font-bold">SIG WEB</h1>
@@ -86,9 +86,8 @@ export default function SIGs() {
                                 <img src={Web}/>
                             </div>
                         </div>
-                    </div>
                     {/* SIG Graph */}
-                    <div className="md:flex grid gap-2 place-items-center">
+                    <div className="md:flex grid gap-2 place-items-center w-7/12">
                         <div className="ImageSIG">
                             <img src={Graph}  />
                         </div>
@@ -103,7 +102,7 @@ export default function SIGs() {
 
                     </div>
                     {/* SIG Foundation*/}
-                    <div className="md:flex grid gap-2 place-items-center">
+                    <div className="md:flex grid gap-2 place-items-center w-7/12">
                         {/* <div className="Image-dropL Foundation"></div>                        */}
 
                         <div className="text-center xl:py-36 lg:py-24 md:px-32 px-6 Foundation text-white BG-info xl:w-4/6 lg:w-4/5 md:w-11/12 py-10">
@@ -118,7 +117,7 @@ export default function SIGs() {
                         </div>
                     </div>
                     {/* SIG Python */}
-                    <div className="md:flex grid gap-2 place-items-center">
+                    <div className="md:flex grid gap-2 place-items-center w-7/12">
                         <div className="ImageSIG">
                             <img src={Python}/>
                         </div>

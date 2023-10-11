@@ -4,7 +4,7 @@ import {AiOutlineArrowRight,AiOutlineArrowLeft} from "react-icons/ai"
 import {BsInstagram,BsFacebook,BsLinkedin} from "react-icons/bs"
 import {RxDotFilled} from "react-icons/rx"
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import HeroImg from "../../assets/Images/club/hero_home.png"
+import HeroImg from "../../assets/Images/club/hero_home.webp"
 import React, { useRef, useState } from "react";
 import {  FeatureList, GalleryList } from "../../Components/Lists/GalleryList";
 import { UpcomingList, featurelist, session_2020_21 } from "../../Components/Lists/EventList";
@@ -79,7 +79,7 @@ export default function Home(){
                         
                     </div>
                     <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1,ease:"easeInOut"}}>
-                    <img src={HeroImg} className="hidden xl:block xl:ml-52"  draggable="false"></img>
+                    <img src={HeroImg} loading="lazy" className="hidden xl:block xl:ml-52"  draggable="false"></img>
                     </motion.div>
                 </div>
                 <div id="more">
@@ -100,6 +100,13 @@ export default function Home(){
                                                     <p className={"xl:text-lg text-md  trasition-colors py-4 font-regular tracking widest"}>{data.intro}</p>
 
                                                 </div>
+                                                <ul className="list-disc">
+                                                        {data.points.map(d=>{
+                                                            return(
+                                                                <li className="xl:text-xl lg:text-lg text-md trasition-colors py-4 font-semibold tracking widest">{d}</li>
+                                                            )
+                                                        })}
+                                                    </ul>
                                                 <div>
                                                     <h1 className="xl:text-4xl lg:text-3xl text-2xl font-bold trancking-wide">Event rules</h1>
                                                     <ol className="list-decimal">
@@ -122,8 +129,8 @@ export default function Home(){
                                                             )
                                                         })}
                                                     </ol>
-                                                    <Link to="Events/"><motion.button whileHover={{scale:1.05}}
-                                    whileTap={{scale:0.8}} className="bg-SecGradP text-white px-8 py-4">Register Now!</motion.button></Link>
+                                                    <a href={data.register}><motion.button whileHover={{scale:1.05}}
+                                    whileTap={{scale:0.8}} className="bg-SecGradP text-white px-8 py-4">Register Now!</motion.button></a>
                                                 </div>
                                             </div>
                                         </div>
