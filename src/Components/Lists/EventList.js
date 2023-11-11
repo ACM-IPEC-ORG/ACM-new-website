@@ -414,9 +414,7 @@ export const session_2022_23=[
     },
 ]
 // session 2020_21
-import EtiG from "../../assets/Images/Team/core/eti-garg.jpeg"
-import ManyaT from "../../assets/Images/Team/core/manya-tyagi.jpeg"
-import MridulT from "../../assets/Images/Team/core/mridul.jpeg"
+
 // posters
 import TechMate from "../../assets/Images/Poster/tech-and-mate.png"
 import Algoholic from "../../assets/Images/Poster/algoholic.png"
@@ -2090,7 +2088,7 @@ import AIPICATHON from "../../assets/Images/Poster/AIPICATHON.jpeg"
 export const UpcomingList=[
     {
         id:"1",
-        upcome:true,
+        upcome:false,
         name:"AIPICATHON",
         img:AIPICATHON,
         intro:" IPEC ACM STUDENT CHAPTER is organizing AIPICATHON An event for 1st year and 3rd year students BBA, BCA,  Btech branches (CSE, CSE(DS), CSE(AIML), IT ).AIPICATHON: A Multi Elimination round  event  to merge innovation with imagination that portray in AI image",

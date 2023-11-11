@@ -15,6 +15,7 @@ import IMG1 from "../../assets/Images/Gallery/BUGSMASH/1.jpeg"
 import IMG2 from "../../assets/Images/Gallery/BUGSMASH/2.jpeg"
 import IMG3 from "../../assets/Images/Gallery/BUGSMASH/3.jpeg"
 import TypewriterComponent from "typewriter-effect";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 export default function Home(){
     window.scroll(0,0)
     const upcome=UpcomingList.find(items=>items.upcome);
@@ -79,7 +80,7 @@ export default function Home(){
                         
                     </div>
                     <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1,ease:"easeInOut"}}>
-                    <img src={HeroImg} loading="lazy" className="hidden xl:block xl:ml-52"  draggable="false"></img>
+                    <LazyLoadImage src={HeroImg} loading="lazy" className="hidden xl:block xl:ml-52"  draggable="false"></LazyLoadImage>
                     </motion.div>
                 </div>
                 <div id="more">

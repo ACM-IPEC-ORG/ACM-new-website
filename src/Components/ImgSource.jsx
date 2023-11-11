@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { Blurhash } from "react-blurhash"
+import { LazyLoadImage } from "react-lazy-load-image-component"
 
 export default function ImgSource({src}){
     const [imgloaded,setimgloaded]=useState(false)
@@ -24,7 +25,7 @@ export default function ImgSource({src}){
                 punch={1}
             />
             </div>
-        <img
+        <LazyLoadImage
             loading="lazy"
             onLoad={()=>setimgloaded(true)}
             src={src}
