@@ -95,7 +95,7 @@ export default function Home(){
                                     return(
                                         <div className="grid grid-cols-1 md:grid-cols-2 xl:px-64 lg:px-12 px-12 xl:gap-24 py-10 w-full">
                                             <UpcomingCard img={data.img}/>
-                                            <div className="grid gap-y-24 py-4">
+                                            <div className="grid gap-y-12 py-4">
                                                 <div>
                                                     <h1 className="xl:text-4xl lg:text-3xl text-2xl font-bold trancking-wide">{data.name}</h1>
                                                     <p className={"xl:text-lg text-md  trasition-colors py-4 font-regular tracking widest"}>{data.intro}</p>
@@ -109,6 +109,8 @@ export default function Home(){
                                                         })}
                                                     </ul>
                                                 <div>
+                                                {data.rules && <div>
+
                                                     <h1 className="xl:text-4xl lg:text-3xl text-2xl font-bold trancking-wide">Event rules</h1>
                                                     <ol className="list-decimal">
                                                         {data.rules.map(d=>{
@@ -117,7 +119,9 @@ export default function Home(){
                                                             )
                                                         })}
                                                     </ol>
-                                                    
+                                                    </div>}
+                                                    {data.date&& <p className="xl:text-xl lg:text-lg text-md trasition-colors py-4 font-bold tracking widest">Date: {data.date}</p>}
+                                                    {data.time&& <p className="xl:text-xl lg:text-lg text-md trasition-colors py-4 font-bold tracking widest">Time: {data.time}</p>}
 
                                                 </div>
 

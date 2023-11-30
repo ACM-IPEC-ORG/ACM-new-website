@@ -22,6 +22,13 @@ export const GalleryList=[
         'allimg':[]
     },
     {
+        'name':"AIPICATHON",
+       
+        slugs:"AIPICATHON",
+        have:false,
+        'allimg':[]
+    },
+    {
         'name':"WORDSMITH",
         have:false,
        

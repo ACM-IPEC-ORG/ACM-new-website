@@ -15,16 +15,27 @@ export const ConveyersList=[
         twitter:"",
         // linkedin:"https://acm.ipec.org.in/team.html#"
     },
+    // {
+    //     id:"3",
+    //     img:MonikaS,
+    //     name:"Ms. Monika Sharma",
+    //     // title:"",
+    //     // facebook:"https://www.facebook.com/tripti.sharma.94849",
+    //     // instagram:"",
+    //     email:"monika.sharma@ipec.org.in",
+    //     // twitter:"",
+    //     linkedin:"https://www.linkedin.com/in/"
+    // },
     {
         id:"3",
         img:MonikaS,
-        name:"Ms. Monika Sharma",
+        name:"Ms. Pushpanjali Chandra",
         // title:"",
         // facebook:"https://www.facebook.com/tripti.sharma.94849",
         // instagram:"",
-        email:"monika.sharma@ipec.org.in",
+        email:"chandra.pushpanjali@ipec.org.in",
         // twitter:"",
-        linkedin:"https://www.linkedin.com/in/"
+        // linkedin:"https://www.linkedin.com/in/"
     },
     {
         id:"1",
@@ -311,7 +322,8 @@ import MridulT from "../../assets/Images/Team/core/mridul.png"
 import ShreyaJ from "../../assets/Images/Team/core/shreya-jain.jpeg"
 import Sumit from "../../assets/Images/Team/core/sumit.jpeg"
 import TanishS from "../../assets/Images/Team/core/tanish-srivastava.jpeg"
-import NikitaP from "../../assets/Images/Team/core/Nikita_Patra.jpg"
+import HimanshuG from "../../assets/Images/Team/core/Himanshu-gupta.jpg"
+import VanditJ from "../../assets/Images/Team/core/vandit-jain.jpeg"
 
 export const CMList=[
     {
@@ -379,13 +391,25 @@ export const CMList=[
         id:"7",
         img:AditiG,
         name:"Aditi Garg",
-        title:"SIG Python Head",
+        title:"SIG PYTHON HEAD",
         // facebook:"",
         mail:"aditigarg1404@gmail.com",
         github:"https://github.com/Akshay2022Singh",
         // instagram:"",
         // twitter:"",
         linkedin:"https://www.linkedin.com/in/aditi-garg-b6270b258"
+    },
+    {
+        id:"7",
+        img:HimanshuG,
+        name:"Himanshu Gupta",
+        title:"SIG JAVA HEAD",
+        // facebook:"",
+        // mail:"aditigarg1404@gmail.com",
+        // github:"https://github.com/Akshay2022Singh",
+        instagram:"https://instagram.com/32himanshu?utm_source=qr&igshid=OGIxMTE0OTdkZA==",
+        // twitter:"",
+        linkedin:"https://www.linkedin.com/in/himanshu-gupta-a74916227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
     {
         id:"8",
@@ -407,16 +431,7 @@ export const CMList=[
         // twitter:"",
         linkedin:"https://www.linkedin.com/in/tanish-srivastava-18521423b"
     },
-    {
-        id:"10",
-        img:NikitaP,
-        name:"Nikita Patra",
-        title:"Social Media Head",
-        // facebook:"https://www.facebook.com/anushka.purwar.3?mibextid=ZbWKwL",
-        instagram:"http://www.instagram.com/whyniky_",
-        // twitter:"",
-        // linkedin:"https://www.linkedin.com/in/anushka-purwar-476273230"
-    },
+    
     {
         id:"11",
         img:ShreyaJ,
@@ -426,6 +441,16 @@ export const CMList=[
         instagram:"https://instagram.com/shreya_jainn01?igshid=ZDdkNTZiNTM=",
         // twitter:"",
         linkedin:"https://www.linkedin.com/in/shreya-jain-120b59227/"
+    },
+    {
+        id:"11",
+        img:VanditJ,
+        name:"Vandit Jain",
+        title:"Documentation Head",
+        // facebook:"",
+        instagram:"https://instagram.com/vandit_jan?utm_source=qr&igshid=OGU0MmVlOWVjOQ==",
+        // twitter:"",
+        linkedin:"https://www.linkedin.com/in/vandit-jain-1a09b1196?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
     
 ]

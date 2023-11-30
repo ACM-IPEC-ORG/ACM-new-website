@@ -81,6 +81,44 @@ export const session_2022_23=[
     {
         id:"1",
         tags:"s22_23",
+        slugs:"AIPICATHON",
+        img:AIPICATHON,
+        head:"AIPICATHON",
+        heading:"AIPICATHON",
+        date:"13-10-2023",
+        time:"03:00PM",
+        TS:"Individual",
+
+        tagline:"Let's Merge innovation with imagination that portray in AI Images",
+        intro:" IPEC ACM STUDENT CHAPTER is organizing AIPICATHON An event for 1st year and 3rd year students BBA, BCA,  Btech branches (CSE, CSE(DS), CSE(AIML), IT ).AIPICATHON: A Multi Elimination round  event  to merge innovation with imagination that portray in AI image",
+        info:
+            "Generate AI images with the following rounds: Round 1: Based on theme., Round 2: Using Keyword., Participants will be judged based on different categories as follows Element consistency in AI images.Attractive theme portray. Imagination with Artificial Intelligence."
+        ,
+        rules:[
+            "Eligibility: Bug Smash is open to all participants interested in showcasing their debugging skills.",
+            "Bug Identification: Participants will be presented with code snippets that contain errors.",
+            "Debugging Time: There will be a specified time limit to identify and fix the bugs in each code snippet.",
+            "Question Variety: The event will feature a mix of algorithmic, logical, and coding questions that span various difficulty levels.",
+            "Individual Participation: Participants must attempt the debugging challenges individually.",
+            "Fair Play: Debugging challenges must be solved independently. Sharing solutions or using external sources is strictly prohibited.",
+            "Scoring: Participants will earn points based on the number of bugs successfully fixed and the time taken.",
+            "Recognition: The participants with the highest scores and the quickest bug smashers will be recognized and celebrated.",
+            "Learning Opportunity: Bug Smash offers a unique chance to enhance debugging skills and learn from real-world code errors.",
+            "Winners will be awarded with certificates",
+            "Date: 13 October 2023",
+            "Time: 3:00 PM Onwards",
+            "Venue: CS LAB 6"
+        
+        ],
+        contact:"If you have any query then contact: ",
+        cno:[
+            "Eti: +91 8218553892",
+            "Tanish: +91 8382874059"
+        ],
+    },
+    {
+        id:"1",
+        tags:"s22_23",
         img:BugSmash,
         info:"A great opportunity for everyone to show their debugging skills on codes which will give errors on running",
         intro:"Get ready to put your debugging skills to the test in Bug Smash! This event offers a fantastic opportunity for participants to showcase their expertise in identifying and fixing code errors. You'll be provided with code snippets that contain hidden bugs, and your mission is to debug them within a time limit. Bug Smash is a thrilling competition that celebrates your problem-solving abilities and technical finesse. Join us for a code-busting extravaganza where you can earn glory by smashing those pesky bugs!",
@@ -578,6 +616,45 @@ export const session_2019_20=[
     },
 ]
 export const allEvent=[ 
+    {
+        id:"1",
+        tags:"s22_23",
+        slugs:"AIPICATHON",
+        img:AIPICATHON,
+        head:"AIPICATHON",
+        heading:"AIPICATHON",
+        date:"13-10-2023",
+        time:"03:00PM",
+        TS:"Individual",
+        winners:[
+        ],
+        tagline:"Let's Merge innovation with imagination that portray in AI Images",
+        intro:" IPEC ACM STUDENT CHAPTER is organizing AIPICATHON An event for 1st year and 3rd year students BBA, BCA,  Btech branches (CSE, CSE(DS), CSE(AIML), IT ).AIPICATHON: A Multi Elimination round  event  to merge innovation with imagination that portray in AI image",
+        info:
+            "Generate AI images with the following rounds: Round 1: Based on theme., Round 2: Using Keyword., Participants will be judged based on different categories as follows Element consistency in AI images.Attractive theme portray. Imagination with Artificial Intelligence."
+        ,
+        rules:[
+            "Eligibility: Bug Smash is open to all participants interested in showcasing their debugging skills.",
+            "Bug Identification: Participants will be presented with code snippets that contain errors.",
+            "Debugging Time: There will be a specified time limit to identify and fix the bugs in each code snippet.",
+            "Question Variety: The event will feature a mix of algorithmic, logical, and coding questions that span various difficulty levels.",
+            "Individual Participation: Participants must attempt the debugging challenges individually.",
+            "Fair Play: Debugging challenges must be solved independently. Sharing solutions or using external sources is strictly prohibited.",
+            "Scoring: Participants will earn points based on the number of bugs successfully fixed and the time taken.",
+            "Recognition: The participants with the highest scores and the quickest bug smashers will be recognized and celebrated.",
+            "Learning Opportunity: Bug Smash offers a unique chance to enhance debugging skills and learn from real-world code errors.",
+            "Winners will be awarded with certificates",
+            "Date: 13 October 2023",
+            "Time: 3:00 PM Onwards",
+            "Venue: CS LAB 6"
+        
+        ],
+        contact:"If you have any query then contact: ",
+        cno:[
+            "Eti: +91 8218553892",
+            "Tanish: +91 8382874059"
+        ],
+    },
     {
         id:"1",
         tags:"s22_23",
@@ -2085,45 +2162,48 @@ export const featurelist=[
 // Upcoming
 import CodeSprint from "../../assets/Images/Poster/Code-sprint.jpeg"
 import AIPICATHON from "../../assets/Images/Poster/AIPICATHON.jpeg"
+import R23 from "../../assets/Images/Poster/RECRUITMENT23.png"
 export const UpcomingList=[
     {
         id:"1",
-        upcome:false,
-        name:"AIPICATHON",
-        img:AIPICATHON,
-        intro:" IPEC ACM STUDENT CHAPTER is organizing AIPICATHON An event for 1st year and 3rd year students BBA, BCA,  Btech branches (CSE, CSE(DS), CSE(AIML), IT ).AIPICATHON: A Multi Elimination round  event  to merge innovation with imagination that portray in AI image",
+        upcome:true,
+        name:"Recuritment 2023",
+        img:R23,
+        intro:"WE ARE RECRUITING 🎊 IPEC ACM STUDENT CHAPTER is recruiting members from all the 1st and 3rd year students of BBA, BCA & B.Tech (All branches)",
         points:[
-            "Generate AI images with the following rounds:",
-            "Round 1: Based on theme.",
-            "Round 2: Using Keyword.",
-            
-            "Participants will be judged based on different categories as follows",
-            "Element consistency in AI images.",
-            "Attractive theme portray.",
-            "Imagination with Artificial Intelligence."
+            "IPEC ACM STUDENT CHAPTER aims at learning and developing at fundamental computing. We believe in 'By the students, for the students💡",
+            "It has following Special Interest Groups (SIG's). Interested students can join any of the following groups and learn the skills.",
+            "SIG GRAPH for Graphic designing",
+            "SIG WEB  for Web Designing & Development",
+            "SIG FOUNDATION for Basic programming (hands on Data Structures and C++ for beginners in Programming)",
+            "SIG PYTHON for Python Development",
+            "SIG TECH for System Analysis",
+            "SIG JAVA focuses on packaging java libraries and applications"
         ],
-        rules:[
-            "Eligibility: Bug Smash is open to all participants interested in showcasing their debugging skills.",
-            "Bug Identification: Participants will be presented with code snippets that contain errors.",
-            "Debugging Time: There will be a specified time limit to identify and fix the bugs in each code snippet.",
-            "Question Variety: The event will feature a mix of algorithmic, logical, and coding questions that span various difficulty levels.",
-            "Individual Participation: Participants must attempt the debugging challenges individually.",
-            "Fair Play: Debugging challenges must be solved independently. Sharing solutions or using external sources is strictly prohibited.",
-            "Scoring: Participants will earn points based on the number of bugs successfully fixed and the time taken.",
-            "Recognition: The participants with the highest scores and the quickest bug smashers will be recognized and celebrated.",
-            "Learning Opportunity: Bug Smash offers a unique chance to enhance debugging skills and learn from real-world code errors.",
-            "Winners will be awarded with certificates",
-            "Date: 13 October 2023",
-            "Time: 3:00 PM Onwards",
-            "Venue: CS LAB 6"
+        // rules:[
+        //     "Eligibility: Bug Smash is open to all participants interested in showcasing their debugging skills.",
+        //     "Bug Identification: Participants will be presented with code snippets that contain errors.",
+        //     "Debugging Time: There will be a specified time limit to identify and fix the bugs in each code snippet.",
+        //     "Question Variety: The event will feature a mix of algorithmic, logical, and coding questions that span various difficulty levels.",
+        //     "Individual Participation: Participants must attempt the debugging challenges individually.",
+        //     "Fair Play: Debugging challenges must be solved independently. Sharing solutions or using external sources is strictly prohibited.",
+        //     "Scoring: Participants will earn points based on the number of bugs successfully fixed and the time taken.",
+        //     "Recognition: The participants with the highest scores and the quickest bug smashers will be recognized and celebrated.",
+        //     "Learning Opportunity: Bug Smash offers a unique chance to enhance debugging skills and learn from real-world code errors.",
+        //     "Winners will be awarded with certificates",
+        //     "Date: 13 October 2023",
+        //     "Time: 3:00 PM Onwards",
+        //     "Venue: CS LAB 6"
         
-        ],
+        // ],
         contact:"If you have any query then contact: ",
         cno:[
             "Eti: +91 8218553892",
             "Tanish: +91 8382874059"
         ],
-        register:"https://tinyurl.com/AIpicathon-ACM"
+        date: "3 and 4 December 2023( Sunday, Monday) ",
+        time:"11:00 am onwards",
+        register:"https://bit.ly/Recruitment_ACM"
     },
     
 ]

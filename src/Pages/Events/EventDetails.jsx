@@ -64,17 +64,17 @@ export default function EventDetails(){
                     
                 </div>
                 {/* WINNERS */}
-                <div id="win" className="grid place-items-center py-10">
+            {Win.length>0 && <div id="win" className="grid place-items-center py-10">
                     <h1 className="text-5xl font-bold py-6">WINNERS!</h1>
                     <div className="grid place-items-center">
                         <div className="flex flex-wrap justify-center gap-x-12 py-8">
                             {Win}
                         </div>
                     </div>
-                </div>
+                </div>}
                
                 {/* About */}
-                <div className="grid place-items-center">
+                <div className="grid py-24 place-items-center">
                     <div className="grid md:grid-cols-2 grid-cols-1 xl:px-64 lg:px-24 px-12 xl:gap-24 lg:gap-12 gap-10 py-10 w-full">
                         <UpcomingCard img={img}/>
                         <div className="grid gap-y-24">
@@ -114,7 +114,7 @@ export default function EventDetails(){
                 </div>
                 
                 {/* Gallery */}
-                <div className="text-center grid gap-5 gallery py-14">
+                {gallery.length>0 && <div className="text-center grid gap-5 gallery py-14">
                     <div>
                         <h1 className="xl:text-5xl lg:text-4xl text-3xl py-8 font-bold text-primary">GALLERY</h1>
                         <div className="grid place-items-center">
@@ -130,7 +130,7 @@ export default function EventDetails(){
                     {hidden && <Slider hidden={hidden} img={allimg} sethidden={sethidden}/>}
 
                     
-                </div>
+                </div>}
             </div>
             </div>
     )
