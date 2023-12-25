@@ -194,7 +194,7 @@ export default function Home(){
                                 <input placeholder="Email" className="py-4 w-full px-5 bg-transparent border border-secondary outline-0 md:text-lg" value={Email} onChange={(e)=>setEmail(e.target.value)}/>
                                 <textarea placeholder="Message" className="py-4 w-full bg-transparent px-5 h-72 border border-tertiary outline-0 md:text-lg" value={Mssg} onChange={(e)=>setMssg(e.target.value)}/>
                             </form>
-                            <div className="grid md:grid-cols-2 grid-cols-1 md:gap-52 gap-12 text-white">
+                            <div className="grid md:grid-cols-2 grid-cols-1 md:gap-96 gap-12 text-white">
                                 <div className="grid place-items-start">
                                     <h1 className="lg:text-xl text-lg font-semibold tracking-widest">Follow Us.</h1>
                                     <div className="flex gap-5 text-primary text-3xl md:py-2">

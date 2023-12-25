@@ -29,14 +29,14 @@ export default function Navbar(){
                         </div>
                     </div>
                 </div>
-                <div className="nav-overlay" style={{
-                    top:navOpen?"0":"100%",
-                    transitionDelay:navOpen?"0s":"0s"
+                <div className="nav-overlay shadow-lg" style={{
+                    top:navOpen?"0":"-100%",
+                    transitionDelay:navOpen?"0.1s":"0s"
                 }}>
-                    <ul className="nav-links">
+                    <ul className="nav-links ">
                         
-                        <li className="nav-item">
-                            <Link to="/SIG" className="hover:underline underline-offset-4"
+                        <li className="nav-items">
+                            <Link to="/SIG" className="nav-text hover:underline underline-offset-4"
                             onClick={()=>setNavOpen(!navOpen)}style={{
                                 top:navOpen? "0":"120px",
                                 transitionDelay:navOpen?"0.5s":"0s"
@@ -45,7 +45,7 @@ export default function Navbar(){
                             <div className="nav-items-wrapper"></div>
                         </li>
                         <li className="nav-items">
-                            <Link to="/Events" className="hover:underline underline-offset-4"
+                            <Link to="/Events" className="nav-text hover:underline underline-offset-4"
                             onClick={()=>setNavOpen(!navOpen)}style={{
                                 top:navOpen? "0":"120px",
                                 transitionDelay:navOpen?"0.5s":"0s"
@@ -54,7 +54,7 @@ export default function Navbar(){
                             <div className="nav-items-wrapper"></div>
                         </li>
                         <li className="nav-items">
-                            <Link to="/Teams" className="hover:underline underline-offset-4"
+                            <Link to="/Teams" className="nav-text hover:underline underline-offset-4"
                             onClick={()=>setNavOpen(!navOpen)}style={{
                                 top:navOpen? "0":"120px",
                                 transitionDelay:navOpen?"0.5s":"0s"
@@ -63,7 +63,7 @@ export default function Navbar(){
                             <div className="nav-items-wrapper"></div>
                         </li>
                         <li className="nav-items">
-                            <Link to="/Founders" className="hover:underline underline-offset-4"
+                            <Link to="/Founders" className="nav-text hover:underline underline-offset-4"
                             onClick={()=>setNavOpen(!navOpen)}
                             style={{
                                 top:navOpen? "0":"120px",

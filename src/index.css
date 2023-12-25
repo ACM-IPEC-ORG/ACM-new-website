@@ -1,10 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- *{
-    font-family: 'Raleway',sans-serif;
- }
-.container{
+
+* {
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.nav-text{
+    font-family: 'Kalnia', sans-serif;
+    font-weight: 600;
+}
+
+.container {
     align-items: center;
     background-color: white;
     display: flex;

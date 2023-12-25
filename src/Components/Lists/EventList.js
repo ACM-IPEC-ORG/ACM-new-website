@@ -2166,7 +2166,7 @@ import R23 from "../../assets/Images/Poster/RECRUITMENT23.png"
 export const UpcomingList=[
     {
         id:"1",
-        upcome:true,
+        upcome:false,
         name:"Recuritment 2023",
         img:R23,
         intro:"WE ARE RECRUITING 🎊 IPEC ACM STUDENT CHAPTER is recruiting members from all the 1st and 3rd year students of BBA, BCA & B.Tech (All branches)",

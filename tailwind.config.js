@@ -5,6 +5,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    
     extend: {
       backgroundColor:{
         'bg-black':'#1E1E1E',
@@ -18,6 +19,7 @@ export default {
         'tertiary':'#08C2BF'
       }
     },
+    
     backgroundImage:{
       'SecGradP':"linear-gradient(to right , #0862C2 30%,#08C2BF)",
       'TerGradP':"linear-gradient(to left , #08C2BF 30%,#0182AC)",

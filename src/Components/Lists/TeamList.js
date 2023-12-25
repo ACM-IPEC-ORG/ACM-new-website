@@ -217,17 +217,17 @@ export const PrimeCMList=[
         // twitter:"",
         linkedin:"https://www.linkedin.com/in/kavya-varshney-70688422b"
     },
-    {
+    // {
     
-        id:"11",
-        img:YatinS,
-        name:"Yatin Singhal",
-        title:"Web Master",
-        // facebook:"",
-        instagram:"http://instagram.com/mr_prave",
-        // twitter:"",
-        linkedin:"https://www.linkedin.com/in/praveen-verma-91634a194/"
-    },
+    //     id:"11",
+    //     img:YatinS,
+    //     name:"Yatin Singhal",
+    //     title:"Web Master",
+    //     // facebook:"",
+    //     instagram:"http://instagram.com/mr_prave",
+    //     // twitter:"",
+    //     linkedin:"https://www.linkedin.com/in/praveen-verma-91634a194/"
+    // },
     {
         id:"5",
         img:AmanG,
@@ -280,16 +280,16 @@ export const PrimeCMList=[
         linkedin:"https://www.linkedin.com/in/shikhar-purwar-7a58b71bb"
     },
     
-    {
-        id:"2",
-        img:DiyaG,
-        name:"Diya Gupta",
-        title:"Event Head",
-        // facebook:"",
-        instagram:"",
-        // twitter:"",
-        linkedin:""
-    },
+    // {
+    //     id:"2",
+    //     img:DiyaG,
+    //     name:"Diya Gupta",
+    //     title:"Event Head",
+    //     // facebook:"",
+    //     instagram:"",
+    //     // twitter:"",
+    //     linkedin:""
+    // },
     
     {
         id:"4",
