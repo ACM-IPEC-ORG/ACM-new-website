@@ -217,24 +217,23 @@ export const PrimeCMList=[
         // twitter:"",
         linkedin:"https://www.linkedin.com/in/kavya-varshney-70688422b"
     },
-    // {
-    
-    //     id:"11",
-    //     img:YatinS,
-    //     name:"Yatin Singhal",
-    //     title:"Web Master",
-    //     // facebook:"",
-    //     instagram:"http://instagram.com/mr_prave",
-    //     // twitter:"",
-    //     linkedin:"https://www.linkedin.com/in/praveen-verma-91634a194/"
-    // },
+    {
+        id:"1",
+        img:AnjaliA,
+        name:"Anjali Arya",
+        title:"Web Master",
+        // facebook:"",
+        instagram:"https://instagram.com/anj_lii.arya_?igshid=YmMyMTA2M2Y=",
+        // twitter:"",
+        linkedin:"https://www.linkedin.com/in/anjali-arya-886123207"
+    },
     {
         id:"5",
         img:AmanG,
         name:"Aman Gautam",
         title:"General Secretary",
         // facebook:"",
-        instagram:"https://www.instagram.com/ankurkush10/",
+        // instagram:"https://www.instagram.com/ankurkush10/",
         // twitter:"",
         linkedin:"https://www.linkedin.com/in/aman-gautam-3s"
     },
@@ -280,16 +279,16 @@ export const PrimeCMList=[
         linkedin:"https://www.linkedin.com/in/shikhar-purwar-7a58b71bb"
     },
     
-    // {
-    //     id:"2",
-    //     img:DiyaG,
-    //     name:"Diya Gupta",
-    //     title:"Event Head",
-    //     // facebook:"",
-    //     instagram:"",
-    //     // twitter:"",
-    //     linkedin:""
-    // },
+    {
+        id:"2",
+        img:DiyaG,
+        name:"Diya Gupta",
+        title:"Event Head",
+        // facebook:"",
+        instagram:"https://www.instagram.com/__miss.gupta__01?igsh=ODA1NTc5OTg5Nw==",
+        // twitter:"",
+        linkedin:"https://www.linkedin.com/in/diya-gupta-a60ab2208/"
+    },
     
     {
         id:"4",
@@ -297,19 +296,21 @@ export const PrimeCMList=[
         name:"Tushar Pandey",
         title:"Documentation Head",
         // facebook:"",
-        instagram:"https://www.instagram.com/kanupriya__11/",
+        // instagram:"https://www.instagram.com/kanupriya__11/",
         // twitter:"",
-        linkedin:"https://www.linkedin.com/in/kanupriya-prajapati-197842196"
+        linkedin:"https://www.linkedin.com/in/tushar-pandey-083495207/"
     },
+    
     {
-        id:"1",
-        img:AnjaliA,
-        name:"Anjali Arya",
-        title:"Joint Secretart",
+    
+        id:"11",
+        img:YatinS,
+        name:"Yatin Singhal",
+        title:"Joint Secretary",
         // facebook:"",
-        instagram:"https://instagram.com/anj_lii.arya_?igshid=YmMyMTA2M2Y=",
+        // instagram:"http://instagram.com/mr_prave",
         // twitter:"",
-        linkedin:"https://www.linkedin.com/in/anjali-arya-886123207"
+        linkedin:"https://www.linkedin.com/in/yatin-singhal-838594201/"
     },
     
 ]
@@ -380,7 +381,7 @@ export const CMList=[
     {
         id:"6",
         img:Sumit,
-        name:"Kavya Varshabey",
+        name:"Sumit Mishra",
         title:"SIG FOUNDATION HEAD",
         // facebook:"",
         instagram:"https://www.instagram.com/su_mit597",
