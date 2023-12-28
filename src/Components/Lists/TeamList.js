@@ -2,6 +2,7 @@
 import TriptiS from "../../assets/Images/Team/Teacher/TriptiS.jpg"
 import MonikaS from "../../assets/Images/Team/Teacher/monika-sharma.jpg"
 import TanyaS from "../../assets/Images/Team/Teacher/Tanya_Sharma.jpeg"
+import PushpanjaliC from "../../assets/Images/Team/Teacher/Pushpanjali_Chandra.jpeg"
 export const ConveyersList=[
     
     {
@@ -28,7 +29,7 @@ export const ConveyersList=[
     // },
     {
         id:"3",
-        img:MonikaS,
+        img:PushpanjaliC,
         name:"Ms. Pushpanjali Chandra",
         // title:"",
         // facebook:"https://www.facebook.com/tripti.sharma.94849",
