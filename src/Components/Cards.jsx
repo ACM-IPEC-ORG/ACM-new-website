@@ -279,81 +279,54 @@ export const Slider = function (props) {
   )
 }
 // Marquee
-import { styled, keyframes, css } from "styled-components";
-import F1 from "../assets/Images/Poster/tedchjobs.png"
-import F2 from "../assets/Images/Poster/tech-and-mate.png"
-import F3 from "../assets/Images/Poster/algoholic.png"
-import F4 from "../assets/Images/Poster/quizzard.jpeg"
-import F5 from "../assets/Images/Poster/brainbrew.jpeg"
-import F6 from "../assets/Images/Poster/3.jpg"
-import F7 from "../assets/Images/Poster/Code-sprint.jpeg"
-import F8 from "../assets/Images/Poster/quizophile.jfif"
-import { Link } from "react-router-dom";
-import classNames from "classnames";
-import { allEvent, featurelist } from "./Lists/EventList";
-import ImgSource from "./ImgSource";
+import React from 'react';
+import styled, { keyframes, css } from 'styled-components';
+import { Link } from 'react-router-dom';
+import { featurelist } from './Lists/EventList';
+import ImgSource from './ImgSource';
 
+export const MarqueR = () => {
+  const images = featurelist;
 
-export const MarqueR = function () {
-
-  const image = featurelist
   return (
-    <div>
-      <div className="flex items-center justify-center relative w-full h-full">
-        <div className="overflow-hidden flex w-full select-none">
-          <MarqueeGroup className="shrink-0 p-2 flex gap-5 items-center justify-around whitespace-nowrap w-full">
-            {image.map(data => {
-              return (
-                <ImageGroup >
-                  <Link to={`/Events/${data.slugs}`}><ImgSource src={data.img} className="h-full aspect-auto" /></Link>
-                </ImageGroup>
-              )
-
-            })}
-
-          </MarqueeGroup>
-          <MarqueeGroup className="shrink-0 p-2 flex gap-5 items-center justify-around whitespace-nowrap w-full">
-            {image.map(data => {
-              return (
-                <ImageGroup >
-                  <Link to={`/Events/${data.slugs}`}><ImgSource src={data.img} className="h-full aspect-auto" /></Link>
-
-                </ImageGroup>
-              )
-
-            })}
-
-          </MarqueeGroup>
-        </div>
-
-      </div>
-
+    <div className="grid grid-flow-col">
+      <MarqueeContainer>
+      {images.map((data, index) => (
+        <ImageGroup key={index}>
+          <Link to={`/Events/${data.slugs}`}>
+            <ImgSource src={data.img} className="h-full aspect-auto" />
+          </Link>
+        </ImageGroup>
+      ))}
+    </MarqueeContainer>
+      
     </div>
-
-  )
-}
+    
+    
+  );
+};
 const scrollX = keyframes`
-from{
-  left:translateX(0);
+0% {
+  transform: translateX(100%);
 }
-to{
-  transform:translateX(-100%);
+100% {
+  transform: translateX(-100%);
 }
 `;
+const MarqueeContainer = styled.div`
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  display: flex;
+  animation: ${scrollX} 15s linear infinite;
+`;
 
-const common = css`
-animation:${scrollX} 10s linear infinite
-`
 
-const MarqueeGroup = styled.div`
-${common}
 
-`
-  ;
 const ImageGroup = styled.div`
-  display:grid;
-  place-items:center;
-  width:clamp(10rem,1rem+40vmin,30rem);
-  padding:calc(clamp(10rem,1rem+30vmin,30rem)/10);
-`
-  ;
+  display: grid;
+  place-items: center;
+  width: clamp(10rem, 1rem + 40vmin, 30rem);
+  padding: calc(clamp(10rem, 1rem + 30vmin, 30rem) / 10);
+`;
+

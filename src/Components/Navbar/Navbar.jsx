@@ -14,7 +14,7 @@ export default function Navbar(){
     return(
         
         <div className="nav">
-            <div className="nav-conainer">
+            <div className="nav-container">
                 <div className="navbar items-center">
                     <Link to="/" onClick={()=>setNavOpen(false)}><div className="px-16 aspect-video" style={{
                         backgroundImage:`url(${ACMLOGO})`,

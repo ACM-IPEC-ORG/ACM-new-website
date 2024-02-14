@@ -218,16 +218,7 @@ export const PrimeCMList=[
         // twitter:"",
         linkedin:"https://www.linkedin.com/in/kavya-varshney-70688422b"
     },
-    {
-        id:"1",
-        img:AnjaliA,
-        name:"Anjali Arya",
-        title:"Web Master",
-        // facebook:"",
-        instagram:"https://instagram.com/anj_lii.arya_?igshid=YmMyMTA2M2Y=",
-        // twitter:"",
-        linkedin:"https://www.linkedin.com/in/anjali-arya-886123207"
-    },
+    
     {
         id:"5",
         img:AmanG,
@@ -237,6 +228,17 @@ export const PrimeCMList=[
         // instagram:"https://www.instagram.com/ankurkush10/",
         // twitter:"",
         linkedin:"https://www.linkedin.com/in/aman-gautam-3s"
+    },
+    
+    {
+        id:"10",
+        img:AnushkaP,
+        name:"Anushka Purwar",
+        title:"Treasurer",
+        facebook:"https://www.facebook.com/anushka.purwar.3?mibextid=ZbWKwL",
+        instagram:"http://www.instagram.com/purwar__anushka",
+        // twitter:"",
+        linkedin:"https://www.linkedin.com/in/anushka-purwar-476273230"
     },
     {
         id:"9",
@@ -249,14 +251,15 @@ export const PrimeCMList=[
         // linkedin:"https://www.linkedinedin.com/in/jasnidh-kaur-ahuja-ab2164167/"
     },
     {
-        id:"10",
-        img:AnushkaP,
-        name:"Anushka Purwar",
-        title:"Treasurer",
-        facebook:"https://www.facebook.com/anushka.purwar.3?mibextid=ZbWKwL",
-        instagram:"http://www.instagram.com/purwar__anushka",
+    
+        id:"11",
+        img:YatinS,
+        name:"Yatin Singhal",
+        title:"WebMaster",
+        // facebook:"",
+        // instagram:"http://instagram.com/mr_prave",
         // twitter:"",
-        linkedin:"https://www.linkedin.com/in/anushka-purwar-476273230"
+        linkedin:"https://www.linkedin.com/in/yatin-singhal-838594201/"
     },
     {
         id:"7",
@@ -302,18 +305,17 @@ export const PrimeCMList=[
         linkedin:"https://www.linkedin.com/in/tushar-pandey-083495207/"
     },
     
+    
     {
-    
-        id:"11",
-        img:YatinS,
-        name:"Yatin Singhal",
-        title:"Joint Secretary",
+        id:"1",
+        img:AnjaliA,
+        name:"Anjali Arya",
+        title:"Jont Secretary",
         // facebook:"",
-        // instagram:"http://instagram.com/mr_prave",
+        instagram:"https://instagram.com/anj_lii.arya_?igshid=YmMyMTA2M2Y=",
         // twitter:"",
-        linkedin:"https://www.linkedin.com/in/yatin-singhal-838594201/"
+        linkedin:"https://www.linkedin.com/in/anjali-arya-886123207"
     },
-    
 ]
 //CMList
 import SupriyaS from "../../assets/Images/Team/core/supriya-srivastava.jpeg"
@@ -325,29 +327,74 @@ import ShreyaJ from "../../assets/Images/Team/core/shreya-jain.jpeg"
 import Sumit from "../../assets/Images/Team/core/sumit.jpeg"
 import TanishS from "../../assets/Images/Team/core/tanish-srivastava.jpeg"
 import HimanshuG from "../../assets/Images/Team/core/Himanshu-gupta.jpg"
-import VanditJ from "../../assets/Images/Team/core/vandit-jain.jpeg"
+import NishitaS from "../../assets/Images/Team/core/Nishita_Srivastava.jpg"
 
 export const CMList=[
     {
-        id:"4",
-        img:SupriyaS,
-        name:"Supriya Srivastava",
-        title:"SIG TECH HEAD",
+        id:"8",
+        img:EtiG,
+        name:"Eti Garg",
+        title:"Membership Coordinator",
         // facebook:"",
-        instagram:"https://instagram.com/supriyasrivastavaa?igshid=ZDdkNTZiNTM=",
+        instagram:"https://instagram.com/5209garg?igshid=ZDdkNTZiNTM=h",
         // twitter:"",
-        linkedin:"https://www.linkedin.com/in/sup-sri"
+        linkedin:"https://www.linkedin.com/in/eti-garg-a3b18a249"
     },
     {
-        id:"1",
-        img:MridulT,
-        name:"Mridul Tiwari",
-        title:"SIG WEB HEAD",
+        id:"9",
+        img:TanishS,
+        name:"Tanish Srivastava",
+        title:"Membership Coordinator",
         // facebook:"",
-        instagram:"https://instagram.com/mridulti",
-        twitter:"https://twitter.com/MridulTi",
-        linkedin:"https://www.linkedin.com/in/mridul-tiwari-001185216/"
+        instagram:"https://instagram.com/tanish_sri19?igshid=ZDdkNTZiNTM=",
+        // twitter:"",
+        linkedin:"https://www.linkedin.com/in/tanish-srivastava-18521423b"
     },
+    {
+        id:"11",
+        img:ShreyaJ,
+        name:"Shreya Jain",
+        title:"Documentation Head",
+        // facebook:"",
+        instagram:"https://instagram.com/shreya_jainn01?igshid=ZDdkNTZiNTM=",
+        // twitter:"",
+        linkedin:"https://www.linkedin.com/in/shreya-jain-120b59227/"
+    },
+    {
+        id:"11",
+        img:NishitaS,
+        name:"Nishita Srivastava",
+        title:"Social Media Head",
+        // facebook:"",
+        instagram:"https://www.instagram.com/moon__star__25?igsh=MWEyNGp0NXZ3cGpsdg==",
+        // twitter:"",
+        linkedin:"https://www.linkedin.com/in/nishita-srivastava-110a1124b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+        id:"7",
+        img:AditiG,
+        name:"Aditi Garg",
+        title:"SIG PYTHON HEAD",
+        // facebook:"",
+        mail:"aditigarg1404@gmail.com",
+        github:"https://github.com/Akshay2022Singh",
+        // instagram:"",
+        // twitter:"",
+        linkedin:"https://www.linkedin.com/in/aditi-garg-b6270b258"
+    },
+    {
+        id:"7",
+        img:HimanshuG,
+        name:"Himanshu Gupta",
+        title:"SIG JAVA HEAD",
+        // facebook:"",
+        // mail:"aditigarg1404@gmail.com",
+        // github:"https://github.com/Akshay2022Singh",
+        instagram:"https://instagram.com/32himanshu?utm_source=qr&igshid=OGIxMTE0OTdkZA==",
+        // twitter:"",
+        linkedin:"https://www.linkedin.com/in/himanshu-gupta-a74916227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+   
     {
         id:"2",
         img:ManyaT,
@@ -389,71 +436,30 @@ export const CMList=[
         // twitter:"",
         linkedin:"https://www.linkedin.com/in/sumit-mishra-253708269/"
     },
-    {
-        id:"7",
-        img:AditiG,
-        name:"Aditi Garg",
-        title:"SIG PYTHON HEAD",
-        // facebook:"",
-        mail:"aditigarg1404@gmail.com",
-        github:"https://github.com/Akshay2022Singh",
-        // instagram:"",
-        // twitter:"",
-        linkedin:"https://www.linkedin.com/in/aditi-garg-b6270b258"
-    },
-    {
-        id:"7",
-        img:HimanshuG,
-        name:"Himanshu Gupta",
-        title:"SIG JAVA HEAD",
-        // facebook:"",
-        // mail:"aditigarg1404@gmail.com",
-        // github:"https://github.com/Akshay2022Singh",
-        instagram:"https://instagram.com/32himanshu?utm_source=qr&igshid=OGIxMTE0OTdkZA==",
-        // twitter:"",
-        linkedin:"https://www.linkedin.com/in/himanshu-gupta-a74916227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-    },
-    {
-        id:"8",
-        img:EtiG,
-        name:"Eti Garg",
-        title:"Membership Coordinator",
-        // facebook:"",
-        instagram:"https://instagram.com/5209garg?igshid=ZDdkNTZiNTM=h",
-        // twitter:"",
-        linkedin:"https://www.linkedin.com/in/eti-garg-a3b18a249"
-    },
-    {
-        id:"9",
-        img:TanishS,
-        name:"Tanish Srivastava",
-        title:"Membership Coordinator",
-        // facebook:"",
-        instagram:"https://instagram.com/tanish_sri19?igshid=ZDdkNTZiNTM=",
-        // twitter:"",
-        linkedin:"https://www.linkedin.com/in/tanish-srivastava-18521423b"
-    },
+    
     
     {
-        id:"11",
-        img:ShreyaJ,
-        name:"Shreya Jain",
-        title:"Documentation Head",
+        id:"4",
+        img:SupriyaS,
+        name:"Supriya Srivastava",
+        title:"SIG TECH HEAD",
         // facebook:"",
-        instagram:"https://instagram.com/shreya_jainn01?igshid=ZDdkNTZiNTM=",
+        instagram:"https://instagram.com/supriyasrivastavaa?igshid=ZDdkNTZiNTM=",
         // twitter:"",
-        linkedin:"https://www.linkedin.com/in/shreya-jain-120b59227/"
+        linkedin:"https://www.linkedin.com/in/sup-sri"
     },
     {
-        id:"11",
-        img:VanditJ,
-        name:"Vandit Jain",
-        title:"Documentation Head",
+        id:"1",
+        img:MridulT,
+        name:"Mridul Tiwari",
+        title:"SIG WEB HEAD",
         // facebook:"",
-        instagram:"https://instagram.com/vandit_jan?utm_source=qr&igshid=OGU0MmVlOWVjOQ==",
-        // twitter:"",
-        linkedin:"https://www.linkedin.com/in/vandit-jain-1a09b1196?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+        instagram:"https://instagram.com/mridulti",
+        twitter:"https://twitter.com/MridulTi",
+        linkedin:"https://www.linkedin.com/in/mridul-tiwari-001185216/"
     },
+    
+    
     
 ]
 // Team 2022

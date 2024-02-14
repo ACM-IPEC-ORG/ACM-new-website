@@ -5,7 +5,7 @@ import {BsInstagram,BsFacebook,BsLinkedin} from "react-icons/bs"
 import {RxDotFilled} from "react-icons/rx"
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import HeroImg from "../../assets/Images/club/hero_home.webp"
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {  FeatureList, GalleryList } from "../../Components/Lists/GalleryList";
 import { UpcomingList, featurelist, session_2020_21 } from "../../Components/Lists/EventList";
 import { Carasouel, MarqueR, Slider, UpcomingCard } from "../../Components/Cards";
@@ -31,6 +31,25 @@ export default function Home(){
         setCurentIndex(index)
         setClickedImg(item.img)
     }
+    const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      // Check if screen width is less than or equal to 768px (commonly considered mobile width)
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    // Add event listener to handle window resize
+    window.addEventListener('resize', handleResize);
+
+    // Call handleResize once initially to set the initial state
+    handleResize();
+
+    // Cleanup: Remove event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
     const gallery=FeatureList.map((data)=>{
         return(
             <div>
@@ -148,7 +167,7 @@ export default function Home(){
                     </section>}
                     
                     {/* Events */}
-                    <div className="text-center text-white bg-SecGradP">
+                    {!isMobile &&<div className="text-center text-white bg-SecGradP overflow-hidden">
                         <h1 className="lg:text-6xl md:text-5xl text-3xl font-semibold pt-4">Recent Events</h1>
                         <h1 className="lg:text-2xl md:text-xl text-lg md:leading-9 font-thin">What's going on in IPEC ACM?</h1>
                         <div className="py-4 md:py-12">
@@ -156,7 +175,7 @@ export default function Home(){
                         </div>
                     
                     
-                    </div>
+                    </div>}
                 </div>
                 
                 {/* Gallery */}
