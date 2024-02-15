@@ -6,7 +6,7 @@ import Tech from "../../assets/Images/sigs/SIG_TECH.png";
 import Graph from "../../assets/Images/sigs/SIG_GRAPH.png";
 import Python from "../../assets/Images/sigs/SIG_PYTHON.png";
 import Foundation from "../../assets/Images/sigs/SIG_FOUNDATION.png";
-import Java from "../../assets/Images/sigs/SIG_FOUNDATION.png";
+import Java from "../../assets/Images/sigs/SIG_JAVA.png";
 import sig from "../../assets/Images/club/SIG.png";
 
 export default function SIGs() {
@@ -16,42 +16,42 @@ export default function SIGs() {
       name: "SIG TECH",
       description:
         "The SIG Tech is a special interest group under the ACM IPEC, dedicated to advancing technology through collaboration...",
-      link: "/SIG/Tech",
+      link: "https://drive.google.com/file/d/1Yr2djaNA0t6aYE-gS6n4RDzORTfrV4sy/view",
     },
     {
       imgSrc: Web,
       name: "SIG WEB",
       description:
         "The SIG Web is a special interest group under the ACM IPEC, dedicated to advancing web technology through collaboration...",
-      link: "/SIG/Web",
+      link: "https://drive.google.com/file/d/1YsPdz_YXEnBMqKoX2q7EDjTxHTZY1CDM/view",
     },
     {
       imgSrc: Graph,
       name: "SIG GRAPH",
       description:
         "The SIG Graph is a special interest group under the ACM IPEC, dedicated to advancing graphics technology through collaboration...",
-      link: "/SIG/Graph",
+      link: "https://drive.google.com/file/d/1Z1k-T_vujJR5EE7yx8V_0clop3Ha6qrf/view",
     },
     {
       imgSrc: Java,
       name: "SIG JAVA",
       description:
         "The SIG Java is a special interest group under the ACM IPEC, dedicated to advancing Java technology through collaboration...",
-      link: "/SIG/Java",
+      link: "https://drive.google.com/file/d/1YsBpYMrlrQ1c-aKZjD12wxhXh_kXNLyD/view",
     },
     {
       imgSrc: Python,
       name: "SIG PYTHON",
       description:
         "The SIG Python is a special interest group under the ACM IPEC, dedicated to advancing Python technology through collaboration...",
-      link: "/SIG/Python",
+      link: "https://drive.google.com/file/d/1YvslBFl49XhK99z_TZgjhCzeITlqcUO_/view",
     },
     {
       imgSrc: Foundation,
       name: "SIG FOUNDATION (C++)",
       description:
         "The SIG Foundation (C++) is a special interest group under the ACM IPEC, dedicated to advancing C++ technology through collaboration...",
-      link: "/SIG/Foundation",
+      link: "https://drive.google.com/file/d/1Z5S3pmKr3IwygeVlSinwSgi1r3NHH95N/view",
     },
   ];
 
@@ -63,7 +63,7 @@ export default function SIGs() {
       </div>
       <div className="grid gap-8 grid-cols-1 md:grid-cols-3 xl:grid-cols-6 justify-center">
         {sigs.map((item, index) => (
-          <Link to={item.link}><motion.div
+          <a target="_blank" href={item.link}><motion.div
             
             key={index}
             whileHover={{ scale: 1.05 }}
@@ -73,7 +73,7 @@ export default function SIGs() {
             <h2 className="font-bold text-xl">{item.name}</h2>
             <p className="text-sx">{item.description}</p>
           </motion.div>
-          </Link>
+          </a>
         ))}
       </div>
     </div>
