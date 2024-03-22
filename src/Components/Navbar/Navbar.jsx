@@ -14,13 +14,13 @@ export default function Navbar(){
     return(
         
         <div className="nav">
-            <div className="nav-container">
+            <div className="nav-container py-24">
                 <div className="navbar items-center">
-                    <Link to="/" onClick={()=>setNavOpen(false)}><div className="px-16 aspect-video" style={{
+                    <Link to="/" onClick={()=>setNavOpen(false)}><div className="px-16 rounded-full aspect-video" style={{
                         backgroundImage:`url(${ACMLOGO})`,
                         backgroundSize:"contain",
                         backgroundRepeat:"no-repeat",
-                        backgroundPosition:"center"
+                        backgroundPosition:"center",
                     }}></div></Link>
                     <div className="menu-toggle" onClick={()=>setNavOpen(!navOpen)}>
                         <div className={navOpen?"hamBox hamBoxOpen":"hamBox"}>

@@ -46,8 +46,8 @@ export default function Events() {
                     ))}
                 </ul>
                 <div>
-                    <h1 className="text-center py-4 lg:text-5xl md:text-3xl text-2xl tracking-wider font-extrabold">Session {selectedSession.substring(1).replaceAll('_', '-')}</h1>
-                    <ul className="grid xl:grid-cols-2 xl:px-52 md:grid-cols-1 grid-cols-1 gap-x-32 gap-y-4 py-12 justify-center md:px-24 px-0 xl:w-11/12">
+                    <h1 className="text-center py-4 lg:text-3xl md:text-3xl text-xl tracking-wider font-extrabold">Session {selectedSession.substring(1).replaceAll('_', '-')}</h1>
+                    <ul className="grid xl:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-x-32 gap-y-6 py-12 justify-center md:px-24 px-0 xl:w-11/12">
                         {menuItem && menuItem.map((data) => (
                             <EveCard {...data} />
                         ))}

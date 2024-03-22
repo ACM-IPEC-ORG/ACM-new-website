@@ -56,22 +56,22 @@ export default function SIGs() {
   ];
 
   return (
-    <div className="grid gap-12 place-items-center px-24 md:px-46 xl:px-64 py-44">
+    <div className="grid gap-12 place-items-center px-24 md:px-46 xl:px-44 py-32">
       <div className="grid place-items-center">
-        <h1 className="font-bold text-2xl">Choose your Starting point.</h1>
-        <p className="text-lg">Explore our Special Interest Groups (SIGs) and choose the one that aligns with your interests.</p>
+        <h1 className="font-bold text-xl">Choose your Starting point.</h1>
+        <p className="text-sm">Explore our Special Interest Groups (SIGs) and choose the one that aligns with your interests.</p>
       </div>
-      <div className="grid gap-8 grid-cols-1 md:grid-cols-3 xl:grid-cols-6 justify-center">
+      <div className="grid gap-8 grid-cols-1 md:grid-cols-3 xl:grid-cols-6 place-items-center">
         {sigs.map((item, index) => (
           <a target="_blank" href={item.link}><motion.div
             
             key={index}
             whileHover={{ scale: 1.05 }}
-            className="grid gap-2  p-2 rounded-xl"
+            className="grid gap-2 p-2 rounded-xl"
           >
             <img src={item.imgSrc} className="rounded-xl" alt={item.name} />
-            <h2 className="font-bold text-xl">{item.name}</h2>
-            <p className="text-sx">{item.description}</p>
+            <h2 className="font-bold text-md">{item.name}</h2>
+            <p className="text-xs">{item.description}</p>
           </motion.div>
           </a>
         ))}

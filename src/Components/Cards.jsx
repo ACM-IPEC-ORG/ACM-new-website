@@ -126,8 +126,8 @@ export const SyllCard = function (props) {
 }
 export const EveCard = function (props) {
   return (
-    <motion.div className=" grid md:flex gap-10" whileHover={{ scale: 1.05 }} transition={{ ease: "easeIn" }}>
-      <div className="object-cover aspect-square p-32 md:w-52 md:h-52"
+    <motion.div className=" grid md:flex gap-10" whileHover={{ scale: 1.02 }} transition={{ ease: "easeIn" }}>
+      <div className="object-cover aspect-square md:w-52 md:h-52"
         style={{
 
           backgroundImage: `url(${props.img})`,
@@ -139,11 +139,11 @@ export const EveCard = function (props) {
       </div>
       <div>
         <div className="divide-y-2 divide-gray-300">
-          <h1 className="text-3xl font-semibold">{props.head}</h1>
-          <h2 className="text-lg">{props.info}</h2>
+          <h1 className="text-2xl font-semibold">{props.head}</h1>
+          <h2 className="text-xs">{props.info}</h2>
 
         </div>
-        <Link to={`/Events/${props.slugs}`}><button className="bg-SecGradP text-white font-semibold my-2 text-sm px-4 py-2">Details!</button></Link>
+        <Link to={`/Events/${props.slugs}`}><button className="bg-SecGradP text-white hover:font-semibold my-2 text-xs px-4 py-2">Details!</button></Link>
       </div>
 
     </motion.div>
