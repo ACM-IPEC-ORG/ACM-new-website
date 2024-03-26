@@ -76,6 +76,8 @@ import Code_O_Fiesta from "../../assets/Images/Poster/code-o-fiesta.jpeg"
 import Logomania2 from "../../assets/Images/Poster/logomania2.0.jpeg"
 import ABCD from "../../assets/Images/Poster/ABCD.jpeg"
 import BugSmash from "../../assets/Images/Poster/Bug-Smash.png"
+import AIPICATHON from "../../assets/Images/Poster/AIPICATHON.jpeg"
+import CodeSprint from "../../assets/Images/Poster/Code-sprint.jpeg"
 
 export const session_2022_23=[
     {
@@ -2160,50 +2162,46 @@ export const featurelist=[
     
 ]
 // Upcoming
-import CodeSprint from "../../assets/Images/Poster/Code-sprint.jpeg"
-import AIPICATHON from "../../assets/Images/Poster/AIPICATHON.jpeg"
-import R23 from "../../assets/Images/Poster/RECRUITMENT23.png"
+import BRB from "../../assets/Images/Poster/BrainBrew2.jpg"
 export const UpcomingList=[
     {
         id:"1",
         upcome:true,
         name:"Recuritment 2023",
-        img:R23,
-        intro:"WE ARE RECRUITING 🎊 IPEC ACM STUDENT CHAPTER is recruiting members from all the 1st and 3rd year students of BBA, BCA & B.Tech (All branches)",
+        img:BRB,
+        intro:"IPEC ACM STUDENT CHAPTER is organising BRAINBREW 2.O",
         points:[
-            "IPEC ACM STUDENT CHAPTER aims at learning and developing at fundamental computing. We believe in 'By the students, for the students💡",
-            "It has following Special Interest Groups (SIG's). Interested students can join any of the following groups and learn the skills.",
-            "SIG GRAPH for Graphic designing",
-            "SIG WEB  for Web Designing & Development",
-            "SIG FOUNDATION for Basic programming (hands on Data Structures and C++ for beginners in Programming)",
-            "SIG PYTHON for Python Development",
-            "SIG TECH for System Analysis",
-            "SIG JAVA focuses on packaging java libraries and applications"
+            "An event for 1st and 3rd year students of Btech All branches (CSE, CSE(DS) , CSE(AIML), IT, ECE, ME).",
+            "*BRAINBREW 2.O :* A Series of Competitive questions based on objective problems having one word answer in the form of crossword 🔥",
+            
         ],
-        // rules:[
-        //     "Eligibility: Bug Smash is open to all participants interested in showcasing their debugging skills.",
-        //     "Bug Identification: Participants will be presented with code snippets that contain errors.",
-        //     "Debugging Time: There will be a specified time limit to identify and fix the bugs in each code snippet.",
-        //     "Question Variety: The event will feature a mix of algorithmic, logical, and coding questions that span various difficulty levels.",
-        //     "Individual Participation: Participants must attempt the debugging challenges individually.",
-        //     "Fair Play: Debugging challenges must be solved independently. Sharing solutions or using external sources is strictly prohibited.",
-        //     "Scoring: Participants will earn points based on the number of bugs successfully fixed and the time taken.",
-        //     "Recognition: The participants with the highest scores and the quickest bug smashers will be recognized and celebrated.",
-        //     "Learning Opportunity: Bug Smash offers a unique chance to enhance debugging skills and learn from real-world code errors.",
-        //     "Winners will be awarded with certificates",
-        //     "Date: 13 October 2023",
-        //     "Time: 3:00 PM Onwards",
-        //     "Venue: CS LAB 6"
+        rules:[
+            "Eligibility: 1st and 3rd-year B.Tech students from all branches (CSE, CSE(DS), CSE(AIML), IT, ECE, ME) are eligible to participate.",
+            "✅ Questions will be divided into different categories as follows",
+            "⭐ Data Structure",
+            "⭐ Basic Programming",
+            "⭐ Current Technologies",
+            "Debugging Time: Participants will have a set time to debug and solve each problem in the competition.",
+            "Question Variety: Competitive questions will cover various categories, including Data Structure, Basic Programming, and Current Technologies.",
+            "Individual Participation: Participants will compete individually to solve objective problems in the form of a crossword.",
+            "Fair Play: All participants must adhere to fair play rules and guidelines throughout the event.",
+            "Scoring: Scoring will be based on the accuracy and speed of solving the problems.",
+            "Recognition: Winners will receive certificates for their outstanding performance in the competition.",
+            "Learning Opportunity: Participants will have the opportunity to enhance their problem-solving skills and expand their knowledge in various technical domains.",
+            "Winners will be awarded with certificates",
+            "Date: 13 October 2023",
+            "Time: 3:00 PM Onwards",
+            "Venue: The event will be conducted online via Google Meet."
         
-        // ],
+        ],
         contact:"If you have any query then contact: ",
         cno:[
             "Eti: +91 8218553892",
             "Tanish: +91 8382874059"
         ],
-        date: "3 and 4 December 2023( Sunday, Monday) ",
-        time:"11:00 am onwards",
-        register:"https://bit.ly/Recruitment_ACM"
+        date: "31st March 2024 (Sunday) ",
+        time:"3:00 PM onwards",
+        register:"https://tinyurl.com/brainbrew2-0"
     },
     
 ]
