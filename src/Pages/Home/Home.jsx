@@ -123,26 +123,16 @@ export default function Home() {
                                                 <p className={"xl:text-md text-md  trasition-colors py-4 font-regular tracking widest"}>{data.intro}</p>
 
                                             </div>
-                                            {/* <ul className="list-disc">
+                                                <p className="xl:text-lg lg:text-lg text-md trasition-colors py-4 font-semibold tracking widest">{data.detail}</p>
+                                                {/* <ul className="list-disc">
                                                 {data.points.map(d => {
                                                     return (
                                                         <li className="xl:text-lg lg:text-lg text-md trasition-colors py-4 font-semibold tracking widest">{d}</li>
                                                     )
                                                 })}
                                             </ul> */}
-                                                <p className="xl:text-lg lg:text-lg text-md trasition-colors py-4 font-semibold tracking widest">{data.detail}</p>
                                             <div>
-                                                {/* {data.rules && <div>
 
-                                                    <h1 className="xl:text-3xl  underline underline-offset-8 lg:text-3xl text-2xl font-bold trancking-wide">Event rules</h1>
-                                                    <ol className="list-decimal">
-                                                        {data.rules.map(d => {
-                                                            return (
-                                                                <li className="xl:text-lg lg:text-lg text-md trasition-colors py-4 font-semibold tracking widest">{d}</li>
-                                                            )
-                                                        })}
-                                                    </ol>
-                                                </div>} */}
                                                 {data.date && <p className="xl:text-lg lg:text-lg text-md trasition-colors py-4 font-bold tracking widest">Date: {data.date}</p>}
                                                 {data.time && <p className="xl:text-lg lg:text-lg text-md trasition-colors py-4 font-bold tracking widest">Time: {data.time}</p>}
 
