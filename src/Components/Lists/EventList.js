@@ -2217,7 +2217,8 @@ export const UpcomingList=[
         upcome:true,
         name:"Code Combat",
         img: CC,
-        intro:"WE ARE RECRUITING 🎊 IPEC ACM STUDENT CHAPTER is recruiting members from all the 1st and 3rd year students of BBA, BCA & B.Tech (All branches)",
+        intro:"IPEC ACM STUDENT CHAPTER is organizing CODE COMBAT. An event for BTech 1st and 2nd-year students of all branches (CSE, CSE(DS), CSE(AIML), IT, ECE).",
+        detail: "CODE COMBAT is a coding challenge that tests your problem-solving abilities by requiring you to code the questions or answer MCQs to identify the correct algorithms' names and output challenges. " ,
         points:[
             "IPEC ACM STUDENT CHAPTER aims at learning and developing at fundamental computing. We believe in 'By the students, for the students💡",
             "It has following Special Interest Groups (SIG's). Interested students can join any of the following groups and learn the skills.",
@@ -2228,29 +2229,15 @@ export const UpcomingList=[
             "SIG TECH for System Analysis",
             "SIG JAVA focuses on packaging java libraries and applications"
         ],
-        // rules:[
-        //     "Eligibility: Bug Smash is open to all participants interested in showcasing their debugging skills.",
-        //     "Bug Identification: Participants will be presented with code snippets that contain errors.",
-        //     "Debugging Time: There will be a specified time limit to identify and fix the bugs in each code snippet.",
-        //     "Question Variety: The event will feature a mix of algorithmic, logical, and coding questions that span various difficulty levels.",
-        //     "Individual Participation: Participants must attempt the debugging challenges individually.",
-        //     "Fair Play: Debugging challenges must be solved independently. Sharing solutions or using external sources is strictly prohibited.",
-        //     "Scoring: Participants will earn points based on the number of bugs successfully fixed and the time taken.",
-        //     "Recognition: The participants with the highest scores and the quickest bug smashers will be recognized and celebrated.",
-        //     "Learning Opportunity: Bug Smash offers a unique chance to enhance debugging skills and learn from real-world code errors.",
-        //     "Winners will be awarded with certificates",
-        //     "Date: 13 October 2023",
-        //     "Time: 3:00 PM Onwards",
-        //     "Venue: CS LAB 6"
         
-        // ],
         contact:"If you have any query then contact: ",
         cno:[
             "Eti: +91 8218553892",
             "Tanish: +91 8382874059"
         ],
-        date: "3 and 4 December 2023( Sunday, Monday) ",
-        time:"11:00 am onwards",
+        date: "13th SEPTEMBER 2024",
+        time:"03:00 PM onwards",
+        venue: "IT LAB 5",
         register:"https://bit.ly/Recruitment_ACM"
     },
     
