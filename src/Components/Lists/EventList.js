@@ -1921,6 +1921,14 @@ export const UpcomingList = [
         "❃ Basic Mathematical and Logical Algorithms"
        
        ],
+    point3: ["✅ Participants will be judged based on different categories as follows : ",
+        "⭐ Coding Compatible Skills.",
+        "⭐ Number of test cases passed.",
+        "⭐ Timely Optimization.",
+        "⭐ Algorithms Knowledge. "
+        ],
+
+    
     contact: "If you have any query then contact: ",
     cno: [
       "Eti: +91 8218553892",
