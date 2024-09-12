@@ -124,13 +124,13 @@ export default function Home() {
 
                                             </div>
                                                 <p className="xl:text-lg lg:text-lg text-md trasition-colors py-4 font-semibold tracking widest">{data.detail}</p>
-                                                <ul className="list-disc">
+                                                {/* <ul className="list-disc">
                                                 {data.points.map(d => {
                                                     return (
                                                         <li className="xl:text-lg lg:text-lg text-md trasition-colors py-4 font-semibold tracking widest">{d}</li>
                                                     )
                                                 })}
-                                            </ul>
+                                            </ul> */}
                                             <div>
 
                                                 {data.date && <p className="xl:text-lg lg:text-lg text-md trasition-colors py-4 font-bold tracking widest">Date: {data.date}</p>}
