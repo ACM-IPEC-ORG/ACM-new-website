@@ -1898,29 +1898,29 @@ export const UpcomingList = [
       "IPEC ACM STUDENT CHAPTER is organizing CODE COMBAT. An event for BTech 1st and 2nd-year students of all branches (CSE, CSE(DS), CSE(AIML), IT, ECE).",
     detail:
       "CODE COMBAT is a coding challenge that tests your problem-solving abilities by requiring you to code the questions or answer MCQs to identify the correct algorithms' names and output challenges. ",
-    point1: [
+    point: [
       "✅ Its Consists of Two Rounds and Both are Eliminating Rounds",
       "Round 1 : Coding Challenge (Team)",
       "attempt in any Programming Language",
       "Round 2 : Quiz (Individual) ",
       "in C Language only",
     ],
-    point2: [
-      "✅ Questions will be divided into different categories as follows :",
-      "❃ Sorting Algorithms",
-      "❃ Printing Patterns",
-      "❃ Searching Algorithms",
-      "❃ Basic Mathematical and Logical Algorithms",
-    ],
-    point3: [
-      "✅ Participants will be judged based on different categories as follows : ",
-      "⭐ Coding Compatible Skills.",
-      "⭐ Number of test cases passed.",
-      "⭐ Timely Optimization.",
-      "⭐ Algorithms Knowledge.",
-    ],
+    // point2: [
+    //   "✅ Questions will be divided into different categories as follows :",
+    //   "❃ Sorting Algorithms",
+    //   "❃ Printing Patterns",
+    //   "❃ Searching Algorithms",
+    //   "❃ Basic Mathematical and Logical Algorithms",
+    // ],
+    // point3: [
+    //   "✅ Participants will be judged based on different categories as follows : ",
+    //   "⭐ Coding Compatible Skills.",
+    //   "⭐ Number of test cases passed.",
+    //   "⭐ Timely Optimization.",
+    //   "⭐ Algorithms Knowledge.",
+    // ],
 
-    point4: "🌸 Winners will be awarded with certificates !!! 🌸",
+    // point4: "🌸 Winners will be awarded with certificates !!! 🌸",
 
     contact: "If you have any query then contact: ",
     cno: [

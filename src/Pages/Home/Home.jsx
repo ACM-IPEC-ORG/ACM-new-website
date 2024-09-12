@@ -124,7 +124,7 @@ export default function Home() {
 
                                             </div>
                                                 <p className="xl:text-lg lg:text-lg text-md trasition-colors py-4 font-semibold tracking widest">{data.detail}</p>
-                                                 // point1 
+                                                 {/* // point1  */}
                                                  <ul className="list-disc">
                                                 {data.point1.map(d => {
                                                     return (
@@ -132,7 +132,7 @@ export default function Home() {
                                                     )
                                                 })}
                                             </ul>
-                                            //point2
+                                            {/* //point2 */}
                                             <ul className="list-disc">
                                                 {data.point2.map(d => {
                                                     return (
@@ -140,7 +140,7 @@ export default function Home() {
                                                     )
                                                 })}
                                             </ul>
-                                            //point3
+                                            {/* //point3 */}
                                             <ul className="list-disc">
                                                 {data.point3.map(d => {
                                                     return (
@@ -148,7 +148,7 @@ export default function Home() {
                                                     )
                                                 })}
                                             </ul>
-                                            //point4 
+                                            {/* //point4  */}
                                             <ul className="list-disc">
                                                 {data.point4.map(d => {
                                                     return (
