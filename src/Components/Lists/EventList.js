@@ -2219,7 +2219,7 @@ export const UpcomingList=[
         img: CC,
         intro:"IPEC ACM STUDENT CHAPTER is organizing CODE COMBAT. An event for BTech 1st and 2nd-year students of all branches (CSE, CSE(DS), CSE(AIML), IT, ECE).",
         detail: "CODE COMBAT is a coding challenge that tests your problem-solving abilities by requiring you to code the questions or answer MCQs to identify the correct algorithms' names and output challenges. " ,
-        
+        points: ["1", "2", "3", "4"],
         contact:"If you have any query then contact: ",
         cno:[
             "Eti: +91 8218553892",
