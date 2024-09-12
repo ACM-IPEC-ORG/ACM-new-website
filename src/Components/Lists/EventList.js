@@ -1920,7 +1920,6 @@ export const UpcomingList = [
     //   "⭐ Algorithms Knowledge.",
     // ],
 
-<<<<<<< HEAD
     // point4: "🌸 Winners will be awarded with certificates !!! 🌸",
 
     contact: "If you have any query then contact: ",
@@ -1936,36 +1935,3 @@ export const UpcomingList = [
     note: " 👉🏻 Registered Students will get further details via WhatsApp.",
   },
 ];
-=======
-export const UpcomingList=[
-    {
-        id:"1",
-        upcome:true,
-        name:"Code Combat",
-        img: CC,
-        intro:"IPEC ACM STUDENT CHAPTER is organizing CODE COMBAT. An event for BTech 1st and 2nd-year students of all branches (CSE, CSE(DS), CSE(AIML), IT, ECE).",
-        detail: "CODE COMBAT is a coding challenge that tests your problem-solving abilities by requiring you to code the questions or answer MCQs to identify the correct algorithms' names and output challenges. " ,
-        points:[
-            "IPEC ACM STUDENT CHAPTER aims at learning and developing at fundamental computing. We believe in 'By the students, for the students💡",
-            "It has following Special Interest Groups (SIG's). Interested students can join any of the following groups and learn the skills.",
-            "SIG GRAPH for Graphic designing",
-            "SIG WEB  for Web Designing & Development",
-            "SIG FOUNDATION for Basic programming (hands on Data Structures and C++ for beginners in Programming)",
-            "SIG PYTHON for Python Development",
-            "SIG TECH for System Analysis",
-            "SIG JAVA focuses on packaging java libraries and applications"
-        ],
-        
-        contact:"If you have any query then contact: ",
-        cno:[
-            "Eti: +91 8218553892",
-            "Tanish: +91 8382874059"
-        ],
-        date: "13th SEPTEMBER 2024",
-        time:"03:00 PM onwards",
-        venue: "IT LAB 5",
-        register:"https://bit.ly/Recruitment_ACM"
-    },
-    
-]
->>>>>>> parent of 5c8388a (added mail id as contact)
