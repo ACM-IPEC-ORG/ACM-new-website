@@ -156,7 +156,7 @@ export default function Home() {
 
                                             <div>
                                                 <p className={"xl:text-lg lg:text-lg text-md trasition-colors py-4 font-semibold tracking widest leading-3"}>{data.contact}</p>
-                                                <ol className="list-disc">
+                                                <ol className="list-none">
                                                     {data.cno.map(d => {
                                                         return (
                                                             <li className="xl:text-lg lg:text-lg text-md py-4 font-semibold tracking-wider leading-3">{d}</li>
