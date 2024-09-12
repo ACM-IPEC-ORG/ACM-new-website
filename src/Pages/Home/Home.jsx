@@ -124,7 +124,7 @@ export default function Home() {
 
                                             </div>
                                                 <p className="xl:text-lg lg:text-lg text-md trasition-colors py-4 font-semibold tracking widest">{data.detail}</p>
-                                                <ul className="list-disc">
+                                                <ul className="list-none">
                                                 {data.points.map(d => {
                                                     return (
                                                         <li className="xl:text-lg lg:text-lg text-md trasition-colors py-4 font-semibold tracking widest">{d}</li>
@@ -132,7 +132,7 @@ export default function Home() {
                                                 })}
                                             </ul>
                                             {/* //point 2 */}
-                                            <ul className="list-disc">
+                                            <ul className="list-none">
                                                 {data.point2.map(d => {
                                                     return (
                                                         <li className="xl:text-lg lg:text-lg text-md trasition-colors py-4 font-semibold tracking widest">{d}</li>
@@ -140,7 +140,7 @@ export default function Home() {
                                                 })}
                                             </ul>
                                             {/* point3 */}
-                                            <ul className="list-disc">
+                                            <ul className="list-none">
                                                 {data.point3.map(d => {
                                                     return (
                                                         <li className="xl:text-lg lg:text-lg text-md trasition-colors py-4 font-semibold tracking widest">{d}</li>
