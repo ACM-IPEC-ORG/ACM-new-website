@@ -124,13 +124,39 @@ export default function Home() {
 
                                             </div>
                                                 <p className="xl:text-lg lg:text-lg text-md trasition-colors py-4 font-semibold tracking widest">{data.detail}</p>
-                                                {/* <ul className="list-disc">
-                                                {data.points.map(d => {
+                                                 // point1 
+                                                 <ul className="list-disc">
+                                                {data.point1.map(d => {
                                                     return (
                                                         <li className="xl:text-lg lg:text-lg text-md trasition-colors py-4 font-semibold tracking widest">{d}</li>
                                                     )
                                                 })}
-                                            </ul> */}
+                                            </ul>
+                                            //point2
+                                            <ul className="list-disc">
+                                                {data.point2.map(d => {
+                                                    return (
+                                                        <li className="xl:text-lg lg:text-lg text-md trasition-colors py-4 font-semibold tracking widest">{d}</li>
+                                                    )
+                                                })}
+                                            </ul>
+                                            //point3
+                                            <ul className="list-disc">
+                                                {data.point3.map(d => {
+                                                    return (
+                                                        <li className="xl:text-lg lg:text-lg text-md trasition-colors py-4 font-semibold tracking widest">{d}</li>
+                                                    )
+                                                })}
+                                            </ul>
+                                            //point4 
+                                            <ul className="list-disc">
+                                                {data.point4.map(d => {
+                                                    return (
+                                                        <li className="xl:text-lg lg:text-lg text-md trasition-colors py-4 font-semibold tracking widest">{d}</li>
+                                                    )
+                                                })}
+                                            </ul>
+                                            
                                             <div>
 
                                                 {data.date && <p className="xl:text-lg lg:text-lg text-md trasition-colors py-4 font-bold tracking widest">Date: {data.date}</p>}
@@ -149,6 +175,7 @@ export default function Home() {
                                                 </ol>
                                                 <a href={data.register}> <motion.button whileHover={{ scale: 1.05 }}
                                                     whileTap={{ scale: 0.8 }} onClick={handleClick} className="bg-SecGradP hover:font-bold text-sm text-white px-8 py-4">Register Now !</motion.button></a>
+                                                    <p className={"xl:text-md text-md  trasition-colors py-4 font-regular tracking widest"}>{data.note}</p>
                                             </div>
                                         </div>
                                     </div>
