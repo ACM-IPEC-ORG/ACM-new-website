@@ -126,6 +126,8 @@ export const SyllCard = function (props) {
 }
 export const EveCard = function (props) {
   return (
+
+    // img 
     <motion.div className=" grid md:flex gap-10" whileHover={{ scale: 1.02 }} transition={{ ease: "easeIn" }}>
       <div className="object-cover aspect-square md:w-52 md:h-52"
         style={{
@@ -135,14 +137,19 @@ export const EveCard = function (props) {
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat"
         }}>
+          {/* // add 3 card in one row  */}
+
 
       </div>
+    
       <div>
+        {/* head and info  */}
         <div className="divide-y-2 divide-gray-300">
           <h1 className="text-2xl font-semibold">{props.head}</h1>
           <h2 className="text-xs">{props.info}</h2>
 
         </div>
+        {/* takes to slugs/event page */}
         <Link to={`/Events/${props.slugs}`}><button className="bg-SecGradP text-white hover:font-semibold my-2 text-xs px-4 py-2">Details!</button></Link>
       </div>
 
@@ -150,7 +157,7 @@ export const EveCard = function (props) {
   )
 }
 
-
+// event Carousel Card
 export const Carousel = function ({ cards }) {
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
 
