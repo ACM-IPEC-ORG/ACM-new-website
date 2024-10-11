@@ -5,17 +5,7 @@ import TanyaS from "../../assets/Images/Team/Teacher/Tanya_Sharma.jpeg"
 import PushpanjaliC from "../../assets/Images/Team/Teacher/Pushpanjali_Chandra.jpeg"
 export const ConveyersList=[
     
-    {
-        id:"2",
-        img:TriptiS,
-        name:"Dr. Tripti Sharma",
-        // title:"",
-        facebook:"https://www.facebook.com/tripti.sharma.94849",
-        // instagram:"",
-        email:"tripti.sharma@ipec.org.in",
-        twitter:"",
-        // linkedin:"https://acm.ipec.org.in/team.html#"
-    },
+    
     // {
     //     id:"3",
     //     img:MonikaS,
@@ -73,6 +63,17 @@ export const HeadsDList=[
         // instagram:"",
         // twitter:"",
         // linkedin:"https://www.linkedinedin.com/in/designkarta"
+    },
+    {
+        id:"2",
+        img:TriptiS,
+        name:"Dr. Tripti Sharma",
+        // title:"",
+        facebook:"https://www.facebook.com/tripti.sharma.94849",
+        // instagram:"",
+        email:"tripti.sharma@ipec.org.in",
+        twitter:"",
+        // linkedin:"https://acm.ipec.org.in/team.html#"
     },
 ]
 // Founders
