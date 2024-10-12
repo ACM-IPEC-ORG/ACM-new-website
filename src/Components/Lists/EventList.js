@@ -2162,7 +2162,7 @@ export const featurelist=[
     
 ]
 // Upcoming
-import BRB from "../../assets/Images/Poster/BrainBrew2.jpg"
+import BRB from "../../assets/Images/Poster/Brainbrew2.jpg"
 export const UpcomingList=[
     {
         id:"1",
