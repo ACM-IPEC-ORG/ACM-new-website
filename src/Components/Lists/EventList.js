@@ -2166,7 +2166,7 @@ import BRB from "../../assets/Images/Poster/BrainBrew2.jpg"
 export const UpcomingList=[
     {
         id:"1",
-        upcome:true,
+        upcome:false,
         name:"Recuritment 2023",
         img:BRB,
         intro:"IPEC ACM STUDENT CHAPTER is organising BRAINBREW 2.O",
