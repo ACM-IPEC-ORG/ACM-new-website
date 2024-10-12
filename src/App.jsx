@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 
@@ -14,9 +14,11 @@ import Loader from "./Pages/More/Preloader";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
-  setTimeout(() => {
-    setLoading(false)
-  }, 2000)
+  useEffect(()=>{
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  },[])
   const router = createBrowserRouter([
     {
       path:"/",
@@ -79,11 +81,11 @@ export default function App() {
   return (
     
     <div className="App">
-      {loading?<Loader/>:
-      <>
-      <RouterProvider router={router}/>
-      </>
-      }
+      {loading ? (
+        <Loader />
+      ) : (
+          <RouterProvider router={router} />
+      )}
       </div>
   )
 }
