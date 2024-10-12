@@ -14,7 +14,7 @@ export const HeadD = function (props) {
       <img
         className="w-11/12 aspect-square rounded-full object-cover object-center"
         src={props.img}
-          loading="lazy"
+        loading="lazy"
         alt="HOD image"
       />
       <div className="py-2 text-center">
@@ -42,7 +42,7 @@ export const ConveyerD = function (props) {
       <img
         className="w-1/3 aspect-square rounded-full object-cover object-center"
         src={props.img}
-          loading="lazy"
+        loading="lazy"
         alt="Conveyer image"
       />
       <div className="py-2 text-center">
@@ -84,12 +84,12 @@ export const Founder = function (props) {
     <motion.div
       whileHover={{ scale: 1.1 }} onHoverStart={() => seta(1)} onHoverEnd={() => seta(0)}
       className="flex flex-col justify-center items-center m-4 text-center">
-          <img
-          className="md:w-28 aspect-square rounded-full object-cover object-center"
-          src={props.img}
-          loading="lazy"
-          alt="Founder image"
-        />
+      <img
+        className="md:w-28 aspect-square rounded-full object-cover object-center"
+        src={props.img}
+        loading="lazy"
+        alt="Founder image"
+      />
       <div className="py-2 text-center">
         <h1 className="text-lg font-semibold">{props.name}</h1>
         <h1 className="text-md text-gray-400">{props.title}</h1>
@@ -111,7 +111,7 @@ export const CMCard = function (props) {
       <motion.div
         whileHover={{ scale: 1.1 }} onHoverStart={() => seta(1)} onHoverEnd={() => seta(0)}
         className="flex flex-col justify-center items-center m-4 text-center">
-          <img
+        <img
           className="md:w-24 aspect-square rounded-full object-cover object-center"
           src={props.img}
           loading="lazy"
@@ -145,26 +145,34 @@ export const SyllCard = function (props) {
 }
 export const EveCard = function (props) {
   return (
-    <motion.div className=" grid md:flex gap-10" whileHover={{ scale: 1.02 }} transition={{ ease: "easeIn" }}>
-      <div className="object-cover aspect-square md:w-52 md:h-52"
-        style={{
+    <motion.div className="" whileHover={{ scale: 1.02 }} transition={{ ease: "easeIn" }}>
+      <Card
+        className="h-fit"
+        direction={{ base: 'column', sm: 'row' }}
+        overflow='hidden'
+        variant='outline'
+      >
+        <img
+        loading="lazy"
+          className="h-52 aspect-square object-center object-cover"
+          src={props.img}
+        />
 
-          backgroundImage: `url(${props.img})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat"
-        }}>
+        <Stack>
+          <CardBody>
+            <Heading size='md'>{props.heading}</Heading>
 
-      </div>
-      <div>
-        <div className="divide-y-2 divide-gray-300">
-          <h1 className="text-2xl font-semibold">{props.head}</h1>
-          <h2 className="text-xs">{props.info}</h2>
-
-        </div>
-        <Link to={`/Events/${props.slugs}`}><button className="bg-SecGradP text-white hover:font-semibold my-2 text-xs px-4 py-2">Details!</button></Link>
-      </div>
-
+            <Text py='2' className="text-sm">
+              {props?.intro?.length > 50
+                ? `${props?.intro.slice(0, 300)}. . .`  // Limit to 50 characters and append "..."
+                : props?.intro}
+            </Text>
+            <Button variant='solid' color='blue.400'>
+              READ MORE
+            </Button>
+          </CardBody>
+        </Stack>
+      </Card>
     </motion.div>
   )
 }
@@ -303,6 +311,7 @@ import styled, { keyframes, css } from 'styled-components';
 import { Link } from 'react-router-dom';
 import { featurelist } from './Lists/EventList';
 import ImgSource from './ImgSource';
+import { Button, Card, CardBody, CardFooter, Heading, Image, Stack, Text } from "@chakra-ui/react";
 
 export const MarqueR = () => {
   const images = featurelist;
