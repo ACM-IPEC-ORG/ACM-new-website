@@ -167,9 +167,10 @@ export const EveCard = function (props) {
                 ? `${props?.intro.slice(0, 300)}. . .`  // Limit to 50 characters and append "..."
                 : props?.intro}
             </Text>
-            <Button variant='solid' color='blue.400'>
+            <Link to={`/Events/${props.slugs}`}><Button variant='solid' color='blue.400'>
               READ MORE
             </Button>
+            </Link>
           </CardBody>
         </Stack>
       </Card>
