@@ -68,7 +68,7 @@ export const HeadsDList=[
         id:"2",
         img:TriptiS,
         name:"Dr. Tripti Sharma",
-        title:"(Information Technology)",
+        title:"(CSE-DS)",
         facebook:"https://www.facebook.com/tripti.sharma.94849",
         // instagram:"",
         email:"tripti.sharma@ipec.org.in",
