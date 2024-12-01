@@ -145,6 +145,14 @@ export default function Home() {
                                                     )
                                                 })}
                                             </ul>
+                                            {/* point3 */}
+                                            <ul className="list-disc">
+                                                {data.point3.map(d => {
+                                                    return (
+                                                        <li className="xl:text-lg lg:text-lg text-md trasition-colors py-4 font-semibold tracking widest">{d}</li>
+                                                    )
+                                                })}
+                                            </ul>
                                             <div>
 
                                                 {data.date && <p className="xl:text-lg lg:text-lg text-md trasition-colors py-4 font-bold tracking widest">Date: {data.date}</p>}
