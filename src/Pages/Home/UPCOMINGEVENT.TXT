@@ -1,0 +1,68 @@
+{upcome && <section
+                        // ref={targetRef}
+                        className=" h-full">
+                        <div className="sticky grid place-items-center py-16">
+                            <h1 className="xl:text-4xl lg:text-5xl md:text-4xl text-3xl font-semibold text-secondary">Upcoming Event</h1>
+
+                            {UpcomingList.map(data => {
+                                return (
+                                    <div className="grid grid-cols-1 md:grid-cols-2 xl:px-64 lg:px-12 px-12 xl:gap-24 py-10 w-full">
+                                        <UpcomingCard img={data.img} />
+                                        <div className="grid gap-y-12 py-4">
+                                            <div>
+                                                <h1 className="xl:text-3xl underline underline-offset-8 lg:text-3xl text-2xl font-bold trancking-wide">{data.name}</h1>
+                                                <p className={"xl:text-md text-md  trasition-colors py-4 font-regular tracking widest"}>{data.intro}</p>
+
+                                            </div>
+                                                <p className="xl:text-lg lg:text-lg text-md trasition-colors py-4 font-semibold tracking widest">{data.detail}</p>
+                                                <ul className="list-none">
+                                                {data.points.map(d => {
+                                                    return (
+                                                        <li className="xl:text-lg lg:text-lg text-md trasition-colors py-4 font-semibold tracking widest">{d}</li>
+                                                    )
+                                                })}
+                                            </ul>
+                                            {/* //point 2 */}
+                                            <ul className="list-none">
+                                                {data.point2.map(d => {
+                                                    return (
+                                                        <li className="xl:text-lg lg:text-lg text-md trasition-colors py-4 font-semibold tracking widest">{d}</li>
+                                                    )
+                                                })}
+                                            </ul>
+                                            {/* point3 */}
+                                            <ul className="list-none">
+                                                {data.point3.map(d => {
+                                                    return (
+                                                        <li className="xl:text-lg lg:text-lg text-md trasition-colors py-4 font-semibold tracking widest">{d}</li>
+                                                    )
+                                                })}
+                                            </ul>
+                                            <div>
+
+                                                {data.date && <p className="xl:text-lg lg:text-lg text-md trasition-colors py-4 font-bold tracking widest">Date: {data.date}</p>}
+                                                {data.time && <p className="xl:text-lg lg:text-lg text-md trasition-colors py-4 font-bold tracking widest">Time: {data.time}</p>}
+
+                                            </div>
+
+                                            <div>
+                                                <p className={"xl:text-lg lg:text-lg text-md trasition-colors py-4 font-semibold tracking widest leading-3"}>{data.contact}</p>
+                                                <ol className="list-none">
+                                                    {data.cno.map(d => {
+                                                        return (
+                                                            <li className="xl:text-lg lg:text-lg text-md py-4 font-semibold tracking-wider leading-3">{d}</li>
+                                                        )
+                                                    })}
+                                                </ol>
+                                                <a href={data.register}> <motion.button whileHover={{ scale: 1.05 }}
+                                                    whileTap={{ scale: 0.8 }} onClick={handleClick} className="bg-SecGradP hover:font-bold text-sm text-white px-8 py-4">Register Now !</motion.button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )
+                            })
+                            }
+
+
+                        </div>
+                    </section>}
