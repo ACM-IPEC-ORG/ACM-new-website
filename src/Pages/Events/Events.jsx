@@ -36,7 +36,7 @@ export default function Events() {
                 <ul className="grid lg:flex gap-10 justify-center text-xl text-white">
                     {sessionButtons.map(({ name, tag }) => (
                         <motion.button
-                            // key={tag}
+                            key={tag}
                             whileTap={{ scale: 0.9 }}
                             onClick={() => filter(tag)}
                             className={`px-4 py-2 cursor-pointer ${selectedSession === tag ? 'bg-SecGradP text-white' : 'bg-white text-black font-semibold'} hover:scale-110`}
@@ -47,13 +47,11 @@ export default function Events() {
                 </ul>
                 <div>
                     <h1 className="text-center py-4 lg:text-3xl md:text-3xl text-xl tracking-wider font-extrabold">Session {selectedSession.substring(1).replaceAll('_', '-')}</h1>
-                    <div className="grid pt-12 place-items-center">
-                    <ul className="w-10/12 grid grid-cols-2 gap-6">
+                    <ul className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-8 gap-y-6 py-12 justify-center md:px-12 px-0 xl:w-full">
                         {menuItem && menuItem.map((data) => (
-                            <EveCard {...data} />
+                            <EveCard key={data.slugs} {...data} />
                         ))}
                     </ul>
-                    </div>
                 </div>
             </div>
         </div>

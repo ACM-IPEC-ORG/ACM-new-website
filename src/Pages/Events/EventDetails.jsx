@@ -34,7 +34,7 @@ export default function EventDetails(){
         <div>
             <div className="">
                 {/* HERO SECTION */}
-                <div className="grid xl:px-64 lg:px-12 md:px-12 px-12 lg:py-32 lg:grid-cols-2 md:grid-cols-1 grid-cols-1 lg:py-12 py-32 place-items-center h-full Team-Hero overflow-x-hidden gap-12 md:gap-12">
+                <div className="grid xl:px-64 lg:px-12 md:px-12 px-12 lg:py-32 lg:grid-cols-2 md:grid-cols-1 grid-cols-1  py-32 place-items-center h-full Team-Hero overflow-x-hidden gap-12 md:gap-12">
                     <div className="text-lg">
                         <h1 className="text-7xl font-bold text-sky-500 tracking-wide">{heading}</h1>
                         <div className="">

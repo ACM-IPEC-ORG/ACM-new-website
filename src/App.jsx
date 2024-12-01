@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 
@@ -13,20 +13,22 @@ import Gallery from "./Pages/More/Gallery";
 import Loader from "./Pages/More/Preloader";
 
 export default function App() {
-  const [loading, setLoading] = useState(true);
-  useEffect(()=>{
+  const [loading, setLoading] = useState(window.location.pathname === "/");
+  
+  if (window.location.pathname === "/") {
     setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-  },[])
+      setLoading(false)
+    }, 2000)
+  }
+
   const router = createBrowserRouter([
     {
-      path:"/",
-      element:<MainLayout/>,
-      children:[
+      path: "/",
+      element: <MainLayout />,
+      children: [
         {
           path: "/",
-          element: <Home />,
+          element: loading ? <Loader /> : <Home />,
         },
         {
           path:"*",
@@ -81,12 +83,8 @@ export default function App() {
   return (
     
     <div className="App">
-      {loading ? (
-        <Loader />
-      ) : (
-          <RouterProvider router={router} />
-      )}
-      </div>
+      <RouterProvider router={router} />
+    </div>
   )
 }
 

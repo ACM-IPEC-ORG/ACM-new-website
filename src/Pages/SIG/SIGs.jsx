@@ -8,7 +8,6 @@ import Python from "../../assets/Images/sigs/SIG_PYTHON.png";
 import Foundation from "../../assets/Images/sigs/SIG_FOUNDATION.png";
 import Java from "../../assets/Images/sigs/SIG_JAVA.png";
 import sig from "../../assets/Images/club/SIG.png";
-import { Avatar, Card, CardBody, CardHeader, Typography } from "@material-tailwind/react";
 
 export default function SIGs() {
   const sigs = [
@@ -57,32 +56,23 @@ export default function SIGs() {
   ];
 
   return (
-    <div className="grid gap-12 min-h-screen place-items-center px-4 md:px-12 lg:px-24 xl:px-44 py-16 lg:py-32">
-      {/* Intro Section */}
-      <div className="grid place-items-center text-center">
-        <h1 className="font-bold text-lg md:text-xl lg:text-2xl">Choose your Starting Point</h1>
-        <p className="text-sm md:text-base lg:text-lg">
-          Explore our Special Interest Groups (SIGs) and choose the one that aligns with your interests.
-        </p>
+    <div className="grid gap-12 place-items-center px-24 md:px-46 xl:px-44 py-32">
+      <div className="grid place-items-center">
+        <h1 className="font-bold text-xl">Choose your Starting point.</h1>
+        <p className="text-sm">Explore our Special Interest Groups (SIGs) and choose the one that aligns with your interests.</p>
       </div>
-
-      {/* SIG Cards Section */}
-      <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 place-items-center">
+      <div className="grid gap-8 grid-cols-1 md:grid-cols-3 xl:grid-cols-6 place-items-center">
         {sigs.map((item, index) => (
-          <a key={index} target="_blank" rel="noopener noreferrer" href={item.link}>
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="grid gap-2 p-4 rounded-xl max-w-[200px] sm:max-w-[180px] lg:max-w-[240px]"
-            >
-              <img
-                src={item.imgSrc}
-                loading="lazy"
-                className="rounded-2xl w-full object-cover"
-                alt={item.name}
-              />
-              <h2 className="font-bold text-sm md:text-md lg:text-lg">{item.name}</h2>
-              <p className="text-xs lg:text-sm">{item.description}</p>
-            </motion.div>
+          <a target="_blank" href={item.link}><motion.div
+            
+            key={index}
+            whileHover={{ scale: 1.05 }}
+            className="grid gap-2 p-2 rounded-xl"
+          >
+            <img src={item.imgSrc} className="rounded-xl" alt={item.name} />
+            <h2 className="font-bold text-md">{item.name}</h2>
+            <p className="text-xs">{item.description}</p>
+          </motion.div>
           </a>
         ))}
       </div>
