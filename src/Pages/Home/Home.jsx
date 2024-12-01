@@ -91,7 +91,7 @@ export default function Home() {
                         <h1 className="text-lg font-semibold">Welcome to</h1>
                         <h1 className="xl:text-5xl lg:text-5xl md:text-5xl text-4xl py-2 font-bold text-sky-500 tracking-wide">Association For Computing Machinery</h1>
                         <h2 className="text-lg font-semibold">IPEC | Student Chapter</h2>
-                        <p className="text-xs py-8">ACM is a renowned educational and scientific society established in New York in 1947. It connects researchers, educators, and professionals, encourages discourse, and addresses challenges in computing. The IPEC ACM Student Chapter is a representative association that promotes high standards of honor and civic responsibility, cooperation between students, faculty, and administration, and an increased interest in computing. Chartered by ACM, the Chapter operates for educational and scientific purposes to improve students' learning and working environments, promote modern computing, and foster communication among those interested in computing.</p>
+                        <p className="md:text-sm py-8">ACM is a renowned educational and scientific society established in New York in 1947. It connects researchers, educators, and professionals, encourages discourse, and addresses challenges in computing. The IPEC ACM Student Chapter is a representative association that promotes high standards of honor and civic responsibility, cooperation between students, faculty, and administration, and an increased interest in computing. Chartered by ACM, the Chapter operates for educational and scientific purposes to improve students' learning and working environments, promote modern computing, and foster communication among those interested in computing.</p>
                         <div className="flex gap-12">
 
                             <motion.button whileHover={{ scale: 1.05 }}
@@ -102,7 +102,13 @@ export default function Home() {
 
                     </div>
                     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, ease: "easeInOut" }}>
-                        <LazyLoadImage src={HeroImg} loading="lazy" className="hidden xl:block xl:ml-52" draggable="false"></LazyLoadImage>
+                        <img
+                            className="hidden xl:block xl:ml-52 object-cover object-center"
+                            src={HeroImg}
+                            loading="lazy"
+                            alt="HERO image"
+                        />
+                        {/* <LazyLoadImage src={HeroImg} loading="lazy" className="hidden xl:block xl:ml-52" draggable="false"></LazyLoadImage> */}
                     </motion.div>
                 </div>
                 <div id="more">
