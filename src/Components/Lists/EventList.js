@@ -7,6 +7,13 @@ import TechD from "../../assets/Images/Poster/tedchjobs.png";
 import WordsSmith from "../../assets/Images/Poster/word.jpeg";
 import CSSBattle2 from "../../assets/Images/Poster/css-battle2.0.jpg";
 import Deccoding from "../../assets/Images/Poster/deccoding.jpg";
+// session 2024_25
+export const session_2024_25 = [
+  {
+    id: "0",
+    info: "Events for the 2024-25 session are not uploaded yet. Please check back later.",
+  }
+];
 export const session_2021_22 = [
   {
     id: "1",
@@ -344,7 +351,7 @@ export const session_2022_23 = [
       "Time Limits: Participants have a specified time to answer each question.",
       "Fair Play: All participants are expected to maintain the highest ethical standards. Cheating or using external resources is strictly prohibited.",
       "Ranking: Participants will be ranked based on their scores, with the top performers earning recognition and prizes.",
-      "Results: Winners will be announced at the conclusion of the event, celebrating the participants with the keenest eye for logos.",
+      "Results: Winners will be announced at the conclusion of the event, celebrating the participants' keen eye for logos.",
       "Enjoy the Challenge: Logomania 2.0 is an opportunity to showcase your logo recognition skills, compete with like-minded enthusiasts, and celebrate the world of branding.",
     ],
     contact: "If you have any query then contact: ",
@@ -819,7 +826,7 @@ export const allEvent = [
       "Time Limits: Participants have a specified time to answer each question.",
       "Fair Play: All participants are expected to maintain the highest ethical standards. Cheating or using external resources is strictly prohibited.",
       "Ranking: Participants will be ranked based on their scores, with the top performers earning recognition and prizes.",
-      "Results: Winners will be announced at the conclusion of the event, celebrating the participants with the keenest eye for logos.",
+      "Results: Winners will be announced at the conclusion of the event, celebrating the participants' keen eye for logos.",
       "Enjoy the Challenge: Logomania 2.0 is an opportunity to showcase your logo recognition skills, compete with like-minded enthusiasts, and celebrate the world of branding.",
     ],
     contact: "If you have any query then contact: ",

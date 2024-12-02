@@ -53,25 +53,27 @@ export default function Home() {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
-    const gallery = FeatureList.map((data) => {
+    const gallery = FeatureList.map((data, index) => {
         return (
-            <div>
+            <div key={index}>
                 <h1 className="text-2xl font-bold pt-8 pb-4">{data.name}</h1>
                 <div className="grid place-items-center">
                     <div className="xl:w-1/3 md:w-4/5  w-11/12 grid md:grid-cols-3 grid-cols-2 gap-8 place-items-center" onClick={() => setimage(data.img)}>
-                        {data.img.map((d) => {
+                        {data.img.map((d, imgIndex) => {
                             return (
-                                <div style={{ backgroundImage: `url(${d})`, backgroundSize: "cover", backgroundPosition: "center" }} className="md:p-28 p-20" onClick={() => {
-                                    sethidden(true),
+                                <div 
+                                    key={imgIndex}
+                                    style={{ backgroundImage: `url(${d})`, backgroundSize: "cover", backgroundPosition: "center" }} 
+                                    className="md:p-28 p-20" 
+                                    onClick={() => {
+                                        sethidden(true),
                                         handleImage(item, index)
-                                }} />
-
+                                    }} 
+                                />
                             )
-
                         })}
                     </div>
                 </div>
-
             </div>
         )
     })

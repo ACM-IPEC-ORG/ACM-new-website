@@ -186,195 +186,164 @@ export const FoundersList=[
 
 
 // Prime
-import VivekRS from "../../assets/Images/Team/Prime/vivek-raj-singh.jpg"
-import YatinS from "../../assets/Images/Team/Prime/yatin-singhal.jpg"
-import AmanG from "../../assets/Images/Team/Prime/aman-gautam.jpg"
-import KanishkaD from "../../assets/Images/Team/Prime/kanishka-doogra.jpg"
-import AnushkaP from "../../assets/Images/Team/Prime/anushka-purwar.jpg"
-import DiyaG from "../../assets/Images/Team/Prime/Diya-gupta.jpeg"
-import AkshayS from "../../assets/Images/Team/Prime/akshay-singh.jpg"
-import ShikharP from "../../assets/Images/Team/Prime/shikhar-purwar.jpg"
-import TusharP from "../../assets/Images/Team/Prime/tushar-pandey.jpg"
-import AnjaliA from "../../assets/Images/Team/Prime/anjali-arya.jpg"
-import KavyaV from "../../assets/Images/Team/Prime/Kavya-Varshabey.png"
-export const PrimeCMList=[
-    {
-        id:"8",
-        img:VivekRS,
-        name:"Vivek Raj Singh",
-        title:"Chairperson",
-        // facebook:"",
-        instagram:"https://instagram.com/vivek_raj_singh",
-        // twitter:"",
-        linkedin:"https://www.linkedin.com/in/vivek-raj-singh-512a381b8"
-    },
-    {
-        id:"6",
-        img:KavyaV,
-        name:"Kavya Varshaney",
-        title:"Vice Chairperson",
-        // facebook:"",
-        instagram:"https://instagram.com/_kaashii__?igshid=ZDdkNTZiNTM=",
-        // twitter:"",
-        linkedin:"https://www.linkedin.com/in/kavya-varshney-70688422b"
-    },
-    
-    {
-        id:"5",
-        img:AmanG,
-        name:"Aman Gautam",
-        title:"General Secretary",
-        // facebook:"",
-        // instagram:"https://www.instagram.com/ankurkush10/",
-        // twitter:"",
-        linkedin:"https://www.linkedin.com/in/aman-gautam-3s"
-    },
-    
-    {
-        id:"10",
-        img:AnushkaP,
-        name:"Anushka Purwar",
-        title:"Treasurer",
-        facebook:"https://www.facebook.com/anushka.purwar.3?mibextid=ZbWKwL",
-        instagram:"http://www.instagram.com/purwar__anushka",
-        // twitter:"",
-        linkedin:"https://www.linkedin.com/in/anushka-purwar-476273230"
-    },
-    {
-        id:"9",
-        img:KanishkaD,
-        name:"Kanishka Dogra",
-        title:"Membership Chairperson",
-        // facebook:"",
-        instagram:"https://instagram.com/kanishkadogra26",
-        // twitter:"",
-        // linkedin:"https://www.linkedinedin.com/in/jasnidh-kaur-ahuja-ab2164167/"
-    },
-    {
-    
-        id:"11",
-        img:YatinS,
-        name:"Yatin Singhal",
-        title:"WebMaster",
-        // facebook:"",
-        // instagram:"http://instagram.com/mr_prave",
-        // twitter:"",
-        linkedin:"https://www.linkedin.com/in/yatin-singhal-838594201/"
-    },
-    {
-        id:"7",
-        img:AkshayS,
-        name:"Akshay Singh",
-        title:"Technical Head",
-        // facebook:"",
-        github:"https://github.com/Akshay2022Singh",
-        instagram:"https://www.instagram.com/elite2022akshay/",
-        // twitter:"",
-        linkedin:"https://www.linkedin.com/in/akshay-singh-elite/"
-    },
-    {
-        id:"3",
-        img:ShikharP,
-        name:"Shikhar Purwar",
-        title:"Technical Head",
-        // facebook:"",
-        instagram:"https://www.instagram.com/shikhar.purwar/",
-        // twitter:"",
-        linkedin:"https://www.linkedin.com/in/shikhar-purwar-7a58b71bb"
-    },
-    
-    {
-        id:"2",
-        img:DiyaG,
-        name:"Diya Gupta",
-        title:"Event Head",
-        // facebook:"",
-        instagram:"https://www.instagram.com/__miss.gupta__01?igsh=ODA1NTc5OTg5Nw==",
-        // twitter:"",
-        linkedin:"https://www.linkedin.com/in/diya-gupta-a60ab2208/"
-    },
-    
-    {
-        id:"4",
-        img:TusharP,
-        name:"Tushar Pandey",
-        title:"Documentation Head",
-        // facebook:"",
-        // instagram:"https://www.instagram.com/kanupriya__11/",
-        // twitter:"",
-        linkedin:"https://www.linkedin.com/in/tushar-pandey-083495207/"
-    },
-    
-    
-    {
-        id:"1",
-        img:AnjaliA,
-        name:"Anjali Arya",
-        title:"Jont Secretary",
-        // facebook:"",
-        instagram:"https://instagram.com/anj_lii.arya_?igshid=YmMyMTA2M2Y=",
-        // twitter:"",
-        linkedin:"https://www.linkedin.com/in/anjali-arya-886123207"
-    },
-]
-//CMList
-import SupriyaS from "../../assets/Images/Team/core/supriya-srivastava.jpeg"
-import AditiG from "../../assets/Images/Team/core/aditi-garg.jpeg"
-import EtiG from "../../assets/Images/Team/core/eti-garg.jpeg"
-import ManyaT from "../../assets/Images/Team/core/manya-tyagi.jpeg"
-import MridulT from "../../assets/Images/Team/core/mridul.png"
-import ShreyaJ from "../../assets/Images/Team/core/shreya-jain.jpeg"
-import Sumit from "../../assets/Images/Team/core/sumit.jpeg"
-import TanishS from "../../assets/Images/Team/core/tanish-srivastava.jpeg"
-import HimanshuG from "../../assets/Images/Team/core/Himanshu-gupta.jpg"
-import NishitaS from "../../assets/Images/Team/core/Nishita_Srivastava.jpg"
 
-export const CMList=[
+// export const PrimeCMList=[
+//     {
+//         id:"8",
+//         img:VivekRS,
+//         name:"Vivek Raj Singh",
+//         title:"Chairperson",
+//         // facebook:"",
+//         instagram:"https://instagram.com/vivek_raj_singh",
+//         // twitter:"",
+//         linkedin:"https://www.linkedin.com/in/vivek-raj-singh-512a381b8"
+//     },
+//     {
+//         id:"6",
+//         img:KavyaV,
+//         name:"Kavya Varshaney",
+//         title:"Vice Chairperson",
+//         // facebook:"",
+//         instagram:"https://instagram.com/_kaashii__?igshid=ZDdkNTZiNTM=",
+//         // twitter:"",
+//         linkedin:"https://www.linkedin.com/in/kavya-varshney-70688422b"
+//     },
+    
+//     {
+//         id:"5",
+//         img:AmanG,
+//         name:"Aman Gautam",
+//         title:"General Secretary",
+//         // facebook:"",
+//         // instagram:"https://www.instagram.com/ankurkush10/",
+//         // twitter:"",
+//         linkedin:"https://www.linkedin.com/in/aman-gautam-3s"
+//     },
+    
+//     {
+//         id:"10",
+//         img:AnushkaP,
+//         name:"Anushka Purwar",
+//         title:"Treasurer",
+//         facebook:"https://www.facebook.com/anushka.purwar.3?mibextid=ZbWKwL",
+//         instagram:"http://www.instagram.com/purwar__anushka",
+//         // twitter:"",
+//         linkedin:"https://www.linkedin.com/in/anushka-purwar-476273230"
+//     },
+//     {
+//         id:"9",
+//         img:KanishkaD,
+//         name:"Kanishka Dogra",
+//         title:"Membership Chairperson",
+//         // facebook:"",
+//         instagram:"https://instagram.com/kanishkadogra26",
+//         // twitter:"",
+//         // linkedin:"https://www.linkedinedin.com/in/jasnidh-kaur-ahuja-ab2164167/"
+//     },
+//     {
+    
+//         id:"11",
+//         img:YatinS,
+//         name:"Yatin Singhal",
+//         title:"WebMaster",
+//         // facebook:"",
+//         // instagram:"http://instagram.com/mr_prave",
+//         // twitter:"",
+//         linkedin:"https://www.linkedin.com/in/yatin-singhal-838594201/"
+//     },
+//     {
+//         id:"7",
+//         img:AkshayS,
+//         name:"Akshay Singh",
+//         title:"Technical Head",
+//         // facebook:"",
+//         github:"https://github.com/Akshay2022Singh",
+//         instagram:"https://www.instagram.com/elite2022akshay/",
+//         // twitter:"",
+//         linkedin:"https://www.linkedin.com/in/akshay-singh-elite/"
+//     },
+//     {
+//         id:"3",
+//         img:ShikharP,
+//         name:"Shikhar Purwar",
+//         title:"Technical Head",
+//         // facebook:"",
+//         instagram:"https://www.instagram.com/shikhar.purwar/",
+//         // twitter:"",
+//         linkedin:"https://www.linkedin.com/in/shikhar-purwar-7a58b71bb"
+//     },
+    
+//     {
+//         id:"2",
+//         img:DiyaG,
+//         name:"Diya Gupta",
+//         title:"Event Head",
+//         // facebook:"",
+//         instagram:"https://www.instagram.com/__miss.gupta__01?igsh=ODA1NTc5OTg5Nw==",
+//         // twitter:"",
+//         linkedin:"https://www.linkedin.com/in/diya-gupta-a60ab2208/"
+//     },
+    
+//     {
+//         id:"4",
+//         img:TusharP,
+//         name:"Tushar Pandey",
+//         title:"Documentation Head",
+//         // facebook:"",
+//         // instagram:"https://www.instagram.com/kanupriya__11/",
+//         // twitter:"",
+//         linkedin:"https://www.linkedin.com/in/tushar-pandey-083495207/"
+//     },
+    
+    
+//     {
+//         id:"1",
+//         img:AnjaliA,
+//         name:"Anjali Arya",
+//         title:"Jont Secretary",
+//         // facebook:"",
+//         instagram:"https://instagram.com/anj_lii.arya_?igshid=YmMyMTA2M2Y=",
+//         // twitter:"",
+//         linkedin:"https://www.linkedin.com/in/anjali-arya-886123207"
+//     },
+// ]
+//Current PrimeCMList
+import SupriyaS from "../../assets/Images/Team/Prime/supriya-srivastava.jpeg"
+import AditiG from "../../assets/Images/Team/Prime/aditi-garg.jpeg"
+import EtiG from "../../assets/Images/Team/Prime/eti-garg.jpeg"
+import ManyaT from "../../assets/Images/Team/Prime/manya-tyagi.jpeg"
+import MridulT from "../../assets/Images/Team/Prime/mridul.png"
+import ShreyaJ from "../../assets/Images/Team/Prime/shreya-jain.jpeg"
+import Sumit from "../../assets/Images/Team/Prime/sumit.jpeg"
+import TanishS from "../../assets/Images/Team/Prime/tanish-srivastava.jpeg"
+import HimanshuG from "../../assets/Images/Team/Prime/Himanshu-gupta.jpg"
+import NishitaS from "../../assets/Images/Team/Prime/Nishita_Srivastava.jpg"
+export const PrimeCMList=[
     {
         id:"8",
         img:EtiG,
         name:"Eti Garg",
-        title:"Membership Coordinator",
+        title:"Chairperson",
         // facebook:"",
         instagram:"https://instagram.com/5209garg?igshid=ZDdkNTZiNTM=h",
         // twitter:"",
         linkedin:"https://www.linkedin.com/in/eti-garg-a3b18a249"
     },
     {
-        id:"9",
+        id:"6",
         img:TanishS,
         name:"Tanish Srivastava",
-        title:"Membership Coordinator",
+        title:"Vice Chairperson",
         // facebook:"",
         instagram:"https://instagram.com/tanish_sri19?igshid=ZDdkNTZiNTM=",
         // twitter:"",
         linkedin:"https://www.linkedin.com/in/tanish-srivastava-18521423b"
     },
     {
-        id:"11",
-        img:ShreyaJ,
-        name:"Shreya Jain",
-        title:"Documentation Head",
-        // facebook:"",
-        instagram:"https://instagram.com/shreya_jainn01?igshid=ZDdkNTZiNTM=",
-        // twitter:"",
-        linkedin:"https://www.linkedin.com/in/shreya-jain-120b59227/"
-    },
-    {
-        id:"11",
-        img:NishitaS,
-        name:"Nishita Srivastava",
-        title:"Social Media Head",
-        // facebook:"",
-        instagram:"https://www.instagram.com/moon__star__25?igsh=MWEyNGp0NXZ3cGpsdg==",
-        // twitter:"",
-        linkedin:"https://www.linkedin.com/in/nishita-srivastava-110a1124b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-    },
-    {
-        id:"7",
+        id:"5",
         img:AditiG,
         name:"Aditi Garg",
-        title:"SIG PYTHON HEAD",
+        title:"General Secretary",
         // facebook:"",
         mail:"aditigarg1404@gmail.com",
         github:"https://github.com/Akshay2022Singh",
@@ -383,10 +352,20 @@ export const CMList=[
         linkedin:"https://www.linkedin.com/in/aditi-garg-b6270b258"
     },
     {
-        id:"7",
+        id:"10",
+        img:NishitaS,
+        name:"Nishita Srivastava",
+        title:"Treasurer",
+        // facebook:"",
+        instagram:"https://www.instagram.com/moon__star__25?igsh=MWEyNGp0NXZ3cGpsdg==",
+        // twitter:"",
+        linkedin:"https://www.linkedin.com/in/nishita-srivastava-110a1124b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+        id:"9",
         img:HimanshuG,
         name:"Himanshu Gupta",
-        title:"SIG JAVA HEAD",
+        title:"Membership Chairperson",
         // facebook:"",
         // mail:"aditigarg1404@gmail.com",
         // github:"https://github.com/Akshay2022Singh",
@@ -394,17 +373,50 @@ export const CMList=[
         // twitter:"",
         linkedin:"https://www.linkedin.com/in/himanshu-gupta-a74916227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
-   
+    {
+        id:"11",
+        img:Sumit,
+        name:"Sumit Mishra",
+        title:"Webmaster",
+        // facebook:"",
+        instagram:"https://www.instagram.com/su_mit597",
+        // twitter:"",
+        linkedin:"https://www.linkedin.com/in/sumit-mishra-253708269/"
+    },
+    {
+        id:"7",
+        img:MridulT,
+        name:"Mridul Tiwari",
+        title:"Technical Head",
+        // facebook:"",
+        instagram:"https://instagram.com/mridulti",
+        twitter:"https://twitter.com/MridulTi",
+        linkedin:"https://www.linkedin.com/in/mridul-tiwari-001185216/"
+    },
     {
         id:"2",
         img:ManyaT,
         name:"Manya Tyagi",
-        title:"SIG GRAPH HEAD",
+        title:"Event Head",
         // facebook:"",
         instagram:"https://instagram.com/_manya.tyagi_?igshid=ZDdkNTZiNTM=",
         // twitter:"",
         linkedin:"https://www.linkedin.com/in/manya-tyagi"
     },
+    {
+        id:"4",
+        img:ShreyaJ,
+        name:"Shreya Jain",
+        title:"Documentation Head",
+        // facebook:"",
+        instagram:"https://instagram.com/shreya_jainn01?igshid=ZDdkNTZiNTM=",
+        // twitter:"",
+        linkedin:"https://www.linkedin.com/in/shreya-jain-120b59227/"
+    },
+    
+    
+   
+    
     // {
     //     id:"3",
     //     img:"Images/core/shikhar-purwar.jpg",
@@ -426,43 +438,270 @@ export const CMList=[
     //     // twitter:"",
     //     linkedin:"https://www.linkedin.com/in/aman-gautam-3s"
     // },
-    {
-        id:"6",
-        img:Sumit,
-        name:"Sumit Mishra",
-        title:"SIG FOUNDATION HEAD",
-        // facebook:"",
-        instagram:"https://www.instagram.com/su_mit597",
-        // twitter:"",
-        linkedin:"https://www.linkedin.com/in/sumit-mishra-253708269/"
-    },
+    
     
     
     {
-        id:"4",
+        id:"1",
         img:SupriyaS,
         name:"Supriya Srivastava",
-        title:"SIG TECH HEAD",
+        title:"Joint Secretary",
         // facebook:"",
         instagram:"https://instagram.com/supriyasrivastavaa?igshid=ZDdkNTZiNTM=",
         // twitter:"",
         linkedin:"https://www.linkedin.com/in/sup-sri"
     },
+    
+    
+    
+    
+]
+//New CM List
+import Abhay from "../../assets/Images/Team/core/Abhay_Sharma.jpg";
+import Aditya from "../../assets/Images/Team/core/Aditya_Gupta.jpg";
+import Anjali from "../../assets/Images/Team/core/Anjali_Bahukhandi.jpg";
+import Ankit from "../../assets/Images/Team/core/Ankit_Vishwakarma.jpg";
+import ishika from "../../assets/Images/Team/core/ishika.jpeg";
+import Kaavyansh from "../../assets/Images/Team/core/Kaavyansh_Rekhi.jpg";
+import Kritika from "../../assets/Images/Team/core/Kritika_kashyap.jpg";
+// import Rahul from "../../assets/Images/Team/core/Rahul_Kargeti.HEIC";
+// import Samarpita from "../../assets/Images/Team/core/Samarpita_Das.jpg";
+import Saurabh from "../../assets/Images/Team/core/Saurabh_Shukla.jpg"; 
+import Shoyal from "../../assets/Images/Team/core/Shoyal_Haldar.jpg";
+import Soham from "../../assets/Images/Team/core/Soham_Sinha.jpg";
+
+export const CMList=[
     {
         id:"1",
-        img:MridulT,
-        name:"Mridul Tiwari",
+        img:Kritika,
+        name:"Kritika kashyap",
+        title:"Membership Coordinator",
+        // facebook:"",
+        instagram:"https://www.instagram.com/kashyap_kriti.26",
+        // twitter:"",
+        linkedin:"https://www.linkedin.com/in/kritika-kashyap-93a40a275"
+    },
+    {
+        id:"2",
+        img:Aditya,
+        name:"Aditya Gupta",
+        title:"Membership Coordinator",
+        // facebook:"",
+        instagram:"https://www.instagram.com/here_aadii0916",
+        // twitter:"",
+        linkedin:"https://www.linkedin.com/in/aditya-gupta-16b714331"
+    },
+    {
+        id:"3",
+        img:Abhay,
+        name:"Abhay Sharma",
+        title:"Documentation Head",
+        // facebook:"",
+        instagram:"https://www.instagram.com/_abhay_sharma._",
+        // twitter:"",
+        linkedin:"https://www.linkedin.com/in/abhay-sharma-43abbb2a8"
+    },
+    {
+        id:"4",
+        img:Ankit,
+        name:"Ankit Vishwakarma",
+        title:"Documentation Head",
+        // facebook:"",
+        instagram:"https://www.instagram.com/ankit_vishwakarma.28",
+        // twitter:"",
+        linkedin:"https://www.linkedin.com/in/ankit-vishwakarma-95b7a8322"
+    },
+    {
+        id:"5",
+        img:ishika,
+        name:"Ishika",
+        title:"Social Media Head",
+        // facebook:"",
+        instagram:"https://www.instagram.com/_ishika023",
+        // twitter:"",
+        linkedin:"https://www.linkedin.com/in/ishika-b1651430b"
+    },
+    {
+        id:"6",
+        img:Saurabh,
+        name:"Saurabh Shukla",
+        title:"Social Media Head",
+        // facebook:"",
+        instagram:"https://www.instagram.com/saurabh_shukla_18",
+        // twitter:"",
+        linkedin:"https://www.linkedin.com/in/saurabh-shukla-a54102228/ "
+    },
+    {
+        id:"7",
+        img:Shoyal,
+        name:"Shoyal Haldar",
+        title:"SIG PYTHON HEAD",
+        // facebook:"",
+        mail:"shoyalhaldar098@gmail.com",
+        github:"https://github.com/Akshay2022Singh",
+        instagram:"https://www.instagram.com/o3_117_shoyal",
+        // twitter:"",
+        linkedin:"https://www.linkedin.com/in/shoyal-halder-606705308"
+    },
+    {
+        id:"8",
+        // img:Samarpita,
+        name:"Samarpita Das",
+        title:"SIG JAVA HEAD",
+        // github:"https://github.com/Akshay2022Singh",
+        instagram:"https://www.instagram.com/samarpitadas_",
+        linkedin:"https://www.linkedin.com/in/samarpitabdas"
+    },
+   
+    {
+        id:"9",
+        img:Kaavyansh,
+        name:"Kaavyansh Rekhi",
+        title:"SIG GRAPH HEAD",
+        // facebook:"",
+        instagram:"https://www.instagram.com/kaavyansh_rekhi",
+        // twitter:"",
+        linkedin:"https://www.linkedin.com/in/kaavyansh-rekhi-bb528929b"
+    },
+    {
+        id:"10",
+        // img:Rahul,
+        name:"Rahul Kargeti",
+        title:"SIG FOUNDATION HEAD",
+        // facebook:"",
+        instagram:"https://www.instagram.com/rahul_kargeti",
+        // twitter:"",
+        linkedin:"https://www.linkedin.com/in/rahul-kargeti-788566294"
+    },
+    
+    
+    {
+        id:"11",
+        img:Anjali,
+        name:"Anjali Bahukhandi",
+        title:"SIG TECH HEAD",
+        // facebook:"",
+        instagram:"https://www.instagram.com/anj_h3",
+        // twitter:"",
+        linkedin:"https://www.linkedin.com/in/anjali-bahukhandi-24b45b248"
+    },
+    {
+        id:"12",
+        img:Soham,
+        name:"Soham Sinha",
         title:"SIG WEB HEAD",
         // facebook:"",
-        instagram:"https://instagram.com/mridulti",
-        twitter:"https://twitter.com/MridulTi",
-        linkedin:"https://www.linkedin.com/in/mridul-tiwari-001185216/"
+        instagram:"https://www.instagram.com/skaiwalker321",
+        // twitter:"https://twitter.com/MridulTi",
+        linkedin:"https://www.linkedin.com/in/soham-sinha-pf"
     },
     
     
     
 ]
-// Team 2022
+//Team 2024
+import VivekRS from "../../assets/Images/2024/vivek-raj-singh.jpg"
+import YatinS from "../../assets/Images/2024/yatin-singhal.jpg"
+import AmanG from "../../assets/Images/2024/aman-gautam.jpg"
+import KanishkaD from "../../assets/Images/2024/kanishka-doogra.jpg"
+import AnushkaP from "../../assets/Images/2024/anushka-purwar.jpg"
+import DiyaG from "../../assets/Images/2024/Diya-gupta.jpeg"
+import AkshayS from "../../assets/Images/2024/akshay-singh.jpg"
+import ShikharP from "../../assets/Images/2024/shikhar-purwar.jpg"
+import TusharP from "../../assets/Images/2024/tushar-pandey.jpg"
+import AnjaliA from "../../assets/Images/2024/anjali-arya.jpg"
+import KavyaV from "../../assets/Images/2024/Kavya-Varshabey.png"
+
+
+export const Team2024List = [
+    {
+        id:"1",
+        img:VivekRS,
+        name:"Vivek Raj Singh",
+        title:"Chairperson",
+        instagram:"https://instagram.com/vivek_raj_singh",
+        linkedin:"https://www.linkedin.com/in/vivek-raj-singh-512a381b8"
+    },
+    {
+        id:"2",
+        img:KavyaV,
+        name:"Kavya Varshaney",
+        title:"Vice Chairperson",
+        instagram:"https://instagram.com/_kaashii__?igshid=ZDdkNTZiNTM=",
+        linkedin:"https://www.linkedin.com/in/kavya-varshney-70688422b"
+    },
+    {
+        id:"3",
+        img:AmanG,
+        name:"Aman Gautam",
+        title:"General Secretary",
+        linkedin:"https://www.linkedin.com/in/aman-gautam-3s"
+    },
+    {
+        id:"4",
+        img:AnushkaP,
+        name:"Anushka Purwar",
+        title:"Treasurer",
+        facebook:"https://www.facebook.com/anushka.purwar.3?mibextid=ZbWKwL",
+        instagram:"http://www.instagram.com/purwar__anushka",
+        linkedin:"https://www.linkedin.com/in/anushka-purwar-476273230"
+    },
+    {
+        id:"5",
+        img:KanishkaD,
+        name:"Kanishka Dogra",
+        title:"Membership Chairperson",
+        instagram:"https://instagram.com/kanishkadogra26"
+    },
+    {
+        id:"6",
+        img:YatinS,
+        name:"Yatin Singhal",
+        title:"WebMaster",
+        linkedin:"https://www.linkedin.com/in/yatin-singhal-838594201/"
+    },
+    {
+        id:"7",
+        img:AkshayS,
+        name:"Akshay Singh",
+        title:"Technical Head",
+        github:"https://github.com/Akshay2022Singh",
+        instagram:"https://www.instagram.com/elite2022akshay/",
+        linkedin:"https://www.linkedin.com/in/akshay-singh-elite/"
+    },
+    {
+        id:"8",
+        img:ShikharP,
+        name:"Shikhar Purwar",
+        title:"Technical Head",
+        instagram:"https://www.instagram.com/shikhar.purwar/",
+        linkedin:"https://www.linkedin.com/in/shikhar-purwar-7a58b71bb"
+    },
+    {
+        id:"9",
+        img:DiyaG,
+        name:"Diya Gupta",
+        title:"Event Head",
+        instagram:"https://www.instagram.com/__miss.gupta__01?igsh=ODA1NTc5OTg5Nw==",
+        linkedin:"https://www.linkedin.com/in/diya-gupta-a60ab2208/"
+    },
+    {
+        id:"10",
+        img:TusharP,
+        name:"Tushar Pandey",
+        title:"Documentation Head",
+        linkedin:"https://www.linkedin.com/in/tushar-pandey-083495207/"
+    },
+    {
+        id:"11",
+        img:AnjaliA,
+        name:"Anjali Arya",
+        title:"Joint Secretary",
+        instagram:"https://instagram.com/anj_lii.arya_?igshid=YmMyMTA2M2Y=",
+        linkedin:"https://www.linkedin.com/in/anjali-arya-886123207"
+    }
+]
+// Team 2023
 import AnjaliM from "../../assets/Images/2023/anjali-mathur.jpg"
 import AtifM from "../../assets/Images/2023/Atif.jpg"
 import PK from "../../assets/Images/2023/pk.jpeg"

@@ -1,6 +1,6 @@
 import { useScroll, useTransform } from "framer-motion";
 import { CMCard, Founder, HeadD } from "../../Components/Cards";
-import { FoundersList, Team2022List, Team2023List } from "../../Components/Lists/TeamList";
+import { FoundersList, Team2022List, Team2023List, Team2024List } from "../../Components/Lists/TeamList";
 import FOUNDER from "../../assets/Images/club/foundersteam.webp"
 import { motion } from "framer-motion";
 import "../Teams/Team.css"
@@ -34,6 +34,13 @@ export default function Founders(){
         }
     }
     const T2023=Team2023List.map(ele=>{
+        return(
+            <CMCard
+            {...ele}
+            />
+        )
+    })
+    const T2024=Team2024List.map(ele=>{
         return(
             <CMCard
             {...ele}
@@ -88,6 +95,15 @@ export default function Founders(){
                     <div className="grid place-items-center">
                         <div className="flex flex-wrap xl:w-11/12 scale-75 px-32 w-11/12 justify-center gap-12">
                             {T2023}
+                        </div>
+                    </div>
+                </div>
+                {/* TEAM 2024 */}
+                <div className="text-center py-12">
+                    <h1 className="text-5xl font-bold">TEAM 2024</h1>
+                    <div className="grid place-items-center">
+                        <div className="flex flex-wrap xl:w-11/12 scale-75 px-32 w-11/12 justify-center gap-12">
+                            {T2024}
                         </div>
                     </div>
                 </div>

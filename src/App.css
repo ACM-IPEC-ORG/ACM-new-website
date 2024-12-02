@@ -1,0 +1,11 @@
+/* .dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+  min-height: 100vh;
+} */
+
+/* Ensure the theme applies to the entire app */
+body {
+  margin: 0;
+  padding: 0;
+}

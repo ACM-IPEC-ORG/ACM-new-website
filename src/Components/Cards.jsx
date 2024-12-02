@@ -128,9 +128,9 @@ export const SyllCard = function (props) {
 export const EveCard = function (props) {
   return (
     <motion.div 
-      className="relative flex flex-col h-full rounded-lg overflow-hidden shadow-lg bg-white w-[350px]"
+      className="relative flex flex-col h-full rounded-lg overflow-hidden shadow-lg bg-white w-[350px] hover:shadow-xl"
       whileHover={{ scale: 1.02 }} 
-      transition={{ ease: "easeIn" }}
+      transition={{ ease: "easeIn", duration: 0.2 }}
     >
       {/* Image Container with Overlay */}
       <div 
@@ -142,13 +142,13 @@ export const EveCard = function (props) {
           backgroundRepeat: "no-repeat",
           height: "250px",
           width: "100%",
-          backgroundColor: "#f8f8f8"
+          backgroundColor: "#f3f4f6"
         }}
       >
-        {/* Dark overlay - appears on hover */}
-        <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        {/* Dark overlay - made lighter for better contrast */}
+        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         
-        {/* Info text overlay - appears on hover */}
+        {/* Info text overlay */}
         <div className="absolute inset-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <p className="text-sm text-white p-4">
             {props.info}
@@ -156,9 +156,9 @@ export const EveCard = function (props) {
         </div>
       </div>
       
-      {/* Title and Button Container - Fixed at bottom */}
+      {/* Title and Button Container */}
       <div className="p-4 flex flex-col">
-        <h1 className="text-xl font-semibold mb-4">{props.head}</h1>
+        <h1 className="text-xl font-semibold mb-4 text-gray-800">{props.head}</h1>
         <Link to={`/Events/${props.slugs}`}>
           <button className="w-full bg-SecGradP text-white hover:font-semibold px-4 py-2 rounded">
             Details

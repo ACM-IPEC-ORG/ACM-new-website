@@ -1,110 +1,110 @@
 import React, { useState } from "react";
-import { FaBars, FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaBars, FaTimes, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import "./Navbar.css"
 import ACMLOGO from "../../assets/Images/logos/acmlogo.png"
-// import {FaInstagram,FaFacebookF,FaTwitter} from "react-icons/fa"
 import { Link } from "react-router-dom";
-import { RxOpacity } from "react-icons/rx";
+import { motion, AnimatePresence } from "framer-motion";
 
-export default function Navbar(){
-    const [navOpen,setNavOpen]=useState(false)
-    // function handleContact(){
-    //     document.getElementById("contact").scrollIntoView("smooth","start")
-    // }
-    return(
-        
-        <div className="nav">
-            <div className="nav-container py-24">
-                <div className="navbar items-center">
-                    <Link to="/" onClick={()=>setNavOpen(false)}><div className="px-16 rounded-full aspect-video" style={{
-                        backgroundImage:`url(${ACMLOGO})`,
-                        backgroundSize:"contain",
-                        backgroundRepeat:"no-repeat",
-                        backgroundPosition:"center",
-                    }}></div></Link>
-                    <div className="menu-toggle" onClick={()=>setNavOpen(!navOpen)}>
-                        <div className={navOpen?"hamBox hamBoxOpen":"hamBox"}>
-                            <span className={navOpen?"lineTop spin":"lineTop"}></span>
-                            <span className={navOpen?"lineBottom spin":"lineBottom"}></span>
-                        </div>
-                    </div>
-                </div>
-                <div className="nav-overlay shadow-lg" style={{
-                    top:navOpen?"0":"-100%",
-                    transitionDelay:navOpen?"0.1s":"0s"
-                }}>
-                    <ul className="nav-links ">
-                        
-                        <li className="nav-items">
-                            <Link to="/SIG" className="nav-text hover:underline underline-offset-4"
-                            onClick={()=>setNavOpen(!navOpen)}style={{
-                                top:navOpen? "0":"120px",
-                                transitionDelay:navOpen?"0.5s":"0s"
-                            }}
-                            >SIGS</Link>
-                            <div className="nav-items-wrapper"></div>
-                        </li>
-                        <li className="nav-items">
-                            <Link to="/Events" className="nav-text hover:underline underline-offset-4"
-                            onClick={()=>setNavOpen(!navOpen)}style={{
-                                top:navOpen? "0":"120px",
-                                transitionDelay:navOpen?"0.5s":"0s"
-                            }}
-                            >EVENTS</Link>
-                            <div className="nav-items-wrapper"></div>
-                        </li>
-                        <li className="nav-items">
-                            <Link to="/Teams" className="nav-text hover:underline underline-offset-4"
-                            onClick={()=>setNavOpen(!navOpen)}style={{
-                                top:navOpen? "0":"120px",
-                                transitionDelay:navOpen?"0.5s":"0s"
-                            }}
-                            >TEAMS</Link>
-                            <div className="nav-items-wrapper"></div>
-                        </li>
-                        <li className="nav-items">
-                            <Link to="/Founders" className="nav-text hover:underline underline-offset-4"
-                            onClick={()=>setNavOpen(!navOpen)}
-                            style={{
-                                top:navOpen? "0":"120px",
-                                transitionDelay:navOpen?"0.5s":"0s"
-                            }}
-                            >FOUNDERS</Link>
-                            <div className="nav-items-wrapper"></div>
-                        </li>
-                              
-                    </ul>
-                    <div className="nav-footer">
-                        <div className="location">
-                            <div className="nav-social-media">
-                                <ul>
-                                <li><a href="https://www.linkedin.com/company/ipec-acm-chapter/"
-                                    style={{
-                                        bottom:navOpen?"0":"-20px",
-                                        opacity:navOpen?"1":"0",
-                                        transitionDelay:navOpen?"0.5s":"0"
-                                    }}
-                                    ><FaLinkedin/></a></li>
-                                    <li><a href="https://www.instagram.com/ipec_acm_chapter/"
-                                    style={{
-                                        bottom:navOpen?"0":"-20px",
-                                        opacity:navOpen?"1":"0",
-                                        transitionDelay:navOpen?"0.5s":"0"
-                                    }}
-                                    ><FaInstagram/></a></li>
-                                    <li><a href="https://www.facebook.com/IpecACM/"
-                                    style={{
-                                        bottom:navOpen?"0":"-20px",
-                                        opacity:navOpen?"1":"0",
-                                        transitionDelay:navOpen?"0.5s":"0"
-                                    }}
-                                    ><FaFacebook/></a></li>
-                                </ul>
+export default function Navbar() {
+    const [navOpen, setNavOpen] = useState(false);
+
+    return (
+        <>
+            {/* Menu Toggle Button */}
+            <button 
+                className="fixed top-4 right-4 z-50 p-2 rounded-md bg-white shadow-md text-gray-800 hover:bg-gray-100"
+                onClick={() => setNavOpen(!navOpen)}
+            >
+                {navOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+            </button>
+
+            {/* Animated Box Navbar */}
+            <AnimatePresence>
+                {navOpen && (
+                    <motion.div 
+                        initial={{ opacity: 0, scale: 0, x: "50%", y: "-50%" }}
+                        animate={{ opacity: 1, scale: 1, x: "0%", y: "0%" }}
+                        exit={{ opacity: 0, scale: 0, x: "50%", y: "-50%" }}
+                        transition={{ duration: 0.3, ease: "easeOut" }}
+                        className="fixed top-4 right-4 bg-white rounded-lg shadow-2xl z-40 w-48 p-4"
+                    >
+                        {/* Logo */}
+                        <Link to="/" onClick={() => setNavOpen(false)}>
+                            <div className="p-2 mb-4">
+                                <div className="w-32 mx-auto aspect-video rounded-full" style={{
+                                    backgroundImage: `url(${ACMLOGO})`,
+                                    backgroundSize: "contain",
+                                    backgroundRepeat: "no-repeat",
+                                    backgroundPosition: "center",
+                                }}></div>
+                            </div>
+                        </Link>
+
+                        {/* Navigation Links */}
+                        <nav className="px-2">
+                            <ul className="space-y-2">
+                                <NavItem to="/" onClick={() => setNavOpen(false)}>HOME</NavItem>
+                                <NavItem to="/SIG" onClick={() => setNavOpen(false)}>SIGS</NavItem>
+                                <NavItem to="/Events" onClick={() => setNavOpen(false)}>EVENTS</NavItem>
+                                <NavItem to="/Teams" onClick={() => setNavOpen(false)}>TEAMS</NavItem>
+                                <NavItem to="/Founders" onClick={() => setNavOpen(false)}>FOUNDERS</NavItem>
+                            </ul>
+                        </nav>
+
+                        {/* Social Media Links */}
+                        <div className="mt-4 px-2">
+                            <div className="flex justify-center space-x-6 text-gray-600">
+                                <SocialLink href="https://www.linkedin.com/company/ipec-acm-chapter/">
+                                    <FaLinkedin size={20} />
+                                </SocialLink>
+                                <SocialLink href="https://www.instagram.com/ipec_acm_chapter/">
+                                    <FaInstagram size={20} />
+                                </SocialLink>
+                                <SocialLink href="https://www.facebook.com/IpecACM/">
+                                    <FaFacebook size={20} />
+                                </SocialLink>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    )
+                    </motion.div>
+                )}
+            </AnimatePresence>
+
+            {/* Overlay */}
+            <AnimatePresence>
+                {navOpen && (
+                    <motion.div 
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="fixed inset-0 bg-black bg-opacity-50 z-30"
+                        onClick={() => setNavOpen(false)}
+                    />
+                )}
+            </AnimatePresence>
+        </>
+    );
 }
+
+// Helper Components
+const NavItem = ({ children, to, onClick }) => (
+    <li>
+        <Link 
+            to={to}
+            onClick={onClick}
+            className="block py-2 px-4 text-gray-800 hover:bg-gray-100 rounded-md transition-colors duration-200 text-sm"
+        >
+            {children}
+        </Link>
+    </li>
+);
+
+const SocialLink = ({ children, href }) => (
+    <a 
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-gray-900 transition-colors duration-200"
+    >
+        {children}
+    </a>
+);
