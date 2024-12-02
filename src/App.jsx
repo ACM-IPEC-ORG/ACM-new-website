@@ -1,7 +1,6 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./Pages/Home/Home";
-
 import MainLayout from "./Pages/More/MainLayout";
 import SIGs from "./Pages/SIG/SIGs";
 import Teams from "./Pages/Teams/Teams";
@@ -11,15 +10,22 @@ import Events from "./Pages/Events/Events.jsx";
 import EventDetails from "./Pages/Events/EventDetails";
 import Gallery from "./Pages/More/Gallery";
 import Loader from "./Pages/More/Preloader";
+import "./App.css";
 
 export default function App() {
-  const [loading, setLoading] = useState(window.location.pathname === "/");
+  const [loading, setLoading] = useState(true);
   
-  if (window.location.pathname === "/") {
-    setTimeout(() => {
-      setLoading(false)
-    }, 2000)
-  }
+  useEffect(() => {
+    // Only show loader on fresh page load/refresh
+    if (performance.navigation.type === 1 || !sessionStorage.getItem('firstLoad')) {
+      sessionStorage.setItem('firstLoad', 'true');
+      setTimeout(() => {
+        setLoading(false);
+      }, 2000);
+    } else {
+      setLoading(false);
+    }
+  }, []);
 
   const router = createBrowserRouter([
     {
@@ -31,60 +37,44 @@ export default function App() {
           element: loading ? <Loader /> : <Home />,
         },
         {
-          path:"*",
-          element:<Error/>
+          path: "*",
+          element: loading ? <Loader /> : <Error />,
         },
         {
-          path:"/SIG",
-          element:<SIGs/>
+          path: "/SIG",
+          element: loading ? <Loader /> : <SIGs />,
         },
         {
-            path:"/SIG",
-            children:[
-              {
-                
-                path:"/SIG/:Slugs",
-                element:<SIGDetails/>
-              }
-            ]
-          },
-        {
-          path:"/Events",
-          element:<Events/>
+          path: "/SIG/:Slugs",
+          element: loading ? <Loader /> : <SIGDetails />,
         },
         {
-          path:"/Events",
-          children:[
-            {
-              
-              path:"/Events/:Slugs",
-              element:<EventDetails/>
-            }
-          ]
+          path: "/Events",
+          element: loading ? <Loader /> : <Events />,
         },
         {
-          path:"/Teams",
-          element:<Teams/>
+          path: "/Events/:Slugs",
+          element: loading ? <Loader /> : <EventDetails />,
         },
         {
-          path:"/Gallery",
-          element:<Gallery/>
+          path: "/Teams",
+          element: loading ? <Loader /> : <Teams />,
         },
         {
-          path:"/Founders",
-          element :<Founders/>
+          path: "/Gallery",
+          element: loading ? <Loader /> : <Gallery />,
+        },
+        {
+          path: "/Founders",
+          element: loading ? <Loader /> : <Founders />,
         }
       ]
     },
-    
-
-  ])
+  ]);
 
   return (
-    
-    <div className="App">
+    <div className="App bg-white text-gray-800">
       <RouterProvider router={router} />
     </div>
-  )
+  );
 }
-
