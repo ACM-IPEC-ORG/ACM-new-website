@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { LuMenu } from "react-icons/lu";
+import { MdOutlineClose } from "react-icons/md";
 import { FaBars, FaTimes, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import "./Navbar.css"
 import ACMLOGO from "../../assets/Images/logos/acmlogo.png"
@@ -12,10 +14,10 @@ export default function Navbar() {
         <>
             {/* Menu Toggle Button */}
             <button 
-                className="fixed top-4 right-4 z-50 p-2 rounded-md bg-white shadow-md text-gray-800 hover:bg-gray-100"
+                className={`fixed top-4 right-4 z-50 p-5 rounded-full ${navOpen?"bg-white":"bg-primary/80 text-white hover:text-black shadow-md"}  text-gray-800 hover:bg-gray-100`}
                 onClick={() => setNavOpen(!navOpen)}
             >
-                {navOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+                {navOpen ? <MdOutlineClose size={24} /> : <LuMenu size={24} />}
             </button>
 
             {/* Animated Box Navbar */}
@@ -26,7 +28,7 @@ export default function Navbar() {
                         animate={{ opacity: 1, scale: 1, x: "0%", y: "0%" }}
                         exit={{ opacity: 0, scale: 0, x: "50%", y: "-50%" }}
                         transition={{ duration: 0.3, ease: "easeOut" }}
-                        className="fixed top-4 right-4 bg-white rounded-lg shadow-2xl z-40 w-48 p-4"
+                        className="fixed top-4 right-4 bg-white rounded-lg shadow-2xl z-40 w-64 p-4"
                     >
                         {/* Logo */}
                         <Link to="/" onClick={() => setNavOpen(false)}>
@@ -76,7 +78,7 @@ export default function Navbar() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        className="fixed inset-0 bg-black bg-opacity-50 z-30"
+                        className="fixed inset-0 bg-black backdrop-blur-sm bg-opacity-50 z-30"
                         onClick={() => setNavOpen(false)}
                     />
                 )}
@@ -91,7 +93,7 @@ const NavItem = ({ children, to, onClick }) => (
         <Link 
             to={to}
             onClick={onClick}
-            className="block py-2 px-4 text-gray-800 hover:bg-gray-100 rounded-md transition-colors duration-200 text-sm"
+            className="block py-2 px-4 text-gray-800 hover:bg-secondary/10 hover:font-semibold rounded-md transition-colors duration-200 text-sm"
         >
             {children}
         </Link>
@@ -103,7 +105,7 @@ const SocialLink = ({ children, href }) => (
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="hover:text-gray-900 transition-colors duration-200"
+        className="hover:text-primary transition-colors duration-200"
     >
         {children}
     </a>

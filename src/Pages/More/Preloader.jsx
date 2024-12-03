@@ -6,7 +6,7 @@ function Loader() {
     
   return (
     <div
-      className="h-screen w-screen text-white font-bold flex justify-center items-center bg-white"
+      className="h-screen w-screen fixed z-50 text-white font-bold flex justify-center items-center bg-white"
     >
       <div>
         <svg

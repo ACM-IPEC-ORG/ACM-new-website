@@ -5,17 +5,7 @@ import TanyaS from "../../assets/Images/Team/Teacher/Tanya_Sharma.jpeg"
 import PushpanjaliC from "../../assets/Images/Team/Teacher/Pushpanjali_Chandra.jpeg"
 export const ConveyersList=[
     
-    {
-        id:"2",
-        img:TriptiS,
-        name:"Dr. Tripti Sharma",
-        // title:"",
-        facebook:"https://www.facebook.com/tripti.sharma.94849",
-        // instagram:"",
-        email:"tripti.sharma@ipec.org.in",
-        twitter:"",
-        // linkedin:"https://acm.ipec.org.in/team.html#"
-    },
+    
     // {
     //     id:"3",
     //     img:MonikaS,
@@ -73,6 +63,17 @@ export const HeadsDList=[
         // instagram:"",
         // twitter:"",
         // linkedin:"https://www.linkedinedin.com/in/designkarta"
+    },
+    {
+        id:"2",
+        img:TriptiS,
+        name:"Dr. Tripti Sharma",
+        title:"(Data Science)",
+        // facebook:"https://www.facebook.com/tripti.sharma.94849",
+        // instagram:"",
+        email:"tripti.sharma@ipec.org.in",
+        // twitter:"",
+        // linkedin:"https://acm.ipec.org.in/team.html#"
     },
 ]
 // Founders
@@ -464,8 +465,8 @@ import Ankit from "../../assets/Images/Team/core/Ankit_Vishwakarma.jpg";
 import ishika from "../../assets/Images/Team/core/ishika.jpeg";
 import Kaavyansh from "../../assets/Images/Team/core/Kaavyansh_Rekhi.jpg";
 import Kritika from "../../assets/Images/Team/core/Kritika_kashyap.jpg";
-// import Rahul from "../../assets/Images/Team/core/Rahul_Kargeti.HEIC";
-// import Samarpita from "../../assets/Images/Team/core/Samarpita_Das.jpg";
+import Rahul_Kargeti from "../../assets/Images/Team/core/Rahul_Kargeti.jpg";
+import Samarpita_Das from "../../assets/Images/Team/core/Samarpita_Das.jpg";
 import Saurabh from "../../assets/Images/Team/core/Saurabh_Shukla.jpg"; 
 import Shoyal from "../../assets/Images/Team/core/Shoyal_Haldar.jpg";
 import Soham from "../../assets/Images/Team/core/Soham_Sinha.jpg";
@@ -545,7 +546,7 @@ export const CMList=[
     },
     {
         id:"8",
-        // img:Samarpita,
+        img:Samarpita_Das,
         name:"Samarpita Das",
         title:"SIG JAVA HEAD",
         // github:"https://github.com/Akshay2022Singh",
@@ -565,7 +566,7 @@ export const CMList=[
     },
     {
         id:"10",
-        // img:Rahul,
+        img:Rahul_Kargeti,
         name:"Rahul Kargeti",
         title:"SIG FOUNDATION HEAD",
         // facebook:"",

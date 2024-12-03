@@ -12,7 +12,7 @@ export const HeadD = function (props) {
     <motion.div
       whileHover={{ scale: 1.1 }} onHoverStart={() => seta(1)} onHoverEnd={() => seta(0)}
       className="grid grid-flow-row w-42 place-items-center p-2">
-      <div className="bg-gray-500 overflow-hidden p-24 border border-48 border-sky-400 rounded-full shadow-2xl relative">
+      <div className="bg-gray-500 overflow-hidden p-16 border border-48 border-sky-400 rounded-full shadow-2xl relative">
         <LazyLoadImage
 
           src={props.img}
@@ -22,8 +22,8 @@ export const HeadD = function (props) {
         />
       </div>
       <div className="py-2 text-center">
-        <h1 className="text-lg font-semibold">{props.name}</h1>
-        <h1 className="text-md text-gray-400">{props.title}</h1>
+        <h1 className="text-md font-semibold">{props.name}</h1>
+        <h1 className="text-xs text-gray-400">{props.title}</h1>
       </div>
       <div
         className="grid grid-flow-col text-secondary justify-center gap-4 py-2" style={{ opacity: a }}>
@@ -133,18 +133,7 @@ export const EveCard = function (props) {
       transition={{ ease: "easeIn", duration: 0.2 }}
     >
       {/* Image Container with Overlay */}
-      <div 
-        className="w-full relative group"
-        style={{
-          backgroundImage: `url(${props.img})`,
-          backgroundSize: "100% 100%",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          height: "250px",
-          width: "100%",
-          backgroundColor: "#f3f4f6"
-        }}
-      >
+      <img src={props.img} className="object-cover aspect-square h-72 object-top"/>
         {/* Dark overlay - made lighter for better contrast */}
         <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         
@@ -154,7 +143,6 @@ export const EveCard = function (props) {
             {props.info}
           </p>
         </div>
-      </div>
       
       {/* Title and Button Container */}
       <div className="p-4 flex flex-col">

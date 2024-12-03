@@ -76,12 +76,12 @@ export default function Teams() {
                 </motion.div>
                 
                 {/* Head of Department */}
-                <div className="grid xl:grid-cols-2 lg:grid-cols-1 xl:px-64 lg:px-10 pt-12">
+                <div className="grid xl:grid-cols-2 gap-0 lg:grid-cols-1 xl:px-64 lg:px-10 pt-12">
                     <div className="xl:w-11/12 md:px-24 px-12 lg:text-center">
                         <h1 className="text-2xl py-4 font-semibold">Head of Department</h1>
                         <p className="text-xs lg:text-justify">The Heads of Department are experienced faculty members who play a crucial role in guiding and mentoring students in their respective fields of study. They are responsible for creating a conducive learning environment and imparting knowledge to the students. The Heads of Departments collaborate with other faculty members and the administration to ensure the smooth functioning of the institute.</p>
                     </div>
-                    <div className="grid md:grid-flow-col scale-75 md:grid-cols-2 grid-cols-1 place-items-center">
+                    <div className="grid grid-cols-1 md:grid-cols-3  place-items-center">
                         {HEADsD}
                     </div>
                 </div>
@@ -94,7 +94,7 @@ export default function Teams() {
                         <h1 className="text-2xl py-4 font-semibold">CONVEYERS</h1>
                         <p className="text-xs ">The Conveners are responsible for organizing and coordinating various events and activities of the ACM IPEC. They work closely with other team members to ensure successful execution of events and strive to provide meaningful opportunities to the members.</p>
                     </div>
-                    <div className="grid md:grid-flow-col scale-75 md:grid-cols-3 grid-cols-1 justify-evenly xl:px-64 lg:px-12 md:gap-12 px-10 py-8">
+                    <div className="grid  scale-75 md:grid-cols-2 grid-cols-1 justify-evenly xl:px-64 lg:px-12 md:gap-12 px-10 py-8">
                         {Conveyer}
                     </div>
                 </div>
