@@ -7,7 +7,14 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export const HeadD = function (props) {
   const [a, seta] = useState(0)
-
+  const getPlatformIcon = (url) => {
+    if (url.includes("@")) return <FaEnvelope />;
+    if (url.includes("linkedin.com")) return <FaLinkedin />;
+    if (url.includes("twitter.com")) return <FaTwitter />;
+    if (url.includes("instagram.com")) return <FaInstagram />;
+    return null; // Return null for unsupported links
+  };
+  const socialLinks = props.social_links || [];
   return (
     <motion.div
       whileHover={{ scale: 1.1 }} onHoverStart={() => seta(1)} onHoverEnd={() => seta(0)}
@@ -22,15 +29,29 @@ export const HeadD = function (props) {
         />
       </div>
       <div className="py-2 text-center">
-        <h1 className="text-md font-semibold">{props.name}</h1>
-        <h1 className="text-xs text-gray-400">{props.title}</h1>
+        <h1 className="text-md font-semibold">{props.fullName}</h1>
+        <h1 className="text-xs text-gray-400">{props.department}</h1>
       </div>
       <div
-        className="grid grid-flow-col text-secondary justify-center gap-4 py-2" style={{ opacity: a }}>
-        {props.email && <a href={`mailto:${props.email}`} target="_blank_"><FaEnvelope /></a>}
-        {props.linkedin && <a href={props.linkedin} target="_blank_"><FaLinkedin /></a>}
-        {props.twitter && <a href={props.twitter} target="_blank_"><FaTwitter /></a>}
-        {props.instagram && <a href={props.instagram} target="_blank_"><FaInstagram /></a>}
+        className="grid grid-flow-col text-secondary justify-center gap-4 py-2"
+        style={{ opacity: props.opacity || 1 }}
+      >
+        {socialLinks.map((link, index) => {
+          const icon = getPlatformIcon(link);
+          return (
+            icon && (
+              <a
+                key={index}
+                href={`mailto:`+link}
+                className={`${a?"visible":"invisible"}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {icon}
+              </a>
+            )
+          );
+        })}
       </div>
     </motion.div>
   )
@@ -55,6 +76,14 @@ export const UpcomingCard = function (props) {
 
 export const Founder = function (props) {
   const [a, seta] = useState(0)
+  const getPlatformIcon = (url) => {
+    if (url.includes("mailto:")) return <FaEnvelope />;
+    if (url.includes("linkedin.com")) return <FaLinkedin />;
+    if (url.includes("twitter.com")) return <FaTwitter />;
+    if (url.includes("instagram.com")) return <FaInstagram />;
+    return null; // Return null for unsupported links
+  };
+  const socialLinks = props.social_links || [];
 
   return (
     <motion.div
@@ -70,21 +99,43 @@ export const Founder = function (props) {
         />
       </div>
       <div className="py-2 text-center">
-        <h1 className="text-lg font-semibold">{props.name}</h1>
-        <h1 className="text-md text-gray-400">{props.title}</h1>
+        <h1 className="text-lg font-semibold">{props.fullName}</h1>
       </div>
       <div
-        className="grid grid-flow-col text-secondary justify-center gap-4 py-2" style={{ opacity: a }}>
-        {props.email && <a href={`mailto:${props.email}`} target="_blank_"><FaEnvelope /></a>}
-        {props.linkedin && <a href={props.linkedin} target="_blank_"><FaLinkedin /></a>}
-        {props.twitter && <a href={props.twitter} target="_blank_"><FaTwitter /></a>}
-        {props.instagram && <a href={props.instagram} target="_blank_"><FaInstagram /></a>}
+        className="grid grid-flow-col text-secondary justify-center gap-4 py-2"
+        style={{ opacity: props.opacity || 1 }}
+      >
+        {socialLinks.map((link, index) => {
+          const icon = getPlatformIcon(link);
+          return (
+            icon && (
+              <a
+              
+                key={index}
+                href={link}
+                className={`${a?"visible text-lg":"invisible"}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {icon}
+              </a>
+            )
+          );
+        })}
       </div>
     </motion.div>
   )
 }
 export const CMCard = function (props) {
   const [a, seta] = useState(0)
+  const getPlatformIcon = (url) => {
+    if (url.includes("@")) return <FaEnvelope />;
+    if (url.includes("linkedin.com")) return <FaLinkedin />;
+    if (url.includes("twitter.com")) return <FaTwitter />;
+    if (url.includes("instagram.com")) return <FaInstagram />;
+    return null; // Return null for unsupported links
+  };
+  const socialLinks = props.social_links || [];
   return (
     <div className="">
       <motion.div
@@ -99,18 +150,30 @@ export const CMCard = function (props) {
             placeholderSrc="Images"
           />
         </div>
-        <div className="py-2 text-center grid grid-rows-1 justify-center">
+        <div className="py-2 text-center grid grid-rows-1 place-items-center">
           <div>
-            <h1 className="text-md font-semibold">{props.name}</h1>
-            <h1 className="text-md text-gray-400">{props.title}</h1>
+            <h1 className="text-md font-semibold">{props.fullName}</h1>
+            <h1 className="text-md text-gray-400">{props.department}</h1>
           </div>
-          <div
-            className="grid grid-flow-col text-secondary justify-center gap-4 py-2" style={{ opacity: a }}>
-            {props.linkedin && <a href={props.linkedin} target="_blank_"><FaLinkedin /></a>}
-            {props.twitter && <a href={props.twitter} target="_blank_"><FaTwitter /></a>}
-            {props.instagram && <a href={props.instagram} target="_blank_"><FaInstagram /></a>}
-          </div>
-
+          <div className="flex gap-1">
+          {socialLinks.map((link, index) => {
+            const icon = getPlatformIcon(link);
+            return (
+            icon && (
+              <a
+              
+              key={index}
+                href={link}
+                className={`${a?"visible":"invisible"} text-lg hover:text-primary`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {icon}
+              </a>
+            )
+          );
+        })}
+        </div>
         </div>
       </motion.div>
     </div>
@@ -127,23 +190,23 @@ export const SyllCard = function (props) {
 }
 export const EveCard = function (props) {
   return (
-    <motion.div 
+    <motion.div
       className="relative flex flex-col h-full rounded-lg overflow-hidden shadow-lg bg-white w-[350px] hover:shadow-xl"
-      whileHover={{ scale: 1.02 }} 
+      whileHover={{ scale: 1.02 }}
       transition={{ ease: "easeIn", duration: 0.2 }}
     >
       {/* Image Container with Overlay */}
-      <img src={props.img} className="object-cover aspect-square h-72 object-top"/>
-        {/* Dark overlay - made lighter for better contrast */}
-        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-        
-        {/* Info text overlay */}
-        <div className="absolute inset-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <p className="text-sm text-white p-4">
-            {props.info}
-          </p>
-        </div>
-      
+      <img src={props.img} className="object-cover aspect-square h-72 object-top" />
+      {/* Dark overlay - made lighter for better contrast */}
+      <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+      {/* Info text overlay */}
+      <div className="absolute inset-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <p className="text-sm text-white p-4">
+          {props.info}
+        </p>
+      </div>
+
       {/* Title and Button Container */}
       <div className="p-4 flex flex-col">
         <h1 className="text-xl font-semibold mb-4 text-gray-800">{props.head}</h1>
@@ -158,59 +221,59 @@ export const EveCard = function (props) {
 }
 
 // event Carousel Card
-export const Carousel = function ({ cards }) {
-  const [currentCardIndex, setCurrentCardIndex] = useState(0);
+// export const Carousel = function ({ cards }) {
+//   const [currentCardIndex, setCurrentCardIndex] = useState(0);
 
-  const handlePrev = () => {
-    setCurrentCardIndex((prevIndex) => (prevIndex === 0 ? cards.length - 1 : prevIndex - 1));
-  };
+//   const handlePrev = () => {
+//     setCurrentCardIndex((prevIndex) => (prevIndex === 0 ? cards.length - 1 : prevIndex - 1));
+//   };
 
-  const handleNext = () => {
-    setCurrentCardIndex((prevIndex) => (prevIndex === cards.length - 1 ? 0 : prevIndex + 1));
-  };
+//   const handleNext = () => {
+//     setCurrentCardIndex((prevIndex) => (prevIndex === cards.length - 1 ? 0 : prevIndex + 1));
+//   };
 
-  return (
-    <div className="relative flex items-center justify-center h-screen">
-      <div className="w-96">
-        <div className="relative overflow-hidden bg-gray-100">
-          {cards.map((card, index) => (
-            <div
-              key={index}
-              className={`absolute inset-0 transition-opacity duration-500 ${index === currentCardIndex ? 'opacity-100' : 'opacity-0'
-                }`}
-            >
-              <img src={card.img} alt={card.head} className="w-full h-full object-contain" />
-            </div>
-          ))}
+//   return (
+//     <div className="relative flex items-center justify-center h-screen">
+//       <div className="w-96">
+//         <div className="relative overflow-hidden bg-gray-100">
+//           {cards.map((card, index) => (
+//             <div
+//               key={index}
+//               className={`absolute inset-0 transition-opacity duration-500 ${index === currentCardIndex ? 'opacity-100' : 'opacity-0'
+//                 }`}
+//             >
+//               <img src={card.img} alt={card.head} className="w-full h-full object-contain" />
+//             </div>
+//           ))}
 
-          <button
-            className="absolute top-1/2 left-0 transform -translate-y-1/2 p-2 bg-gray-800 rounded-full text-white"
-            onClick={handlePrev}
-          >
-            Previous
-          </button>
-          <button
-            className="absolute top-1/2 right-0 transform -translate-y-1/2 p-2 bg-gray-800 rounded-full text-white"
-            onClick={handleNext}
-          >
-            Next
-          </button>
-        </div>
+//           <button
+//             className="absolute top-1/2 left-0 transform -translate-y-1/2 p-2 bg-gray-800 rounded-full text-white"
+//             onClick={handlePrev}
+//           >
+//             Previous
+//           </button>
+//           <button
+//             className="absolute top-1/2 right-0 transform -translate-y-1/2 p-2 bg-gray-800 rounded-full text-white"
+//             onClick={handleNext}
+//           >
+//             Next
+//           </button>
+//         </div>
 
-        <div className="flex justify-center mt-4">
-          {cards.map((_, index) => (
-            <button
-              key={index}
-              className={`w-4 h-4 mx-2 rounded-full ${index === currentCardIndex ? 'bg-gray-800' : 'bg-gray-400'
-                }`}
-              onClick={() => setCurrentCardIndex(index)}
-            />
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-};
+//         <div className="flex justify-center mt-4">
+//           {cards.map((_, index) => (
+//             <button
+//               key={index}
+//               className={`w-4 h-4 mx-2 rounded-full ${index === currentCardIndex ? 'bg-gray-800' : 'bg-gray-400'
+//                 }`}
+//               onClick={() => setCurrentCardIndex(index)}
+//             />
+//           ))}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
 export const Gallerycard = function (props) {
   return (
     <div>
@@ -219,71 +282,70 @@ export const Gallerycard = function (props) {
         {props.img.map((data) => {
           return (
             <LazyLoadImage
-            src={data}
-            alt="Your Alt Text"
-            effect="opacity" // Add blur effect or remove this line if you don't want it
-            
-          />
+              src={data}
+              alt="Your Alt Text"
+              effect="opacity" // Add blur effect or remove this line if you don't want it
+
+            />
           )
         })}
       </div>
     </div>
   )
 }
-export const Carasouel = function (props) {
-  return (
-    <div className="relative">
-      <motion.div
-        className="w-[60vw] h-96 overflow-hidden absolute top-0"
-        initial={{ scale: 0, rotation: -180 }}
-        animate={{ rotation: 0, scale: 1 }}
-        transition={{ type: "spring", stiffness: 260, damping: 20 }}
-      >
-        <img src={props.img} className="h-full" />
-      </motion.div>
-    </div>
+// export const Carasouel = function (props) {
+//   return (
+//     <div className="relative">
+//       <motion.div
+//         className="w-[60vw] h-96 overflow-hidden absolute top-0"
+//         initial={{ scale: 0, rotation: -180 }}
+//         animate={{ rotation: 0, scale: 1 }}
+//         transition={{ type: "spring", stiffness: 260, damping: 20 }}
+//       >
+//         <img src={props.img} className="h-full" />
+//       </motion.div>
+//     </div>
 
-  )
-}
+//   )
+// }
 // Gallery
 
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import { ImCross } from "react-icons/im";
+import {
+  Dialog,
+  DialogBody,
+  Carousel
+} from "@material-tailwind/react";
+ 
 export const Slider = function (props) {
-  let clickedImg = props.clickedImg
-  let [count, setCount] = useState(1);
-  let [tuple, settuple] = useState([null, count])
-  if (tuple[1] != count) {
-    settuple([tuple[1], count]);
+  const {open,setOpen}=useAuth();
+  const handleOpen = (event) => {
+    if (event.target === event.currentTarget) {
+      setOpen(false) // Close the dialog
+    }
+  };
+  let images=null;
+  if (props.img){
+    images= [props.clickedImg, ...props.img.filter((image) => image !== props.clickedImg)];
   }
-  let prev = tuple[0]
-  let direction = count > prev ? "increasing" : "decreasing"
-  let img = props.img
   return (
-    <div className="z-20 fixed top-0 bottom-0 backdrop-blur-xl w-full h-full ">
-      <button onClick={() => props.sethidden(false)} className="absolute right-5 top-5 text-red-800 text-4xl font-bold"><ImCross /></button>
-
-      <div className="flex justify-center py-32">
-        <div className="flex items-center justify-center">
-          <button onClick={() => setCount(count - 1)}><AiOutlineLeft size={30} className="text-black" /></button>
-          <motion.div className={` w-[72vw] h-[72vh] flex justify-center items-center`}
-            style={{
-              backgroundImage: `url(${img[Math.abs(count) % img.length]})`,
-              backgroundPosition: "center",
-              backgroundSize: "contain",
-              backgroundRepeat: "no-repeat"
-            }}
-            key={count}
-            initial={{ x: direction === 'increasing' ? 100 : -100 }}
-            animate={{ x: 0 }}
-
-          ></motion.div>
-          {/* hello */}
-          <button onClick={() => setCount(count + 1)}><AiOutlineRight size={30} className="text-black" /></button>
-
-        </div>
-      </div>
-    </div>
+    <Dialog size="xl" open={open} handler={handleOpen}>
+      <DialogBody>
+        <Carousel loop onClick={(e)=>e.stopPropagation()} className="rounded-xl aspect-video w-fit h-fit">
+          {images&&images.map(img=>{
+            return (
+              <img
+                src={img}
+                alt="image 1"
+                className="h-full w-full object-cover"
+              />
+            )
+          })}
+          
+        </Carousel>
+      </DialogBody>
+    </Dialog>
   )
 }
 // Marquee
@@ -292,6 +354,7 @@ import styled, { keyframes, css } from 'styled-components';
 import { Link } from 'react-router-dom';
 import { featurelist } from './Lists/EventList';
 import ImgSource from './ImgSource';
+import { useAuth } from "../Context/AuthContext";
 
 export const MarqueR = () => {
   const images = featurelist;
@@ -299,18 +362,18 @@ export const MarqueR = () => {
   return (
     <div className="grid grid-flow-col">
       <MarqueeContainer>
-      {images.map((data, index) => (
-        <ImageGroup key={index}>
-          <Link to={`/Events/${data.slugs}`}>
-            <ImgSource src={data.img} className="h-full aspect-auto" />
-          </Link>
-        </ImageGroup>
-      ))}
-    </MarqueeContainer>
-      
+        {images.map((data, index) => (
+          <ImageGroup key={index}>
+            <Link to={`/Events/${data.slugs}`}>
+              <ImgSource src={data.img} className="h-full aspect-auto" />
+            </Link>
+          </ImageGroup>
+        ))}
+      </MarqueeContainer>
+
     </div>
-    
-    
+
+
   );
 };
 const scrollX = keyframes`

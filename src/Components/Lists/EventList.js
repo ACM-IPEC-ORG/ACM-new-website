@@ -569,6 +569,11 @@ export const allEvent = [
     date: "13-10-2023",
     time: "03:00PM",
     TS: "Individual",
+    instagram_post:[
+     "https://www.instagram.com/p/CyOeaezvEaV/",
+     "https://www.instagram.com/p/CyOey1cv82C/",
+     "https://www.instagram.com/p/CygE3GoPSKn/", 
+    ],
     winners: [],
     tagline:
       "Let's Merge innovation with imagination that portray in AI Images",
@@ -620,7 +625,12 @@ export const allEvent = [
     date: "08-06-2023",
     time: "03:00PM",
     TS: "Individual",
+    instagram_post:[
+      "https://www.instagram.com/p/CtBWyfcPDWL/",
+      "https://www.instagram.com/p/CtBW65mPIEf/",
+      "https://www.instagram.com/p/CthL7TjPAVo/"
 
+    ],
     tagline: "Bug Smash: Debugging for Glory!",
   },
   {
@@ -653,7 +663,12 @@ export const allEvent = [
     date: "16-05-2023",
     time: "03:00PM",
     TS: "Individual",
+    instagram_post:[
+      "https://www.instagram.com/p/CsZHdKhPbds/",
+      "https://www.instagram.com/p/CsEQ7SjvCSu/",
+      "https://www.instagram.com/p/CsEQ2fBvmxN/"
 
+    ],
     tagline:
       "It was a Webinar based event for all IPEC students regarding Placements and Higher Studies",
   },
@@ -684,7 +699,11 @@ export const allEvent = [
     date: "26-12-2022",
     time: "07:00 PM",
     TS: "Individual",
-
+    instagram_post:[
+      "https://www.instagram.com/p/CmakR5uP_QM/",
+      "https://www.instagram.com/p/CmakTmZPUzw/",
+      "https://www.instagram.com/p/CnD62IBqu8t/"
+    ],
     tagline: "BrainBrew: Stirring Minds, Brewing Genius",
   },
   {
@@ -717,7 +736,12 @@ export const allEvent = [
     date: "05-03-2023",
     time: "01:30PM",
     TS: "Individual",
-
+    instagram_post:[
+      "https://www.instagram.com/p/CpK83oKPGxv/",
+      "https://www.instagram.com/p/CpK88wGvci4/",
+      "https://www.instagram.com/p/CpvRM2tv2r3/"
+ 
+     ],
     tagline: "Webkriti: Where Code Meets Creativity, One Pixel at a Time",
   },
   {
@@ -1682,7 +1706,10 @@ export const featurelist = [
     date: "17-06-2022",
     time: "02:00PM",
     TS: "Individual",
+    instagram_post:[
+    
 
+    ],
     tagline: "Code-O-Fiesta: Where Code Reigns Supreme!",
   },
 
@@ -1713,7 +1740,12 @@ export const featurelist = [
     date: "20-11-2022",
     time: "02:00PM",
     TS: "Individual",
+    instagram_post:[
+    "https://www.instagram.com/p/Ck3nlNivSbV/",
+    "https://www.instagram.com/p/Ck3nnqbPPWn/",
+    "https://www.instagram.com/p/ClTkumJvgv6/"
 
+    ],
     tagline: "Quizophile: Nourishing Minds, One Quiz at a Time",
   },
   {
@@ -1743,7 +1775,12 @@ export const featurelist = [
     date: "08-06-2023",
     time: "03:00PM",
     TS: "Individual",
+    instagram_post:[
+      "https://www.instagram.com/p/CtBWyfcPDWL/",
+      "https://www.instagram.com/p/CtBW65mPIEf/",
+      "https://www.instagram.com/p/CthL7TjPAVo/"
 
+    ],
     tagline: "Bug Smash: Debugging for Glory!",
   },
   {
@@ -1776,7 +1813,12 @@ export const featurelist = [
     date: "16-05-2023",
     time: "03:00PM",
     TS: "Individual",
+    instagram_post:[
+      "https://www.instagram.com/p/CsZHdKhPbds/",
+      "https://www.instagram.com/p/CsEQ7SjvCSu/",
+      "https://www.instagram.com/p/CsEQ2fBvmxN/"
 
+    ],
     tagline:
       "It was a Webinar based event for all IPEC students regarding Placements and Higher Studies",
   },
@@ -1807,7 +1849,11 @@ export const featurelist = [
     date: "26-12-2022",
     time: "07:00 PM",
     TS: "Individual",
-
+    instagram_post:[
+      "https://www.instagram.com/p/CmakR5uP_QM/",
+      "https://www.instagram.com/p/CmakTmZPUzw/",
+      "https://www.instagram.com/p/CnD62IBqu8t/"
+    ],
     tagline: "BrainBrew: Stirring Minds, Brewing Genius",
   },
   {
@@ -1840,7 +1886,12 @@ export const featurelist = [
     date: "05-03-2023",
     time: "01:30PM",
     TS: "Individual",
+    instagram_post:[
+     "https://www.instagram.com/p/CpK83oKPGxv/",
+     "https://www.instagram.com/p/CpK88wGvci4/",
+     "https://www.instagram.com/p/CpvRM2tv2r3/"
 
+    ],
     tagline: "Webkriti: Where Code Meets Creativity, One Pixel at a Time",
   },
 ];

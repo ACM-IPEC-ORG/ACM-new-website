@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { Navigate, RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import MainLayout from "./Pages/More/MainLayout";
 import SIGs from "./Pages/SIG/SIGs";
@@ -11,8 +11,11 @@ import EventDetails from "./Pages/Events/EventDetails";
 import Gallery from "./Pages/More/Gallery";
 import Loader from "./Pages/More/Preloader";
 import "./App.css";
+import { useAuth } from "./Context/AuthContext.jsx";
+import Admin from "./Pages/Admin/Admin.jsx";
 
 export default function App() {
+  const {user}=useAuth();
   const [loading, setLoading] = useState(true);
   
   useEffect(() => {
@@ -67,6 +70,10 @@ export default function App() {
         {
           path: "/Founders",
           element: loading ? <Loader /> : <Founders />,
+        },
+        {
+          path: "/admin",
+          element: user!=null?loading ? <Loader /> : <Admin />:<Navigate to="/"/>,
         }
       ]
     },

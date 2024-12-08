@@ -6,12 +6,17 @@ import "./Navbar.css"
 import ACMLOGO from "../../assets/Images/logos/acmlogo.png"
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import { Button } from "@material-tailwind/react";
+import GoogleLogin from "../GoogleLogin";
+import { useAuth } from "../../Context/AuthContext";
 
 export default function Navbar() {
     const [navOpen, setNavOpen] = useState(false);
+    const {user,setupUser}=useAuth()
 
     return (
         <>
+
             {/* Menu Toggle Button */}
             <button 
                 className={`fixed top-4 right-4 z-50 p-5 rounded-full ${navOpen?"bg-white":"bg-primary/80 text-white hover:text-black shadow-md"}  text-gray-800 hover:bg-gray-100`}
@@ -50,6 +55,8 @@ export default function Navbar() {
                                 <NavItem to="/Events" onClick={() => setNavOpen(false)}>EVENTS</NavItem>
                                 <NavItem to="/Teams" onClick={() => setNavOpen(false)}>TEAMS</NavItem>
                                 <NavItem to="/Founders" onClick={() => setNavOpen(false)}>FOUNDERS</NavItem>
+                                {user!=null&&<NavItem to="/admin" onClick={() => setNavOpen(false)}>Admin</NavItem>}
+                                <GoogleLogin/>
                             </ul>
                         </nav>
 

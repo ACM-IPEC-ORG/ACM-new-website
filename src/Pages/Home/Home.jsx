@@ -7,8 +7,8 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import HeroImg from "../../assets/Images/club/hero_home.webp"
 import React, { useEffect, useRef, useState } from "react";
 import { FeatureList, GalleryList } from "../../Components/Lists/GalleryList";
-import { UpcomingList, featurelist, session_2020_21 } from "../../Components/Lists/EventList";
-import { Carasouel, MarqueR, Slider, UpcomingCard } from "../../Components/Cards";
+import { UpcomingList, allEvent, featurelist, session_2020_21 } from "../../Components/Lists/EventList";
+import { MarqueR, Slider, UpcomingCard } from "../../Components/Cards";
 // import { Carousel, Gallerycard } from "../../Components/Cards";
 import { useScroll, useTransform } from "framer-motion";
 import IMG1 from "../../assets/Images/Gallery/BUGSMASH/1.jpeg"
@@ -16,11 +16,22 @@ import IMG2 from "../../assets/Images/Gallery/BUGSMASH/2.jpeg"
 import IMG3 from "../../assets/Images/Gallery/BUGSMASH/3.jpeg"
 import TypewriterComponent from "typewriter-effect";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/react-splide/css';
+import { useMediaQuery } from "@uidotdev/usehooks";
+import { InstagramEmbed } from 'react-social-media-embed';
+import { useAuth } from "../../Context/AuthContext";
+
 export default function Home() {
+    const {open,setOpen}=useAuth();
     window.scrollTo({
         top: 0,
         behavior: "smooth"
     })
+    const isMediumDevice = useMediaQuery(
+        "only screen and (min-width : 769px) and (max-width : 992px)"
+      );
+      const isSmallDevice = useMediaQuery("only screen and (max-width : 768px)");
     const upcome = UpcomingList.find(items => items.upcome);
     const [img, setimage] = useState("")
     const [Name, setName] = React.useState("")
@@ -29,30 +40,10 @@ export default function Home() {
 
     const [clickedImg, setClickedImg] = useState(null);
     const [clickedIndex, setCurentIndex] = useState(null);
-    const [hidden, sethidden] = useState(false)
     const handleImage = (items, index) => {
         setCurentIndex(index)
-        setClickedImg(item.img)
+        setClickedImg(items.img)
     }
-    const [isMobile, setIsMobile] = useState(false);
-
-    useEffect(() => {
-        const handleResize = () => {
-            // Check if screen width is less than or equal to 768px (commonly considered mobile width)
-            setIsMobile(window.innerWidth <= 768);
-        };
-
-        // Add event listener to handle window resize
-        window.addEventListener('resize', handleResize);
-
-        // Call handleResize once initially to set the initial state
-        handleResize();
-
-        // Cleanup: Remove event listener on component unmount
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
     const gallery = FeatureList.map((data, index) => {
         return (
             <div key={index}>
@@ -66,8 +57,8 @@ export default function Home() {
                                     style={{ backgroundImage: `url(${d})`, backgroundSize: "cover", backgroundPosition: "center" }} 
                                     className="md:p-28 p-20" 
                                     onClick={() => {
-                                        sethidden(true),
-                                        handleImage(item, index)
+                                        setOpen(true),
+                                        setClickedImg(d)
                                     }} 
                                 />
                             )
@@ -83,6 +74,9 @@ export default function Home() {
     function handleContact() {
         document.getElementById("contact").scrollIntoView({ behavior: "smooth", block: "start" })
     }
+
+    const today=new Date();
+    console.log(today)
     return (
         <div>
             <div className="w-full ">
@@ -114,27 +108,81 @@ export default function Home() {
                             <h1 className="xl:text-4xl lg:text-5xl md:text-4xl text-3xl font-semibold text-secondary">
                                 Upcoming Event
                             </h1>
-                            
-                            {/* No Events Message */}
-                            <div className="grid place-items-center py-10">
-                                <h2 className="text-2xl text-gray-600 font-medium">
-                                    No events right now
-                                </h2>
-                                <p className="text-gray-500 mt-2 text-center">
-                                    Stay tuned for our upcoming events!
-                                </p>
-                            </div>
+                            {allEvent.filter(event => new Date(event.date) > new Date()).length > 0 ? (
+                                allEvent
+                                    .filter(event => new Date(event.date) > new Date())
+                                    .map(data => (
+                                        <div key={data.id} className="flex justify-center items-start w-full gap-12 py-10">
+                                            <img src={data.img} alt="Image 1" className="h-[70vh]" />
+                                            <div className="w-[40vw] scroll text-left h-full flex flex-col gap-3">
+                                                <h1 className="text-lg lg:text-2xl font-bold">{data.slugs}</h1>
+                                                <h1 className="md:hidden lg:block text-sm lg:text-md font-bold">{data.info}</h1>
+                                                <h1 className="text-sm lg:text-md"><b>Description:</b> <br></br>{data.intro}</h1>
+                                                <h1 className="text-sm lg:text-md"><b>Rules:</b> {data.rules.map(li=>(
+                                                    <li>{li}</li>
+                                                ))}</h1>
+                                                <h1 className="text-sm lg:text-md font-bold">Date: {data.date}</h1>
+                                                <h1 className="text-sm lg:text-md"><b>Team Size: </b>{data.TS}</h1>
+                                                <Link to="/Gallery"> <motion.button whileHover={{ scale: 1.05 }}
+                                                    whileTap={{ scale: 0.8 }} className="bg-SecGradP hover:font-bold text-sm text-white px-4 py-2">Register!</motion.button></Link>
+                                            </div>
+                                        </div>
+                                    ))
+                            ) : (
+                                // No Events Message
+                                <div className="grid place-items-center py-10">
+                                    <h2 className="text-2xl text-gray-600 font-medium">No events right now</h2>
+                                    <p className="text-gray-500 mt-2 text-center">Stay tuned for our upcoming events!</p>
+                                </div>
+                            )}
 
-                           
+
+
                         </div>
                     </section>
 
                     {/* Events */}
-                    {!isMobile && <div className="text-center text-white py-4 bg-SecGradP overflow-hidden">
+                    {!isSmallDevice && <div className="text-center text-white py-4 bg-SecGradP overflow-hidden">
                         <h1 className="xl:text-4xl md:text-5xl text-3xl font-semibold pt-4">Recent Events</h1>
                         <h1 className="xl:text-sm md:text-xl text-lg md:leading-9 font-thin">What's going on in IPEC ACM?</h1>
                         <div className="py-4 md:py-12">
-                            <MarqueR />
+                            <Splide options={{
+                                type:"loop",
+                                rewind: true,
+                                perPage: "1",
+                                perMove: "1",
+                                width:"100vw",
+                                lazyLoad:"sequential",
+                                autoplay:true,
+                                pauseOnHover:true,
+                                heightRatio:isMediumDevice?0.6:0.32
+                            }} aria-label="React Splide Example" className="w-full">
+                                {allEvent
+                                    .sort((a, b) => new Date(b.date) - new Date(a.date)) // Sort events by date (newest first)
+                                    .slice(0, 5).map(data => <SplideSlide className="flex justify-center items-center w-full gap-12">
+                                        <img src={data.img} alt="Image 1" className="h-full" />
+                                        <div className="w-[40vw] scroll text-left h-full flex flex-col gap-2">
+                                            <h1 className="text-lg lg:text-2xl font-bold">{data.slugs}</h1>
+                                            <h1 className="md:hidden lg:block text-sm lg:text-md ">{data.info}</h1>
+                                            <h1 className="text-sm lg:text-md ">{data.intro}</h1>
+
+                                            <h1 className="text-sm lg:text-md font-bold">Date: {data.date}</h1>
+                                            <h1 className="text-sm lg:text-md">{data.TS}</h1>
+                                            <div className="flex flex-col lg:flex-row">
+                                                {/* YE VALA PART BHT FUDDU ERROR DERA H */}
+                                                {/* {data.instagram_post && data.instagram_post.length != 0 ? data.instagram_post.map(url => (
+                                                    <div style={{ display: 'flex', justifyContent: 'center' }}>
+                                                        <InstagramEmbed url={url} width={328} className="h-full" />
+                                                    </div>
+                                                )) :
+                                                    <h1 className="text-sm lg:text-md font-bold italic">No Post Available</h1>
+                                                } */}
+                                            </div>
+
+                                        </div>
+                                    </SplideSlide>)}
+                                
+                            </Splide>
                         </div>
 
 
@@ -160,10 +208,10 @@ export default function Home() {
                     {gallery}
                     <div>
                         <Link to="/Gallery"> <motion.button whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.8 }} onClick={handleClick} className="bg-SecGradP hover:font-bold text-sm text-white px-8 py-4">Know More!</motion.button></Link>
+                            whileTap={{ scale: 0.8 }} className="bg-SecGradP hover:font-bold text-sm text-white px-8 py-4">Know More!</motion.button></Link>
                     </div>
 
-                    {hidden && <Slider clickedImg={clickedImg} img={img} hidden={hidden} sethidden={sethidden} />}
+                    <Slider open={open} img={img} clickedImg={clickedImg} />
                 </div>
                 {/* Contact */}
                 <div id="contact" className="bg-black py-16 grid place-items-center">
