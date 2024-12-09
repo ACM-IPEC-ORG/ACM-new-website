@@ -9,8 +9,8 @@ export const ConveyersList=[
     // {
     //     id:"3",
     //     img:MonikaS,
-    //     fullname:"Ms. Monika Sharma",
-    //     // position:"",
+    //     fullName:"Ms. Monika Sharma",
+    //     // department:"",
     //     // facebook:"https://www.facebook.com/tripti.sharma.94849",
     //     // instagram:"",
     //     email:"monika.sharma@ipec.org.in",
@@ -20,8 +20,8 @@ export const ConveyersList=[
     {
         id:"3",
         img:PushpanjaliC,
-        fullname:"Ms. Pushpanjali Chandra",
-        // position:"",
+        fullName:"Ms. Pushpanjali Chandra",
+        // department:"",
         // facebook:"https://www.facebook.com/tripti.sharma.94849",
         // instagram:"",
         email:"chandra.pushpanjali@ipec.org.in",
@@ -31,8 +31,8 @@ export const ConveyersList=[
     {
         id:"1",
         img:TanyaS,
-        fullname:"Ms. Tanya Sharma",
-        // position:"",
+        fullName:"Ms. Tanya Sharma",
+        // department:"",
         facebook:"https://www.facebook.com/pranshusaxena14987",
         email:"tanya.sharma@ipec.org.in",
         // linkedin:"https://www.linkedinedin.com/in/sankalp-malhotra-a3010977"
@@ -45,8 +45,8 @@ export const HeadsDList=[
     {
         id:"1",
         img:VijaiS,
-        fullname:"Dr. Vijai Singh",
-        position:"(Computer Science and Engineering)",
+        fullName:"Dr. Vijai Singh",
+        department:"(Computer Science and Engineering)",
         email:"hod.cse@ipec.org.in"
         // facebook:"",
         // instagram:"",
@@ -56,8 +56,8 @@ export const HeadsDList=[
     {
         id:"2",
         img:IT,
-        fullname:"Dr. Pooja Tripathi",
-        position:"(Information Technology)",
+        fullName:"Dr. Pooja Tripathi",
+        department:"(Information Technology)",
         email:"pooja.tripathi@ipec.org.in"
         // facebook:"",
         // instagram:"",
@@ -67,8 +67,8 @@ export const HeadsDList=[
     {
         id:"2",
         img:TriptiS,
-        fullname:"Dr. Tripti Sharma",
-        position:"(Data Science)",
+        fullName:"Dr. Tripti Sharma",
+        department:"(Data Science)",
         // facebook:"https://www.facebook.com/tripti.sharma.94849",
         // instagram:"",
         email:"tripti.sharma@ipec.org.in",
@@ -96,91 +96,91 @@ export const FoundersList=[
     {
         id:"1",
         img:SankalpM,
-        fullname:"Sankalp Malhotra",
+        fullName:"Sankalp Malhotra",
         linkedin:"https://www.linkedin.com/in/sankalp-malhotra-a3010977"
     },
     {
         id:"2",
         img:AnshulB,
-        fullname:"Anshul Bhatia",
+        fullName:"Anshul Bhatia",
         linkedin:"https://www.linkedin.com/in/designkarta"
     },
     {
         id:"3",
         img:AbhayJ,
-        fullname:"Abhay Jain",
+        fullName:"Abhay Jain",
         linkedin:"https://www.linkedin.com/in/abhayjain13"
     },
     {
         id:"4",
         img:Ayush,
-        fullname:"Ayush",
+        fullName:"Ayush",
         linkedin:"https://www.linkedin.com/in/ayush-gupta-28180a124"
     },
     {
         id:"5",
         img:CheshthaD,
-        fullname:"Cheshta Damija",
+        fullName:"Cheshta Damija",
         linkedin:"https://www.linkedin.com/in/cheshtadhamija"
     },
     {
         id:"6",
         img:DivyaB,
-        fullname:"Divya Bajaj",
+        fullName:"Divya Bajaj",
         linkedin:"https://www.linkedin.com/in/divya-bajaj-486848119"
     },
     {
         id:"7",
         img:JaiJ,
-        fullname:"Jai Jagwan",
+        fullName:"Jai Jagwan",
         linkedin:"https://www.linkedin.com/in/jaijagwani/"
     },
     {
         id:"8",
         img:JaiK,
-        fullname:"Jai Kishan Raghav",
+        fullName:"Jai Kishan Raghav",
         linkedin:"https://www.linkedin.com/in/jai-kishan-raghav-l-%F0%9F%87%AE%F0%9F%87%B3-68633a112/"
     },
     {
         id:"9",
         img:Jasnidh,
-        fullname:"Jasnidh Kaur Ahuja",
+        fullName:"Jasnidh Kaur Ahuja",
         linkedin:"https://www.linkedin.com/in/jasnidh-kaur-ahuja-ab2164167/"
     },
     {
         id:"10",
         img:Kshitij,
-        fullname:"Kshitij Saksena",
+        fullName:"Kshitij Saksena",
         linkedin:"https://www.linkedin.com/in/kshitijsaksena/"
     },
     {
         id:"11",
         img:Mohit,
-        fullname:"Mohit Kumar",
+        fullName:"Mohit Kumar",
         linkedin:"https://www.linkedin.com/in/mknmohit/"
     },
     {
         id:"12",
         img:NishantS,
-        fullname:"Nishant Singh",
+        fullName:"Nishant Singh",
         linkedin:"https://www.linkedin.com/in/nishantwioc/"
     },
     {
         id:"13",
         img:NitishR,
-        fullname:"Nitish Raturi",
+        fullName:"Nitish Raturi",
         link:"https://www.linkedin.com/in/nishantwioc/"
     },
     {
         id:"14",
         img:SunnetS,
-        fullname:"Suneet Srivastava",
+        fullName:"Suneet Srivastava",
         linkedin:"https://www.linkedin.com/in/nishantwioc/"
     },
     {
         id:"15",
         img:Vishakha,
-        fullname:"Vishakha",
+        fullName:"Vishakha",
         linkedin:"https://www.linkedin.com/in/vishakha-mishra-818b00118"
     },
 ]
@@ -192,8 +192,8 @@ export const FoundersList=[
 //     {
 //         id:"8",
 //         img:VivekRS,
-//         fullname:"Vivek Raj Singh",
-//         position:"Chairperson",
+//         fullName:"Vivek Raj Singh",
+//         department:"Chairperson",
 //         // facebook:"",
 //         instagram:"https://instagram.com/vivek_raj_singh",
 //         // twitter:"",
@@ -202,8 +202,8 @@ export const FoundersList=[
 //     {
 //         id:"6",
 //         img:KavyaV,
-//         fullname:"Kavya Varshaney",
-//         position:"Vice Chairperson",
+//         fullName:"Kavya Varshaney",
+//         department:"Vice Chairperson",
 //         // facebook:"",
 //         instagram:"https://instagram.com/_kaashii__?igshid=ZDdkNTZiNTM=",
 //         // twitter:"",
@@ -213,8 +213,8 @@ export const FoundersList=[
 //     {
 //         id:"5",
 //         img:AmanG,
-//         fullname:"Aman Gautam",
-//         position:"General Secretary",
+//         fullName:"Aman Gautam",
+//         department:"General Secretary",
 //         // facebook:"",
 //         // instagram:"https://www.instagram.com/ankurkush10/",
 //         // twitter:"",
@@ -224,8 +224,8 @@ export const FoundersList=[
 //     {
 //         id:"10",
 //         img:AnushkaP,
-//         fullname:"Anushka Purwar",
-//         position:"Treasurer",
+//         fullName:"Anushka Purwar",
+//         department:"Treasurer",
 //         facebook:"https://www.facebook.com/anushka.purwar.3?mibextid=ZbWKwL",
 //         instagram:"http://www.instagram.com/purwar__anushka",
 //         // twitter:"",
@@ -234,8 +234,8 @@ export const FoundersList=[
 //     {
 //         id:"9",
 //         img:KanishkaD,
-//         fullname:"Kanishka Dogra",
-//         position:"Membership Chairperson",
+//         fullName:"Kanishka Dogra",
+//         department:"Membership Chairperson",
 //         // facebook:"",
 //         instagram:"https://instagram.com/kanishkadogra26",
 //         // twitter:"",
@@ -245,8 +245,8 @@ export const FoundersList=[
     
 //         id:"11",
 //         img:YatinS,
-//         fullname:"Yatin Singhal",
-//         position:"WebMaster",
+//         fullName:"Yatin Singhal",
+//         department:"WebMaster",
 //         // facebook:"",
 //         // instagram:"http://instagram.com/mr_prave",
 //         // twitter:"",
@@ -255,8 +255,8 @@ export const FoundersList=[
 //     {
 //         id:"7",
 //         img:AkshayS,
-//         fullname:"Akshay Singh",
-//         position:"Technical Head",
+//         fullName:"Akshay Singh",
+//         department:"Technical Head",
 //         // facebook:"",
 //         github:"https://github.com/Akshay2022Singh",
 //         instagram:"https://www.instagram.com/elite2022akshay/",
@@ -266,8 +266,8 @@ export const FoundersList=[
 //     {
 //         id:"3",
 //         img:ShikharP,
-//         fullname:"Shikhar Purwar",
-//         position:"Technical Head",
+//         fullName:"Shikhar Purwar",
+//         department:"Technical Head",
 //         // facebook:"",
 //         instagram:"https://www.instagram.com/shikhar.purwar/",
 //         // twitter:"",
@@ -277,8 +277,8 @@ export const FoundersList=[
 //     {
 //         id:"2",
 //         img:DiyaG,
-//         fullname:"Diya Gupta",
-//         position:"Event Head",
+//         fullName:"Diya Gupta",
+//         department:"Event Head",
 //         // facebook:"",
 //         instagram:"https://www.instagram.com/__miss.gupta__01?igsh=ODA1NTc5OTg5Nw==",
 //         // twitter:"",
@@ -288,8 +288,8 @@ export const FoundersList=[
 //     {
 //         id:"4",
 //         img:TusharP,
-//         fullname:"Tushar Pandey",
-//         position:"Documentation Head",
+//         fullName:"Tushar Pandey",
+//         department:"Documentation Head",
 //         // facebook:"",
 //         // instagram:"https://www.instagram.com/kanupriya__11/",
 //         // twitter:"",
@@ -300,8 +300,8 @@ export const FoundersList=[
 //     {
 //         id:"1",
 //         img:AnjaliA,
-//         fullname:"Anjali Arya",
-//         position:"Jont Secretary",
+//         fullName:"Anjali Arya",
+//         department:"Jont Secretary",
 //         // facebook:"",
 //         instagram:"https://instagram.com/anj_lii.arya_?igshid=YmMyMTA2M2Y=",
 //         // twitter:"",
@@ -323,8 +323,8 @@ export const PrimeCMList=[
     {
         id:"8",
         img:EtiG,
-        fullname:"Eti Garg",
-        position:"Chairperson",
+        fullName:"Eti Garg",
+        department:"Chairperson",
         // facebook:"",
         instagram:"https://instagram.com/5209garg?igshid=ZDdkNTZiNTM=h",
         // twitter:"",
@@ -333,8 +333,8 @@ export const PrimeCMList=[
     {
         id:"6",
         img:TanishS,
-        fullname:"Tanish Srivastava",
-        position:"Vice Chairperson",
+        fullName:"Tanish Srivastava",
+        department:"Vice Chairperson",
         // facebook:"",
         instagram:"https://instagram.com/tanish_sri19?igshid=ZDdkNTZiNTM=",
         // twitter:"",
@@ -343,8 +343,8 @@ export const PrimeCMList=[
     {
         id:"5",
         img:AditiG,
-        fullname:"Aditi Garg",
-        position:"General Secretary",
+        fullName:"Aditi Garg",
+        department:"General Secretary",
         // facebook:"",
         mail:"aditigarg1404@gmail.com",
         github:"https://github.com/Akshay2022Singh",
@@ -355,8 +355,8 @@ export const PrimeCMList=[
     {
         id:"10",
         img:NishitaS,
-        fullname:"Nishita Srivastava",
-        position:"Treasurer",
+        fullName:"Nishita Srivastava",
+        department:"Treasurer",
         // facebook:"",
         instagram:"https://www.instagram.com/moon__star__25?igsh=MWEyNGp0NXZ3cGpsdg==",
         // twitter:"",
@@ -365,8 +365,8 @@ export const PrimeCMList=[
     {
         id:"9",
         img:HimanshuG,
-        fullname:"Himanshu Gupta",
-        position:"Membership Chairperson",
+        fullName:"Himanshu Gupta",
+        department:"Membership Chairperson",
         // facebook:"",
         // mail:"aditigarg1404@gmail.com",
         // github:"https://github.com/Akshay2022Singh",
@@ -377,8 +377,8 @@ export const PrimeCMList=[
     {
         id:"11",
         img:Sumit,
-        fullname:"Sumit Mishra",
-        position:"Webmaster",
+        fullName:"Sumit Mishra",
+        department:"Webmaster",
         // facebook:"",
         instagram:"https://www.instagram.com/su_mit597",
         // twitter:"",
@@ -387,8 +387,8 @@ export const PrimeCMList=[
     {
         id:"7",
         img:MridulT,
-        fullname:"Mridul Tiwari",
-        position:"Technical Head",
+        fullName:"Mridul Tiwari",
+        department:"Technical Head",
         // facebook:"",
         instagram:"https://instagram.com/mridulti",
         twitter:"https://twitter.com/MridulTi",
@@ -397,8 +397,8 @@ export const PrimeCMList=[
     {
         id:"2",
         img:ManyaT,
-        fullname:"Manya Tyagi",
-        position:"Event Head",
+        fullName:"Manya Tyagi",
+        department:"Event Head",
         // facebook:"",
         instagram:"https://instagram.com/_manya.tyagi_?igshid=ZDdkNTZiNTM=",
         // twitter:"",
@@ -407,8 +407,8 @@ export const PrimeCMList=[
     {
         id:"4",
         img:ShreyaJ,
-        fullname:"Shreya Jain",
-        position:"Documentation Head",
+        fullName:"Shreya Jain",
+        department:"Documentation Head",
         // facebook:"",
         instagram:"https://instagram.com/shreya_jainn01?igshid=ZDdkNTZiNTM=",
         // twitter:"",
@@ -421,8 +421,8 @@ export const PrimeCMList=[
     // {
     //     id:"3",
     //     img:"Images/core/shikhar-purwar.jpg",
-    //     fullname:"Shikhar Purwar",
-    //     position:"SIG CLOUD Head",
+    //     fullName:"Shikhar Purwar",
+    //     department:"SIG CLOUD Head",
     //     // facebook:"",
     //     instagram:"https://www.instagram.com/shikhar.purwar/",
     //     // twitter:"",
@@ -432,8 +432,8 @@ export const PrimeCMList=[
     // {
     //     id:"5",
     //     img:"Images/core/aman-gautam.jpg",
-    //     fullname:"Aman Gautam",
-    //     position:"SIG SOFT Head",
+    //     fullName:"Aman Gautam",
+    //     department:"SIG SOFT Head",
     //     // facebook:"",
     //     instagram:"https://www.instagram.com/ankurkush10/",
     //     // twitter:"",
@@ -445,8 +445,8 @@ export const PrimeCMList=[
     {
         id:"1",
         img:SupriyaS,
-        fullname:"Supriya Srivastava",
-        position:"Joint Secretary",
+        fullName:"Supriya Srivastava",
+        department:"Joint Secretary",
         // facebook:"",
         instagram:"https://instagram.com/supriyasrivastavaa?igshid=ZDdkNTZiNTM=",
         // twitter:"",
@@ -475,8 +475,8 @@ export const CMList=[
     {
         id:"1",
         img:Kritika,
-        fullname:"Kritika kashyap",
-        position:"Membership Coordinator",
+        fullName:"Kritika kashyap",
+        department:"Membership Coordinator",
         // facebook:"",
         instagram:"https://www.instagram.com/kashyap_kriti.26",
         // twitter:"",
@@ -485,8 +485,8 @@ export const CMList=[
     {
         id:"2",
         img:Aditya,
-        fullname:"Aditya Gupta",
-        position:"Membership Coordinator",
+        fullName:"Aditya Gupta",
+        department:"Membership Coordinator",
         // facebook:"",
         instagram:"https://www.instagram.com/here_aadii0916",
         // twitter:"",
@@ -495,8 +495,8 @@ export const CMList=[
     {
         id:"3",
         img:Abhay,
-        fullname:"Abhay Sharma",
-        position:"Documentation Head",
+        fullName:"Abhay Sharma",
+        department:"Documentation Head",
         // facebook:"",
         instagram:"https://www.instagram.com/_abhay_sharma._",
         // twitter:"",
@@ -505,8 +505,8 @@ export const CMList=[
     {
         id:"4",
         img:Ankit,
-        fullname:"Ankit Vishwakarma",
-        position:"Documentation Head",
+        fullName:"Ankit Vishwakarma",
+        department:"Documentation Head",
         // facebook:"",
         instagram:"https://www.instagram.com/ankit_vishwakarma.28",
         // twitter:"",
@@ -515,8 +515,8 @@ export const CMList=[
     {
         id:"5",
         img:ishika,
-        fullname:"Ishika",
-        position:"Social Media Head",
+        fullName:"Ishika",
+        department:"Social Media Head",
         // facebook:"",
         instagram:"https://www.instagram.com/_ishika023",
         // twitter:"",
@@ -525,8 +525,8 @@ export const CMList=[
     {
         id:"6",
         img:Saurabh,
-        fullname:"Saurabh Shukla",
-        position:"Social Media Head",
+        fullName:"Saurabh Shukla",
+        department:"Social Media Head",
         // facebook:"",
         instagram:"https://www.instagram.com/saurabh_shukla_18",
         // twitter:"",
@@ -535,8 +535,8 @@ export const CMList=[
     {
         id:"7",
         img:Shoyal,
-        fullname:"Shoyal Haldar",
-        position:"SIG PYTHON HEAD",
+        fullName:"Shoyal Haldar",
+        department:"SIG PYTHON HEAD",
         // facebook:"",
         mail:"shoyalhaldar098@gmail.com",
         github:"https://github.com/Akshay2022Singh",
@@ -547,8 +547,8 @@ export const CMList=[
     {
         id:"8",
         img:Samarpita_Das,
-        fullname:"Samarpita Das",
-        position:"SIG JAVA HEAD",
+        fullName:"Samarpita Das",
+        department:"SIG JAVA HEAD",
         // github:"https://github.com/Akshay2022Singh",
         instagram:"https://www.instagram.com/samarpitadas_",
         linkedin:"https://www.linkedin.com/in/samarpitabdas"
@@ -557,8 +557,8 @@ export const CMList=[
     {
         id:"9",
         img:Kaavyansh,
-        fullname:"Kaavyansh Rekhi",
-        position:"SIG GRAPH HEAD",
+        fullName:"Kaavyansh Rekhi",
+        department:"SIG GRAPH HEAD",
         // facebook:"",
         instagram:"https://www.instagram.com/kaavyansh_rekhi",
         // twitter:"",
@@ -567,8 +567,8 @@ export const CMList=[
     {
         id:"10",
         img:Rahul_Kargeti,
-        fullname:"Rahul Kargeti",
-        position:"SIG FOUNDATION HEAD",
+        fullName:"Rahul Kargeti",
+        department:"SIG FOUNDATION HEAD",
         // facebook:"",
         instagram:"https://www.instagram.com/rahul_kargeti",
         // twitter:"",
@@ -579,8 +579,8 @@ export const CMList=[
     {
         id:"11",
         img:Anjali,
-        fullname:"Anjali Bahukhandi",
-        position:"SIG TECH HEAD",
+        fullName:"Anjali Bahukhandi",
+        department:"SIG TECH HEAD",
         // facebook:"",
         instagram:"https://www.instagram.com/anj_h3",
         // twitter:"",
@@ -589,8 +589,8 @@ export const CMList=[
     {
         id:"12",
         img:Soham,
-        fullname:"Soham Sinha",
-        position:"SIG WEB HEAD",
+        fullName:"Soham Sinha",
+        department:"SIG WEB HEAD",
         // facebook:"",
         instagram:"https://www.instagram.com/skaiwalker321",
         // twitter:"https://twitter.com/MridulTi",
@@ -618,31 +618,31 @@ export const Team2024List = [
     {
         id:"1",
         img:VivekRS,
-        fullname:"Vivek Raj Singh",
-        position:"Chairperson",
+        fullName:"Vivek Raj Singh",
+        department:"Chairperson",
         instagram:"https://instagram.com/vivek_raj_singh",
         linkedin:"https://www.linkedin.com/in/vivek-raj-singh-512a381b8"
     },
     {
         id:"2",
         img:KavyaV,
-        fullname:"Kavya Varshaney",
-        position:"Vice Chairperson",
+        fullName:"Kavya Varshaney",
+        department:"Vice Chairperson",
         instagram:"https://instagram.com/_kaashii__?igshid=ZDdkNTZiNTM=",
         linkedin:"https://www.linkedin.com/in/kavya-varshney-70688422b"
     },
     {
         id:"3",
         img:AmanG,
-        fullname:"Aman Gautam",
-        position:"General Secretary",
+        fullName:"Aman Gautam",
+        department:"General Secretary",
         linkedin:"https://www.linkedin.com/in/aman-gautam-3s"
     },
     {
         id:"4",
         img:AnushkaP,
-        fullname:"Anushka Purwar",
-        position:"Treasurer",
+        fullName:"Anushka Purwar",
+        department:"Treasurer",
         facebook:"https://www.facebook.com/anushka.purwar.3?mibextid=ZbWKwL",
         instagram:"http://www.instagram.com/purwar__anushka",
         linkedin:"https://www.linkedin.com/in/anushka-purwar-476273230"
@@ -650,22 +650,22 @@ export const Team2024List = [
     {
         id:"5",
         img:KanishkaD,
-        fullname:"Kanishka Dogra",
-        position:"Membership Chairperson",
+        fullName:"Kanishka Dogra",
+        department:"Membership Chairperson",
         instagram:"https://instagram.com/kanishkadogra26"
     },
     {
         id:"6",
         img:YatinS,
-        fullname:"Yatin Singhal",
-        position:"WebMaster",
+        fullName:"Yatin Singhal",
+        department:"WebMaster",
         linkedin:"https://www.linkedin.com/in/yatin-singhal-838594201/"
     },
     {
         id:"7",
         img:AkshayS,
-        fullname:"Akshay Singh",
-        position:"Technical Head",
+        fullName:"Akshay Singh",
+        department:"Technical Head",
         github:"https://github.com/Akshay2022Singh",
         instagram:"https://www.instagram.com/elite2022akshay/",
         linkedin:"https://www.linkedin.com/in/akshay-singh-elite/"
@@ -673,31 +673,31 @@ export const Team2024List = [
     {
         id:"8",
         img:ShikharP,
-        fullname:"Shikhar Purwar",
-        position:"Technical Head",
+        fullName:"Shikhar Purwar",
+        department:"Technical Head",
         instagram:"https://www.instagram.com/shikhar.purwar/",
         linkedin:"https://www.linkedin.com/in/shikhar-purwar-7a58b71bb"
     },
     {
         id:"9",
         img:DiyaG,
-        fullname:"Diya Gupta",
-        position:"Event Head",
+        fullName:"Diya Gupta",
+        department:"Event Head",
         instagram:"https://www.instagram.com/__miss.gupta__01?igsh=ODA1NTc5OTg5Nw==",
         linkedin:"https://www.linkedin.com/in/diya-gupta-a60ab2208/"
     },
     {
         id:"10",
         img:TusharP,
-        fullname:"Tushar Pandey",
-        position:"Documentation Head",
+        fullName:"Tushar Pandey",
+        department:"Documentation Head",
         linkedin:"https://www.linkedin.com/in/tushar-pandey-083495207/"
     },
     {
         id:"11",
         img:AnjaliA,
-        fullname:"Anjali Arya",
-        position:"Joint Secretary",
+        fullName:"Anjali Arya",
+        department:"Joint Secretary",
         instagram:"https://instagram.com/anj_lii.arya_?igshid=YmMyMTA2M2Y=",
         linkedin:"https://www.linkedin.com/in/anjali-arya-886123207"
     }
@@ -718,8 +718,8 @@ export const Team2023List=[
     {
         id:"1",
         img:AnjaliM,
-        fullname:"Anjali Mathur",
-        position:"Chair Person",
+        fullName:"Anjali Mathur",
+        department:"Chair Person",
         facebook:"https://www.facebook.com/profile.php?id=100010877117560",
         instagram:"https://www.instagram.com/a._.mathur/",
         // twitter:"",
@@ -728,8 +728,8 @@ export const Team2023List=[
     {
         id:"2",
         img:AtifM,
-        fullname:"Atif Moin",
-        position:"Vice Chair Person",
+        fullName:"Atif Moin",
+        department:"Vice Chair Person",
         facebook:"https://www.facebook.com/jsone.atif",
         instagram:"https://instagram.com/_.a_ti_f./",
         // twitter:"",
@@ -738,8 +738,8 @@ export const Team2023List=[
     {
         id:"3",
         img:PK,
-        fullname:"Priyansh",
-        position:"WebMaster",
+        fullName:"Priyansh",
+        department:"WebMaster",
         facebook:"https://www.facebook.com/profile.php?id=100022034401336",
         instagram:"https://www.instagram.com/priyansh_kulshrestha/",
         // twitter:"",
@@ -748,8 +748,8 @@ export const Team2023List=[
     {
         id:"4",
         img:VaiabhavS,
-        fullname:"Vaibhav Srivastava",
-        position:"General Secretary",
+        fullName:"Vaibhav Srivastava",
+        department:"General Secretary",
         facebook:"https://www.facebook.com/vaibhavsrivastava.2019/",
         instagram:"https://www.instagram.com/vaib_s_/",
         // twitter:"",
@@ -758,8 +758,8 @@ export const Team2023List=[
     {
         id:"6",
         img:DeepanshuM,
-        fullname:"Deepanshu Mishra",
-        position:"Membership Chairperson",
+        fullName:"Deepanshu Mishra",
+        department:"Membership Chairperson",
         // facebook:"https://acm.ipec.org.in/founders#",
         instagram:"https://www.instagram.com/_deepanshu_mishra/",
         // twitter:"",
@@ -768,8 +768,8 @@ export const Team2023List=[
     {
         id:"7",
         img:GayatriS,
-        fullname:"Gayatri Sharma",
-        position:"Treasure",
+        fullName:"Gayatri Sharma",
+        department:"Treasure",
         // facebook:"https://acm.ipec.org.in/founders#",
         instagram:"https://www.instagram.com/iamnikitaa_sharma/",
         // twitter:"",
@@ -778,8 +778,8 @@ export const Team2023List=[
     {
         id:"8",
         img:JunaidS,
-        fullname:"Junaid Siddiqui",
-        position:"Technical Head",
+        fullName:"Junaid Siddiqui",
+        department:"Technical Head",
         facebook:"https://www.facebook.com/junaid.siddiqui.39904181",
         instagram:"https://www.instagram.com/junaid.just_me/",
         // twitter:"",
@@ -788,8 +788,8 @@ export const Team2023List=[
     {
         id:"8",
         img:VanshG,
-        fullname:"Vansh Gupta",
-        position:"Technical Head",
+        fullName:"Vansh Gupta",
+        department:"Technical Head",
         facebook:"https://www.facebook.com/vanshguptaaman/",
         instagram:"https://www.instagram.com/vansh.gupta.aman/",
         // twitter:"",
@@ -798,8 +798,8 @@ export const Team2023List=[
     {
         id:"9",
         img:AnkurKK,
-        fullname:"Ankur Kumar Kushwaha",
-        position:"Event Head",
+        fullName:"Ankur Kumar Kushwaha",
+        department:"Event Head",
         facebook:"https://www.facebook.com/ankur.kumarkushwaha.9",
         instagram:"https://www.instagram.com/ankurkush10/",
         // twitter:"",
@@ -808,8 +808,8 @@ export const Team2023List=[
     {
         id:"10",
         img:PoornaA,
-        fullname:"Poorna Ashtana",
-        position:"Documnetation Head",
+        fullName:"Poorna Ashtana",
+        department:"Documnetation Head",
         // facebook:"https://acm.ipec.org.in/founders#",
         instagram:"https://instagram.com/_miss_asthana?utm_medium=copy_link",
         // twitter:"",
@@ -818,8 +818,8 @@ export const Team2023List=[
     {
         id:"11",
         img:Kanupriya,
-        fullname:"Kanupriya",
-        position:"Joint Secretary",
+        fullName:"Kanupriya",
+        department:"Joint Secretary",
         // facebook:"https://acm.ipec.org.in/founders#",
         instagram:"https://www.instagram.com/kanupriya__11/",
         // twitter:"",
@@ -842,8 +842,8 @@ export const Team2022List=[
     {
         id:"1",
         img:DevanshM,
-        fullname:"Devansh Mittal",
-        position:"Chair Person",
+        fullName:"Devansh Mittal",
+        department:"Chair Person",
         // facebook:"https://www.facebook.com/",
         instagram:"https://www.instagram.com/hack_unreachable/",
         // twitter:"",
@@ -852,8 +852,8 @@ export const Team2022List=[
     {
         id:"2",
         img:AjayP,
-        fullname:"Ajay Pal",
-        position:"Vice Chair Person",
+        fullName:"Ajay Pal",
+        department:"Vice Chair Person",
         facebook:"https://www.facebook.com/profile.php?id=100019235888156",
         instagram:"https://www.instagram.com/xxajayy/",
         // twitter:"",
@@ -862,8 +862,8 @@ export const Team2022List=[
     {
         id:"3",
         img:AnubhavC,
-        fullname:"Anubhav Chitragupta",
-        position:"WebMaster",
+        fullName:"Anubhav Chitragupta",
+        department:"WebMaster",
         facebook:"https://www.facebook.com/Chitragupta.anhbhav",
         instagram:"https://www.instagram.com/ambitious_anubhav_2_7/",
         // twitter:"",
@@ -872,8 +872,8 @@ export const Team2022List=[
     {
         id:"4",
         img:AmishaA,
-        fullname:"Anisha Aggarwal",
-        position:"General Secretary",
+        fullName:"Anisha Aggarwal",
+        department:"General Secretary",
         facebook:"https://www.facebook.com/anisha.agarwal.14473426",
         instagram:"https://www.instagram.com/anisha_1610/",
         // twitter:"",
@@ -882,8 +882,8 @@ export const Team2022List=[
     {
         id:"6",
         img:AbhishekS,
-        fullname:"Abhishek Singh",
-        position:"Membership Chair",
+        fullName:"Abhishek Singh",
+        department:"Membership Chair",
         facebook:"https://www.facebook.com/profile.php?id=100003587823794",
         instagram:"https://www.instagram.com/abhishek98710",
         // twitter:"",
@@ -892,8 +892,8 @@ export const Team2022List=[
     {
         id:"7",
         img:AditiY,
-        fullname:"Aditi Yadav",
-        position:"Treasure",
+        fullName:"Aditi Yadav",
+        department:"Treasure",
         facebook:"https://www.facebook.com/profile.php?id=100039691230207",
         instagram:"https://www.instagram.com/2710aditi/",
         // twitter:"",
@@ -902,8 +902,8 @@ export const Team2022List=[
     {
         id:"8",
         img:HarshC,
-        fullname:"Harsh Chaudhary",
-        position:"Technical Head",
+        fullName:"Harsh Chaudhary",
+        department:"Technical Head",
         facebook:"https://www.facebook.com/harsh.chaudhary.73345",
         instagram:"https://www.instagram.com/harshchoudhary_1/",
         // twitter:"",
@@ -912,8 +912,8 @@ export const Team2022List=[
     {
         id:"9",
         img:AyushiJ,
-        fullname:"Ayushi Jain",
-        position:"Event Head",
+        fullName:"Ayushi Jain",
+        department:"Event Head",
         facebook:"https://www.facebook.com/profile.php?id=100012626386417",
         instagram:"https://www.instagram.com/ayushijain2017/",
         // twitter:"",
@@ -922,8 +922,8 @@ export const Team2022List=[
     {
         id:"10",
         img:VibhutiM,
-        fullname:"Vibhuti Mandral",
-        position:"Documnetation Head",
+        fullName:"Vibhuti Mandral",
+        department:"Documnetation Head",
         // facebook:"",
         // instagram:"",
         // twitter:"",
@@ -932,8 +932,8 @@ export const Team2022List=[
     {
         id:"11",
         img:SwatiR,
-        fullname:"Swati Raman",
-        position:"Joint Secretary",
+        fullName:"Swati Raman",
+        department:"Joint Secretary",
         // facebook:"",
         instagram:"https://www.instagram.com/swati__raman/",
         // twitter:"",
@@ -942,8 +942,8 @@ export const Team2022List=[
     // {
     //     id:"12",
     //     img:"Images/2022/Nishant.jpeg",
-    //     fullname:"Nishant Singh",
-    //     position:"",
+    //     fullName:"Nishant Singh",
+    //     department:"",
     //     facebook:"",
     //     instagram:"",
     //     twitter:"",
@@ -952,8 +952,8 @@ export const Team2022List=[
     // {
     //     id:"13",
     //     img:"",
-    //     fullname:"Nitish Raturi",
-    //     position:"",
+    //     fullName:"Nitish Raturi",
+    //     department:"",
     //     facebook:"",
     //     instagram:"",
     //     twitter:"",
@@ -962,8 +962,8 @@ export const Team2022List=[
     // {
     //     id:"14",
     //     img:"",
-    //     fullname:"Suneet Srivastava",
-    //     position:"",
+    //     fullName:"Suneet Srivastava",
+    //     department:"",
     //     facebook:"",
     //     instagram:"",
     //     twitter:"",
@@ -972,8 +972,8 @@ export const Team2022List=[
     // {
     //     id:"15",
     //     img:"",
-    //     fullname:"Vishakha",
-    //     position:"",
+    //     fullName:"Vishakha",
+    //     department:"",
     //     facebook:"",
     //     instagram:"",
     //     twitter:"",
