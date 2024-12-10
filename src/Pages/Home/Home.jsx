@@ -7,13 +7,9 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import HeroImg from "../../assets/Images/club/hero_home.webp"
 import React, { useEffect, useRef, useState } from "react";
 import { FeatureList, GalleryList } from "../../Components/Lists/GalleryList";
-import { UpcomingList, allEvent, featurelist, session_2020_21 } from "../../Components/Lists/EventList";
 import { MarqueR, Slider, UpcomingCard } from "../../Components/Cards";
 // import { Carousel, Gallerycard } from "../../Components/Cards";
 import { useScroll, useTransform } from "framer-motion";
-import IMG1 from "../../assets/Images/Gallery/BUGSMASH/1.jpeg"
-import IMG2 from "../../assets/Images/Gallery/BUGSMASH/2.jpeg"
-import IMG3 from "../../assets/Images/Gallery/BUGSMASH/3.jpeg"
 import TypewriterComponent from "typewriter-effect";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
@@ -21,18 +17,31 @@ import '@splidejs/react-splide/css';
 import { useMediaQuery } from "@uidotdev/usehooks";
 import { InstagramEmbed } from 'react-social-media-embed';
 import { useAuth } from "../../Context/AuthContext";
+import axios from "axios"
+import { FETCH_EVENT_ROUTE } from "../../services/constant";
+import Blank from "../../assets/Images/Poster/blank.jpg";
+
 
 export default function Home() {
-    const {open,setOpen}=useAuth();
+    const {open,setOpen,events,setEvents}=useAuth();
     window.scrollTo({
         top: 0,
         behavior: "smooth"
     })
+
+    const fetchHomeEvent=async()=>{
+        await axios.get(FETCH_EVENT_ROUTE)
+        .then(res=>{
+            setEvents(res.data.data);
+        })
+        .catch(err=>{
+            console.log(err)
+        })
+    }
     const isMediumDevice = useMediaQuery(
         "only screen and (min-width : 769px) and (max-width : 992px)"
       );
       const isSmallDevice = useMediaQuery("only screen and (max-width : 768px)");
-    const upcome = UpcomingList.find(items => items.upcome);
     const [img, setimage] = useState("")
     const [Name, setName] = React.useState("")
     const [Email, setEmail] = React.useState("")
@@ -75,8 +84,12 @@ export default function Home() {
         document.getElementById("contact").scrollIntoView({ behavior: "smooth", block: "start" })
     }
 
-    const today=new Date();
-    console.log(today)
+    useEffect(()=>{
+        if(events===null){
+            fetchHomeEvent();
+        }
+    },[])
+
     return (
         <div>
             <div className="w-full ">
@@ -108,12 +121,12 @@ export default function Home() {
                             <h1 className="xl:text-4xl lg:text-5xl md:text-4xl text-3xl font-semibold text-secondary">
                                 Upcoming Event
                             </h1>
-                            {allEvent.filter(event => new Date(event.date) > new Date()).length > 0 ? (
-                                allEvent
-                                    .filter(event => new Date(event.date) > new Date())
+                            {events!=null&&events.filter(event => new Date(event.date) >= new Date()).length > 0 ? (
+                                events
+                                    .filter(event => new Date(event.date) >= new Date())
                                     .map(data => (
                                         <div key={data.id} className="flex justify-center items-start w-full gap-12 py-10">
-                                            <img src={data.img} alt="Image 1" className="h-[70vh]" />
+                                            <img src={data.poster} alt="Image 1" className="h-[70vh]" />
                                             <div className="w-[40vw] scroll text-left h-full flex flex-col gap-3">
                                                 <h1 className="text-lg lg:text-2xl font-bold">{data.slugs}</h1>
                                                 <h1 className="md:hidden lg:block text-sm lg:text-md font-bold">{data.info}</h1>
@@ -121,7 +134,7 @@ export default function Home() {
                                                 <h1 className="text-sm lg:text-md"><b>Rules:</b> {data.rules.map(li=>(
                                                     <li>{li}</li>
                                                 ))}</h1>
-                                                <h1 className="text-sm lg:text-md font-bold">Date: {data.date}</h1>
+                                                <h1 className="text-sm lg:text-md font-bold">Date: {new Date(data.date).toDateString()}</h1>
                                                 <h1 className="text-sm lg:text-md"><b>Team Size: </b>{data.TS}</h1>
                                                 <Link to="/Gallery"> <motion.button whileHover={{ scale: 1.05 }}
                                                     whileTap={{ scale: 0.8 }} className="bg-SecGradP hover:font-bold text-sm text-white px-4 py-2">Register!</motion.button></Link>
@@ -142,7 +155,7 @@ export default function Home() {
                     </section>
 
                     {/* Events */}
-                    {!isSmallDevice && <div className="text-center text-white py-4 bg-SecGradP overflow-hidden">
+                    {!isSmallDevice&&events!=null && <div className="text-center text-white py-4 bg-SecGradP overflow-hidden">
                         <h1 className="xl:text-4xl md:text-5xl text-3xl font-semibold pt-4">Recent Events</h1>
                         <h1 className="xl:text-sm md:text-xl text-lg md:leading-9 font-thin">What's going on in IPEC ACM?</h1>
                         <div className="py-4 md:py-12">
@@ -157,17 +170,18 @@ export default function Home() {
                                 pauseOnHover:true,
                                 heightRatio:isMediumDevice?0.6:0.32
                             }} aria-label="React Splide Example" className="w-full">
-                                {allEvent
+                                {events
                                     .sort((a, b) => new Date(b.date) - new Date(a.date)) // Sort events by date (newest first)
                                     .slice(0, 5).map(data => <SplideSlide className="flex justify-center items-center w-full gap-12">
-                                        <img src={data.img} alt="Image 1" className="h-full" />
+                                        <img src={data.poster??Blank} alt="Image 1" className="h-full" />
                                         <div className="w-[40vw] scroll text-left h-full flex flex-col gap-2">
-                                            <h1 className="text-lg lg:text-2xl font-bold">{data.slugs}</h1>
+                                            <h1 className="text-lg lg:text-2xl font-bold">{data.slug}</h1>
+                                            <h1 className="text-sm lg:text-lg italic ">{data.tagline}</h1>
+                                            <h1 className="text-sm lg:text-md ">{data.description}</h1>
                                             <h1 className="md:hidden lg:block text-sm lg:text-md ">{data.info}</h1>
-                                            <h1 className="text-sm lg:text-md ">{data.intro}</h1>
 
-                                            <h1 className="text-sm lg:text-md font-bold">Date: {data.date}</h1>
-                                            <h1 className="text-sm lg:text-md">{data.TS}</h1>
+                                            <h1 className="text-sm lg:text-md font-bold">Date : {data.date!=""?data.date:new Date(data.createdAt).toDateString()}</h1>
+                                            <h1 className="text-sm lg:text-md">Team Size: {data.TS}</h1>
                                             <div className="flex flex-col lg:flex-row">
                                                 {/* YE VALA PART BHT FUDDU ERROR DERA H */}
                                                 {/* {data.instagram_post && data.instagram_post.length != 0 ? data.instagram_post.map(url => (

@@ -20,7 +20,8 @@ export const AuthProvider = ({ children }) => {
   const [folders,setFolders]=useState([])
   const [open,setOpen]=useState(false)
   const [newClass,setNewClass]=useState(null)
-  const [team,setTeam]=useState(null)
+  const [team,setTeam]=useState(null);
+  const [events,setEvents]=useState(null)
 
 
   function setupUser(data) {
@@ -47,7 +48,8 @@ export const AuthProvider = ({ children }) => {
         setAccessToken,
         folders,
         setFolders,
-        team,setTeam
+        team,setTeam,
+        events,setEvents
       }}
     >
       {children}

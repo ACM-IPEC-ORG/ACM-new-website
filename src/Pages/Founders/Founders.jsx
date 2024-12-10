@@ -1,29 +1,55 @@
 import { useScroll, useTransform } from "framer-motion";
 import { CMCard, Founder, HeadD } from "../../Components/Cards";
-import { FoundersList, Team2022List, Team2023List, Team2024List } from "../../Components/Lists/TeamList";
 import FOUNDER from "../../assets/Images/club/foundersteam.webp"
 import { motion } from "framer-motion";
 import "../Teams/Team.css"
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
+import { useAuth } from "../../Context/AuthContext";
+import { FETCH_TEAM_ROUTE } from "../../services/constant";
+import axios from "axios";
 export default function Founders(){
     window.scrollTo({
         top: 0,
         behavior: "smooth"
     })
-    const Found=FoundersList.map(ele=>{
-        return(
-            <Founder
-            {...ele}
-            />
-        )
-    })
-    const T2022=Team2022List.map(ele=>{
-        return(
-            <CMCard
-            {...ele}
-            />
-        )
-    })
+
+    const {team,setTeam}=useAuth();
+    async function fetchTeam(){
+        await axios.get(FETCH_TEAM_ROUTE)
+        .then(res=>{
+            console.log(res)
+            setTeam(res.data.data)
+        })
+        .catch(err=>{
+            console.log(err)
+        })
+    }
+    useEffect(()=>{
+        const loadTeam = async () => {
+            await fetchTeam();
+        };
+        loadTeam();
+    },[setTeam])
+    const Found=team?
+        team
+        .filter(ele=>ele.position==="founder")
+        .map(ele=>{
+            return(
+                <Founder
+                {...ele}
+                />
+            )
+        }):null;
+    const T2022=team?
+        team
+        .filter(ele=>ele.position==="t2022")
+        .map(ele=>{
+            return(
+                <CMCard
+                {...ele}
+                />
+            )
+        }):null
     const block={
         side:{
             backgroundImage:`url(${FOUNDER})`,
@@ -33,20 +59,26 @@ export default function Founders(){
             // backgroundAttachment:"fixed",
         }
     }
-    const T2023=Team2023List.map(ele=>{
-        return(
-            <CMCard
-            {...ele}
-            />
-        )
-    })
-    const T2024=Team2024List.map(ele=>{
-        return(
-            <CMCard
-            {...ele}
-            />
-        )
-    })
+    const T2023=team?
+        team
+        .filter(ele=>ele.position==="t2023")
+        .map(ele=>{
+            return(
+                <CMCard
+                {...ele}
+                />
+            )
+        }):null
+    const T2024=team?
+        team
+        .filter(ele=>ele.position==="t2024")
+        .map(ele=>{
+            return(
+                <CMCard
+                {...ele}
+                />
+            )
+        }):null
     const ref=useRef(null)
     const {scrollYProgress}=useScroll({
         target:ref,
@@ -75,7 +107,7 @@ export default function Founders(){
                     <h1 className="text-5xl font-bold text-sky-500">FOUNDERS</h1>
                     <div className="grid place-items-center">
                         <div className="flex flex-wrap scale-75 xl:w-11/12 w-11/12 justify-center gap-12">
-                            {Found}
+                            {Found!=null?Found:<p>Loading...</p>}
                         </div>
                     </div>
                 </div>
@@ -85,7 +117,7 @@ export default function Founders(){
                     <h1 className="text-5xl font-bold">TEAM 2022</h1>
                     <div className="grid place-items-center">
                         <div className="flex flex-wrap xl:w-11/12 scale-75 px-32 w-11/12 justify-center gap-12">
-                            {T2022}
+                            {T2022!=null?T2022:<p>Loading...</p>}
                         </div>
                     </div>
                 </div>
@@ -94,7 +126,7 @@ export default function Founders(){
                     <h1 className="text-5xl font-bold">TEAM 2023</h1>
                     <div className="grid place-items-center">
                         <div className="flex flex-wrap xl:w-11/12 scale-75 px-32 w-11/12 justify-center gap-12">
-                            {T2023}
+                            {T2023!=null?T2023:<p>Loading...</p>}
                         </div>
                     </div>
                 </div>
@@ -103,7 +135,7 @@ export default function Founders(){
                     <h1 className="text-5xl font-bold">TEAM 2024</h1>
                     <div className="grid place-items-center">
                         <div className="flex flex-wrap xl:w-11/12 scale-75 px-32 w-11/12 justify-center gap-12">
-                            {T2024}
+                            {T2024!=null?T2024:<p>Loading...</p>}      
                         </div>
                     </div>
                 </div>

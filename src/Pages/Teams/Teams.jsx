@@ -1,30 +1,56 @@
 import { HeadD, CMCard } from "../../Components/Cards";
 import "./Team.css"
 import { motion } from "framer-motion";
-import { CMList, ConveyersList, HeadsDList, PrimeCMList } from "../../Components/Lists/TeamList";
 import TEAM from "../../assets/Images/club/TEAM.webp"
 import { useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import ImgSource from "../../Components/ImgSource";
+import { useAuth } from "../../Context/AuthContext";
+import axios from "axios";
+import { FETCH_TEAM_ROUTE } from "../../services/constant";
 export default function Teams() {
     window.scrollTo({
         top: 0,
         behavior: "smooth"
     })
-    const HEADsD = HeadsDList.map(ele => {
-        return (
-            <HeadD
-                {...ele}
-            />
-        )
-    })
-    const Conveyer = ConveyersList.map(ele => {
-        return (
-            <HeadD
-                {...ele}
-            />
-        )
-    })
+    const {team,setTeam}=useAuth();
+    async function fetchTeam(){
+        await axios.get(FETCH_TEAM_ROUTE)
+        .then(res=>{
+            console.log(res)
+            setTeam(res.data.data)
+        })
+        .catch(err=>{
+            console.log(err)
+        })
+    }
+    useEffect(()=>{
+        const loadTeam = async () => {
+            await fetchTeam();
+        };
+        loadTeam();
+    },[setTeam])
+
+    const HEADsD = team?
+        team
+        .filter(ele=>ele.position==="HOD")
+        .map(ele => {
+            return (
+                <HeadD
+                    {...ele}
+                />
+            )
+        }):null;
+    const Conveyer = team?
+        team
+        .filter(ele=>ele.position==="conveyner")
+        .map(ele => {
+            return (
+                <HeadD
+                    {...ele}
+                />
+            )
+        }):null
     const block={
         side:{
             backgroundImage:`url(${TEAM})`,
@@ -34,20 +60,26 @@ export default function Teams() {
             // backgroundAttachment:"fixed",
         }
     }
-    const PM = PrimeCMList.map(ele => {
-        return (
-            <CMCard
-                {...ele}
-            />
-        )
-    })
-    const CM = CMList.map(ele => {
-        return (
-            <CMCard
-                {...ele}
-            />
-        )
-    })
+    const PM = team?
+        team
+        .filter(ele=>ele.position==="prime")
+        .map(ele => {
+            return (
+                <CMCard
+                    {...ele}
+                />
+            )
+        }):null
+    const CM = team?
+        team
+        .filter(ele=>ele.position==="core")
+        .map(ele => {
+            return (
+                <CMCard
+                    {...ele}
+                />
+            )
+        }):null
     let ref=useRef(null);
     let {scrollYProgress}=useScroll({
         target:ref,
@@ -82,7 +114,7 @@ export default function Teams() {
                         <p className="text-xs lg:text-justify">The Heads of Department are experienced faculty members who play a crucial role in guiding and mentoring students in their respective fields of study. They are responsible for creating a conducive learning environment and imparting knowledge to the students. The Heads of Departments collaborate with other faculty members and the administration to ensure the smooth functioning of the institute.</p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-3  place-items-center">
-                        {HEADsD}
+                        {HEADsD!=null?HEADsD:<p>Loading...</p>}
                     </div>
                 </div>
                 </section>
@@ -95,7 +127,7 @@ export default function Teams() {
                         <p className="text-xs ">The Conveners are responsible for organizing and coordinating various events and activities of the ACM IPEC. They work closely with other team members to ensure successful execution of events and strive to provide meaningful opportunities to the members.</p>
                     </div>
                     <div className="grid  scale-75 md:grid-cols-2 grid-cols-1 justify-evenly xl:px-64 lg:px-12 md:gap-12 px-10 py-8">
-                        {Conveyer}
+                        {Conveyer!=null?Conveyer:<p>Loading...</p>}
                     </div>
                 </div>
                 {/* PM */}
@@ -106,7 +138,7 @@ export default function Teams() {
                     </div>
                     <div className="grid place-items-center">
                         <div className="flex scale-75 flex-wrap xl:w-11/12 lg:w-11/12 w-full justify-center gap-x-12">
-                            {PM}
+                            {PM!=null?PM:<p>Loading...</p>}
                         </div>
                     </div>
                     
@@ -119,7 +151,7 @@ export default function Teams() {
                     </div>
                     <div className="grid place-items-center">
                         <div className="flex scale-75 flex-wrap xl:w-11/12 lg:w-11/12 w-full justify-center gap-x-12 py-8">
-                            {CM}
+                            {CM!=null?CM:<p>Loading...</p>}
                         </div>
                     </div>
                 </div>

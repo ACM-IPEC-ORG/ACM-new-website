@@ -188,30 +188,35 @@ export const SyllCard = function (props) {
     </div>
   )
 }
+import Blank from "../assets/Images/Poster/blank.jpg";
 export const EveCard = function (props) {
   return (
     <motion.div
-      className="relative flex flex-col h-full rounded-lg overflow-hidden shadow-lg bg-white w-[350px] hover:shadow-xl"
+    key={props.slug.toLowerCase()}
+      className="relative flex flex-col h-full cursor-pointer rounded-lg overflow-hidden shadow-lg bg-white w-[350px] hover:shadow-xl group"
       whileHover={{ scale: 1.02 }}
       transition={{ ease: "easeIn", duration: 0.2 }}
     >
       {/* Image Container with Overlay */}
-      <img src={props.img} className="object-cover aspect-square h-72 object-top" />
+      <img src={props.poster!=""?props.poster:Blank} className="object-cover aspect-square h-72 object-top" />
       {/* Dark overlay - made lighter for better contrast */}
-      <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      <div className="absolute inset-0 bg-black/70 h-72 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
       {/* Info text overlay */}
       <div className="absolute inset-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        <p className="text-sm text-white p-4">
-          {props.info}
+        <p className="text-md italic text-white font-semibold p-4">
+          {props?.tagline}
+        </p>
+        <p className="text-sm text-white p-4 py-0">
+          {props?.description?.slice(0,230)+' . . .'??props.info}
         </p>
       </div>
 
       {/* Title and Button Container */}
       <div className="p-4 flex flex-col">
-        <h1 className="text-xl font-semibold mb-4 text-gray-800">{props.head}</h1>
-        <Link to={`/Events/${props.slugs}`}>
-          <button className="w-full bg-SecGradP text-white hover:font-semibold px-4 py-2 rounded">
+        <h1 className="text-xl font-semibold mb-4 text-gray-800">{props.title}</h1>
+        <Link to={`/Events/${props.slug.toLowerCase().trim()}`} >
+          <button disabled className="w-full bg-SecGradP opacity-50 text-white px-4 py-2 rounded">
             Details
           </button>
         </Link>
@@ -352,7 +357,6 @@ export const Slider = function (props) {
 import React from 'react';
 import styled, { keyframes, css } from 'styled-components';
 import { Link } from 'react-router-dom';
-import { featurelist } from './Lists/EventList';
 import ImgSource from './ImgSource';
 import { useAuth } from "../Context/AuthContext";
 
