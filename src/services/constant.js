@@ -1,4 +1,4 @@
-export const BASE_URL = "/api/v1";
+export const BASE_URL = "https://acm-dashboard-backend.vercel.app/api/v1";
 
 export const AUTH_ROUTE = `${BASE_URL}/auth`;
 export const FETCH_TEAM_ROUTE=`${BASE_URL}/teams/allTeam`
