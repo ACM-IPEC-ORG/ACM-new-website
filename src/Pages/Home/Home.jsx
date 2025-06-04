@@ -8,19 +8,24 @@ import HeroImg from "../../assets/Images/club/hero_home.webp"
 import React, { useEffect, useRef, useState } from "react";
 import { FeatureList, GalleryList } from "../../Components/Lists/GalleryList";
 import { MarqueR, Slider, UpcomingCard } from "../../Components/Cards";
-// import { Carousel, Gallerycard } from "../../Components/Cards";
+// import { Carousel, Gallerycard } from "../../Components/Cards"; // These seem commented out already
 import { useScroll, useTransform } from "framer-motion";
 import TypewriterComponent from "typewriter-effect";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { Splide, SplideSlide } from '@splidejs/react-splide';
-import '@splidejs/react-splide/css';
+// Splide imports are no longer needed directly in Home.jsx for the carousel
+// import { Splide, SplideSlide } from '@splidejs/react-splide';
+// import '@splidejs/react-splide/css';
 import { useMediaQuery } from "@uidotdev/usehooks";
-import { InstagramEmbed } from 'react-social-media-embed';
+// InstagramEmbed is no longer needed directly in Home.jsx for the carousel
+// import { InstagramEmbed } from 'react-social-media-embed';
 import { useAuth } from "../../Context/AuthContext";
 import axios from "axios"
 import { FETCH_EVENT_ROUTE } from "../../services/constant";
-import Blank from "../../assets/Images/Poster/blank.jpg";
+// Blank is no longer needed directly in Home.jsx for the carousel
+// import Blank from "../../assets/Images/Poster/blank.jpg";
 
+// Import the new RecentEventsCarousel component
+import RecentEventsCarousel from '../../Components/RecentEventsCarousel';
 
 export default function Home() {
     const {open,setOpen,events,setEvents}=useAuth();
@@ -61,14 +66,14 @@ export default function Home() {
                     <div className="xl:w-1/3 md:w-4/5  w-11/12 grid md:grid-cols-3 grid-cols-2 gap-8 place-items-center" onClick={() => setimage(data.img)}>
                         {data.img.map((d, imgIndex) => {
                             return (
-                                <div 
+                                <div
                                     key={imgIndex}
-                                    style={{ backgroundImage: `url(${d})`, backgroundSize: "cover", backgroundPosition: "center" }} 
-                                    className="md:p-28 p-20" 
+                                    style={{ backgroundImage: `url(${d})`, backgroundSize: "cover", backgroundPosition: "center" }}
+                                    className="md:p-28 p-20"
                                     onClick={() => {
                                         setOpen(true),
                                         setClickedImg(d)
-                                    }} 
+                                    }}
                                 />
                             )
                         })}
@@ -148,59 +153,12 @@ export default function Home() {
                                     <p className="text-gray-500 mt-2 text-center">Stay tuned for our upcoming events!</p>
                                 </div>
                             )}
-
-
-
                         </div>
                     </section>
 
-                    {/* Events */}
-                    {!isSmallDevice&&events!=null && <div className="text-center text-white py-4 bg-SecGradP overflow-hidden">
-                        <h1 className="xl:text-4xl md:text-5xl text-3xl font-semibold pt-4">Recent Events</h1>
-                        <h1 className="xl:text-sm md:text-xl text-lg md:leading-9 font-thin">What's going on in IPEC ACM?</h1>
-                        <div className="py-4 md:py-12">
-                            <Splide options={{
-                                type:"loop",
-                                rewind: true,
-                                perPage: "1",
-                                perMove: "1",
-                                width:"100vw",
-                                lazyLoad:"sequential",
-                                autoplay:true,
-                                pauseOnHover:true,
-                                heightRatio:isMediumDevice?0.6:0.32
-                            }} aria-label="React Splide Example" className="w-full">
-                                {events
-                                    .sort((a, b) => new Date(b.date) - new Date(a.date)) // Sort events by date (newest first)
-                                    .slice(0, 5).map(data => <SplideSlide className="flex justify-center items-center w-full gap-12">
-                                        <img src={data.poster??Blank} alt="Image 1" className="h-full" />
-                                        <div className="w-[40vw] scroll text-left h-full flex flex-col gap-2">
-                                            <h1 className="text-lg lg:text-2xl font-bold">{data.slug}</h1>
-                                            <h1 className="text-sm lg:text-lg italic ">{data.tagline}</h1>
-                                            <h1 className="text-sm lg:text-md ">{data.description}</h1>
-                                            <h1 className="md:hidden lg:block text-sm lg:text-md ">{data.info}</h1>
+                    {/* REPLACED WITH NEW RecentEventsCarousel COMPONENT */}
+                    <RecentEventsCarousel />
 
-                                            <h1 className="text-sm lg:text-md font-bold">Date : {data.date!=""?data.date:new Date(data.createdAt).toDateString()}</h1>
-                                            <h1 className="text-sm lg:text-md">Team Size: {data.TS}</h1>
-                                            <div className="flex flex-col lg:flex-row">
-                                                {/* YE VALA PART BHT FUDDU ERROR DERA H */}
-                                                {/* {data.instagram_post && data.instagram_post.length != 0 ? data.instagram_post.map(url => (
-                                                    <div style={{ display: 'flex', justifyContent: 'center' }}>
-                                                        <InstagramEmbed url={url} width={328} className="h-full" />
-                                                    </div>
-                                                )) :
-                                                    <h1 className="text-sm lg:text-md font-bold italic">No Post Available</h1>
-                                                } */}
-                                            </div>
-
-                                        </div>
-                                    </SplideSlide>)}
-                                
-                            </Splide>
-                        </div>
-
-
-                    </div>}
                 </div>
 
                 {/* Gallery */}

@@ -23,6 +23,8 @@ export default function Events() {
         try {
             const response = await axios.get(FETCH_EVENT_ROUTE);
             setEvents(response.data.data);
+            console.log("API Response Data:", response.data);
+            console.log("Events loaded into AuthContext:", response.data.data);
         } catch (error) {
             console.error("Error fetching events:", error);
         }
@@ -72,7 +74,10 @@ export default function Events() {
                         Session {selectedSession.substring(1).replace("_", "-")}
                     </h1>
                     {events && events.filter((event) => event.session === selectedSession).length > 0 ? (
-                        <ul className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-6 md:gap-x-10 gap-y-8 md:gap-y-10 py-8 md:py-12 justify-items-center items-center px-4 md:px-12 xl:w-full">
+                        <ul
+                            // MODIFIED CLASSES HERE for Flexbox:
+                            className="flex flex-wrap justify-center gap-x-6 md:gap-x-10 gap-y-8 md:gap-y-10 py-8 md:py-12 px-4 md:px-12 xl:w-full"
+                        >
                             {events
                                 .filter((event) => event.session === selectedSession)
                                 .map((event) => (
