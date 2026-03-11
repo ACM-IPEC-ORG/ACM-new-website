@@ -1,7 +1,17 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
+@theme {
+  /* Custom Colors */
+  --color-primary: #0182AC;
+  --color-secondary: #0862C2;
+  --color-tertiary: #08C2BF;
+  --color-bg-black: #1E1E1E;
+
+  /* Background Images (Gradients) */
+  --background-image-SecGradP: linear-gradient(to right, #0862C2 30%, #08C2BF);
+  --background-image-TerGradP: linear-gradient(to left, #08C2BF 30%, #0182AC);
+  --background-image-TerGradS: linear-gradient(to left, #0182AC 30%, #0862C2);
+}   
 * {
     font-family: 'Raleway', sans-serif;
 

@@ -143,7 +143,7 @@ export default function Teams() {
                     </div>
                     
                 </div>
-                {/* Conveyers */}
+                {/* CORE MEMBERS */}
                 <div className="grid grid-cols-1 place-items-center px-32 pt-6">
                     <div className="xl:px-96 text-center">
                         <h1 className="text-2xl py-4 font-semibold">CORE MEMBERS</h1>

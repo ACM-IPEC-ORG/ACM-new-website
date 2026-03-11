@@ -24,16 +24,16 @@ export const HeadD = ({ fullName, department, img, social_links }) => {
 
   return (
     <motion.div
-      whileHover={{ scale: 1.1 }}
+      whileHover={{ scale: 1.05 }}
       onHoverStart={() => setIsHovered(1)}
       onHoverEnd={() => setIsHovered(0)}
-      className="grid w-42 place-items-center p-2">
-      <div className="bg-gray-500 overflow-hidden p-16 border-48 border-sky-400 rounded-full shadow-2xl relative">
+      className="flex flex-col items-center p-4">
+      <div className="w-48 h-48 sm:w-56 sm:h-56 overflow-hidden rounded-full shadow-[0_0_20px_rgba(56,189,248,0.3)] relative border-4 border-sky-400/50 mb-4 bg-[#111]">
         <LazyLoadImage
           src={img}
           alt={fullName || "Profile Image"}
-          wrapperClassName="absolute inset-0 w-full h-full object-cover"
-          placeholderSrc="image holder"
+          wrapperClassName="w-full h-full block"
+          className="w-full h-full object-cover"
         />
       </div>
       <div className="py-2 text-center">
@@ -80,15 +80,15 @@ export const Founder = ({ fullName, img, social_links }) => {
 
   return (
     <motion.div
-      whileHover={{ scale: 1.1 }} onHoverStart={() => setIsHovered(1)} onHoverEnd={() => setIsHovered(0)}
-      className="grid w-42 place-items-center p-2">
-      <div className="bg-gray-500 overflow-hidden p-20 border-48 border-sky-400 rounded-full shadow-2xl relative">
+      whileHover={{ scale: 1.05 }} onHoverStart={() => setIsHovered(1)} onHoverEnd={() => setIsHovered(0)}
+      className="flex flex-col items-center p-4">
+      <div className="w-48 h-48 sm:w-56 sm:h-56 overflow-hidden rounded-full shadow-[0_0_20px_rgba(56,189,248,0.3)] relative border-4 border-sky-400/50 mb-4 bg-[#111]">
         <LazyLoadImage
           effect="opacity"
           src={img}
           alt={fullName || "Founder Image"}
-          wrapperClassName="absolute inset-0 w-full h-full object-cover"
-          placeholderSrc="image"
+          wrapperClassName="w-full h-full block"
+          className="w-full h-full object-cover"
         />
       </div>
       <div className="py-2 text-center">
@@ -122,15 +122,15 @@ export const CMCard = ({ fullName, department, img, social_links }) => {
   return (
     <div className="">
       <motion.div
-        whileHover={{ scale: 1.1 }} onHoverStart={() => setIsHovered(1)} onHoverEnd={() => setIsHovered(0)}
-        className="grid w-42 place-items-center p-2">
-        <div className="bg-gray-500 overflow-hidden p-14 rounded-full shadow-2xl relative">
+        whileHover={{ scale: 1.05 }} onHoverStart={() => setIsHovered(1)} onHoverEnd={() => setIsHovered(0)}
+        className="flex flex-col items-center p-2">
+        <div className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 overflow-hidden rounded-full shadow-[0_0_15px_rgba(255,255,255,0.1)] relative border-2 border-white/20 mb-3 bg-[#111]">
           <LazyLoadImage
             effect="opacity"
             src={img}
             alt={fullName || "Core Member Image"}
-            wrapperClassName="absolute inset-0 w-full h-full object-cover"
-            placeholderSrc="Images"
+            wrapperClassName="w-full h-full block"
+            className="w-full h-full object-cover"
           />
         </div>
         <div className="py-2 text-center grid grid-rows-1 place-items-center">

@@ -79,6 +79,17 @@ export default function Founders(){
                 />
             )
         }):null
+    const T2025=team?
+        team
+        .filter(ele=>ele.position==="t2025")
+        .map(ele=>{
+            return(
+                <CMCard
+                {...ele}
+                />
+            )
+        }):null
+        
     const ref=useRef(null)
     const {scrollYProgress}=useScroll({
         target:ref,
@@ -106,7 +117,7 @@ export default function Founders(){
                 <div className="text-center xl:py-32 lg:py-52 md:py-52">
                     <h1 className="text-5xl font-bold text-sky-500">FOUNDERS</h1>
                     <div className="grid place-items-center">
-                        <div className="flex flex-wrap scale-75 xl:w-11/12 w-11/12 justify-center gap-12">
+                        <div className="flex flex-wrap scale-75 xl:w-11/12 w-11/12 justify-center gap-12 ">
                             {Found!=null?Found:<p>Loading...</p>}
                         </div>
                     </div>
@@ -136,6 +147,15 @@ export default function Founders(){
                     <div className="grid place-items-center">
                         <div className="flex flex-wrap xl:w-11/12 scale-75 px-32 w-11/12 justify-center gap-12">
                             {T2024!=null?T2024:<p>Loading...</p>}      
+                        </div>
+                    </div>
+                </div>
+                {/* TEAM 2025 */}
+                <div className="text-center py-12">
+                    <h1 className="text-5xl font-bold">TEAM 2025</h1>
+                    <div className="grid place-items-center">
+                        <div className="flex flex-wrap xl:w-11/12 scale-75 px-32 w-11/12 justify-center gap-12">
+                            {T2025!=null?T2025:<p>Loading...</p>}      
                         </div>
                     </div>
                 </div>

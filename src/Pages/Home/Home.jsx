@@ -28,25 +28,25 @@ import { FETCH_EVENT_ROUTE } from "../../services/constant";
 import RecentEventsCarousel from '../../Components/RecentEventsCarousel';
 
 export default function Home() {
-    const {open,setOpen,events,setEvents}=useAuth();
+    const { open, setOpen, events, setEvents } = useAuth();
     window.scrollTo({
         top: 0,
         behavior: "smooth"
     })
 
-    const fetchHomeEvent=async()=>{
+    const fetchHomeEvent = async () => {
         await axios.get(FETCH_EVENT_ROUTE)
-        .then(res=>{
-            setEvents(res.data.data);
-        })
-        .catch(err=>{
-            console.log(err)
-        })
+            .then(res => {
+                setEvents(res.data.data);
+            })
+            .catch(err => {
+                console.log(err)
+            })
     }
     const isMediumDevice = useMediaQuery(
         "only screen and (min-width : 769px) and (max-width : 992px)"
-      );
-      const isSmallDevice = useMediaQuery("only screen and (max-width : 768px)");
+    );
+    const isSmallDevice = useMediaQuery("only screen and (max-width : 768px)");
     const [img, setimage] = useState("")
     const [Name, setName] = React.useState("")
     const [Email, setEmail] = React.useState("")
@@ -72,7 +72,7 @@ export default function Home() {
                                     className="md:p-28 p-20"
                                     onClick={() => {
                                         setOpen(true),
-                                        setClickedImg(d)
+                                            setClickedImg(d)
                                     }}
                                 />
                             )
@@ -89,29 +89,29 @@ export default function Home() {
         document.getElementById("contact").scrollIntoView({ behavior: "smooth", block: "start" })
     }
 
-    useEffect(()=>{
-        if(events===null){
+    useEffect(() => {
+        if (events === null) {
             fetchHomeEvent();
         }
-    },[])
+    }, [])
 
     return (
         <div>
             <div className="w-full ">
                 {/* Hero */}
                 <div
-                    className="grid xl:grid-cols-2 lg:grid-cols-1 pb-6 xl:gap-12 lg:gap-0 h-full overflow-x-hidden">
-                    <div className="md:px-0 xl:w-11/12 lg:w-4/5 md:w-11/12 w-full h-full xl:py-48 md:pl-24 pl-12 lg:py-24 md:pt-32 pt-32  px-10">
-                        <h1 className="text-lg font-semibold">Welcome to</h1>
-                        <h1 className="xl:text-5xl lg:text-5xl md:text-5xl text-4xl py-2 font-bold text-sky-500 tracking-wide">Association For Computing Machinery</h1>
+                    className="grid xl:grid-cols-2 lg:grid-cols-1 xl:gap-12 lg:gap-0 min-h-screen items-center overflow-x-hidden pt-24 lg:pt-0">
+                    <div className="md:px-0 xl:w-11/12 lg:w-4/5 md:w-11/12 w-full md:pl-24 pl-12 px-10">
+                        <h1 className="text-lg font-bold text-foreground">Welcome to</h1>
+                        <h1 className="text-6xl sm:text-5xl font-black leading-none mb-2 text-secondary ">Association For Computing Machinery</h1>
                         <h2 className="text-lg font-semibold">IPEC | Student Chapter</h2>
-                        <p className="text-xs py-8">ACM is a renowned educational and scientific society established in New York in 1947. It connects researchers, educators, and professionals, encourages discourse, and addresses challenges in computing. The IPEC ACM Student Chapter is a representative association that promotes high standards of honor and civic responsibility, cooperation between students, faculty, and administration, and an increased interest in computing. Chartered by ACM, the Chapter operates for educational and scientific purposes to improve students' learning and working environments, promote modern computing, and foster communication among those interested in computing.</p>
+                        <p className="max-w-lg mb-10 leading-relaxed text-muted-foreground font-mono text-xs py-8 ">ACM is a global educational and scientific society connecting researchers, educators, and professionals to address computing challenges. The IPEC ACM Student Chapter promotes high standards, collaboration, and increased interest in modern computing, fostering an environment for learning and communication among students.</p>
                         <div className="flex gap-12">
 
                             <motion.button whileHover={{ scale: 1.05 }}
-                                whileTap={{ scale: 0.8 }} onClick={handleClick} className="bg-SecGradP hover:font-bold text-sm text-white px-8 py-4">Know More!</motion.button>
+                                whileTap={{ scale: 0.8 }} onClick={handleClick} className="bg-SecGradP inline-flex items-center gap-2 px-6 py-3 text-sm font-bold tracking-wide transition-all duration-200 hover:opacity-90 hover:scale-[1.02] bg-foreground text-background font-mono">Know More!</motion.button>
                             <motion.button whileHover={{ scale: 1.05 }}
-                                whileTap={{ scale: 0.8 }} onClick={handleContact} className="bg-TerGradP hover:font-bold text-sm text-white px-8 py-4">Contact Us</motion.button>
+                                whileTap={{ scale: 0.8 }} onClick={handleContact} className="bg-TerGradP inline-flex items-center gap-2 px-6 py-3 text-sm font-bold tracking-wide transition-all duration-200 hover:opacity-90 hover:scale-[1.02] bg-foreground text-background font-mono">Contact Us</motion.button>
                         </div>
 
                     </div>
@@ -126,7 +126,7 @@ export default function Home() {
                             <h1 className="xl:text-4xl lg:text-5xl md:text-4xl text-3xl font-semibold text-secondary">
                                 Upcoming Event
                             </h1>
-                            {events!=null&&events.filter(event => new Date(event.date) >= new Date()).length > 0 ? (
+                            {events != null && events.filter(event => new Date(event.date) >= new Date()).length > 0 ? (
                                 events
                                     .filter(event => new Date(event.date) >= new Date())
                                     .map(data => (
@@ -136,7 +136,7 @@ export default function Home() {
                                                 <h1 className="text-lg lg:text-2xl font-bold">{data.slugs}</h1>
                                                 <h1 className="md:hidden lg:block text-sm lg:text-md font-bold">{data.info}</h1>
                                                 <h1 className="text-sm lg:text-md"><b>Description:</b> <br></br>{data.intro}</h1>
-                                                <h1 className="text-sm lg:text-md"><b>Rules:</b> {data.rules.map(li=>(
+                                                <h1 className="text-sm lg:text-md"><b>Rules:</b> {data.rules.map(li => (
                                                     <li>{li}</li>
                                                 ))}</h1>
                                                 <h1 className="text-sm lg:text-md font-bold">Date: {new Date(data.date).toDateString()}</h1>
